@@ -1,0 +1,123 @@
+.navbar {
+  @include flex(space-between, center, row, nowrap);
+
+  &__menu {
+    @include flex(space-between, center, row, nowrap);
+  }
+
+  &__logo {
+    @include flex(flex-start, flex-start, row, nowrap);
+  }
+
+  &__upper-logo {
+    padding-left: 5px;
+  }
+
+  &__item {
+    margin-top: 28px;
+    margin-bottom: 18px;
+
+    &-text {
+      font-family: "TTRounds";
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 0.71;
+      letter-spacing: 1.19px;
+      color: #000000;
+      text-transform: uppercase;
+    }
+  }
+
+  &__button {
+    font-family: "TTRounds";
+    height: 34px;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 0.71;
+    letter-spacing: 0.21px;
+    color: #ffffff;
+  }
+
+  &__enter {
+    font-family: "TTRounds";
+    margin-top: 10px;
+
+    &-text {
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 1.71;
+      letter-spacing: 0.21px;
+      color: #00a6ed;
+    }
+  }
+}
+
+.background-header {
+  @include backgr(url(../img/gradient1.jpg));
+  @extend %backgr;
+
+  &__container {
+    padding-top: 36px;
+    @include flex(space-between, flex-end, row, nowrap);
+  }
+
+  &__title {
+    font-family: "TTRounds";
+    font-size: 51.5px;
+    font-weight: normal;
+    line-height: 1.22;
+    letter-spacing: 0.77px;
+    color: #f7f8f8;
+  }
+
+  &__subtitle {
+    margin: 31px 0 44px;
+    font-family: "TTRounds";
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.63;
+    letter-spacing: 0.24px;
+    color: #f7f8f8;
+  }
+
+  &__button-container {
+    @include flex(flex-start, center, row, nowrap);
+    padding-bottom: 63px;
+    margin: 0;
+  }
+
+  &__img {
+    min-width: 576px;
+    margin-right: -55px;
+  }
+
+  &__button {
+    margin: 0;
+    height: 50px;
+    border: none;
+    background-color: #ffffff;
+    @include flex(space-between, center, row, nowrap);
+    padding: 0 18px 0 25px;
+    box-shadow: 0px 4px 28px 7px rgba(3, 3, 3, 0.25);
+
+    &-text {
+      font-family: "TTRounds";
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 1.5;
+      letter-spacing: 0.24px;
+      color: #00a6ed;
+    }
+  }
+
+  &__between-buttons {
+    margin: 0;
+    padding: 0 38px 0 23px;
+    font-family: "TTRounds";
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 1.85;
+    letter-spacing: 0.2px;
+    color: #ffffff;
+  }
+}

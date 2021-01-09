@@ -1,0 +1,44 @@
+.kickstarter {
+  padding: 89px 0 42px;
+
+  &__header {
+    font-family: "TTRounds";
+    font-size: 32px;
+    font-weight: normal;
+    line-height: 0.8;
+    padding-bottom: 23px;
+    text-align: left;
+    color: #28283d;
+
+    &--blue {
+      color: #00a6ed;
+    }
+  }
+
+  &__container-figures {
+    margin-top: 52px;
+
+    &--last {
+      margin-left: 100px !important;
+      margin-right: -100px !important;
+    }
+  }
+
+  &__figures {
+    font-family: "TTRounds";
+    font-size: 100px;
+    font-weight: 100;
+    line-height: 0.9;
+    letter-spacing: 1.5px;
+    color: #00a6ed;
+
+    &-text {
+      font-family: "TTRounds";
+      font-size: 24px;
+      font-weight: normal;
+      line-height: 2.33;
+      letter-spacing: 0.36px;
+      color: #00a6ed;
+    }
+  }
+}

@@ -1,0 +1,100 @@
+.project-preview {
+  &__block {
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 2px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+
+  &__img {
+    position: relative;
+  }
+
+  &__location {
+    position: absolute;
+    bottom: 4%;
+    left: 7%;
+    font-family: TTRounds;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.33;
+    letter-spacing: 0.78px;
+    text-align: left;
+    color: #ffffff;
+  }
+
+  &__content {
+    height: 130px;
+    padding: 17px 20px 13px 19px;
+    @include flex(space-between, stretch, column, nowrap);
+
+    &-title {
+      font-family: "TTRounds";
+      font-size: 15px;
+      font-weight: normal;
+      line-height: 1.33;
+      letter-spacing: 0.23px;
+      text-align: left;
+      color: #00a6ed;
+    }
+
+    &-progress {
+      height: 4px;
+      margin-bottom: 12px;
+
+      &-status {
+        height: 4px;
+      }
+    }
+
+    &-time {
+      margin-right: 11px;
+    }
+
+    &-how-much-text {
+      font-size: 11px;
+    }
+
+    &-how-much-figures {
+      font-size: 14px;
+    }
+  }
+
+  &__slider {
+    padding: 68px 0 63px;
+
+    &-link {
+      @include flex(flex-start, center, row, nowrap);
+
+      &-text {
+        font-family: "TTRounds";
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 0.5;
+        color: #28283d;
+      }
+    }
+  }
+
+  &__dots {
+    @include flex(flex-end, center, row, nowrap);
+  }
+}
+
+.icon-circle-o {
+  margin-left: 7.5px;
+  font-size: 14px;
+}
+
+.project-preview__slider-link .icon-chevron-right {
+  margin-left: 9px;
+  font-size: 12px;
+}
+
+.project-preview__block:hover .project-preview__content-title,
+.project-preview__block:hover .top-project__details-how-much-text,
+.project-preview__block:hover .top-project__details-how-much-figures {
+  color: black;
+}

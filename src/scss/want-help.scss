@@ -1,0 +1,74 @@
+.want-help {
+  padding: 112px 0 100px 0;
+
+  &__text {
+    font-family: "TTRounds";
+    font-size: 32px;
+    font-weight: normal;
+    line-height: 0.6;
+    letter-spacing: normal;
+    text-align: left;
+    color: #28283d;
+
+    &--blue {
+      color: #00a6ed;
+    }
+
+    &-block {
+      @include flex(flex-start, flex-start, row, nowrap);
+      padding-bottom: 51px;
+    }
+  }
+
+  &__img-container {
+    position: relative;
+  }
+
+  &__img-text {
+    font-family: "TTRounds";
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+    letter-spacing: 0.24px;
+    color: #28283d;
+
+    &--publish {
+      position: absolute;
+      top: 41.5%;
+      left: 0.9%;
+    }
+
+    &--find {
+      position: absolute;
+      top: 41.5%;
+      left: 4%;
+    }
+
+    &--embody {
+      position: absolute;
+      top: 41.5%;
+      left: 0.9%;
+    }
+  }
+
+  .icon-chevron-first {
+    position: absolute;
+    top: 51.9%;
+    left: 0.79%;
+  }
+
+  .icon-chevron-second {
+    position: absolute;
+    top: 51.9%;
+    left: -0.3%;
+  }
+
+  .want-help__img-container .icon-chevron-right {
+    font-size: 20px;
+  }
+}
+
+label.want-help__toggle-button {
+  margin-left: 35px;
+  margin-right: 33px;
+}

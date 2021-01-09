@@ -1,0 +1,58 @@
+.footer {
+  padding: 48px 0 52px;
+
+  &__logo {
+    @include flex(flex-start, flex-end, row, nowrap);
+  }
+
+  &__copyright {
+    font-family: "TTRounds";
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1;
+    color: #00a6ed;
+    padding-left: 5px;
+  }
+
+  &__menu {
+    @include flex(space-between, center, row, nowrap);
+    font-family: "TTRounds";
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1.5;
+    color: #00a6ed;
+  }
+
+  &__mail-us {
+    padding-top: 12px;
+    font-family: "TTRounds";
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 1.77;
+    color: #39434d;
+
+    &--blue {
+      color: #00a6ed;
+    }
+  }
+
+  &__facebook {
+    @include flex(flex-end, center, row, nowrap);
+    font-family: "TTRounds";
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1.5;
+    padding-right: 87px;
+
+    &--blue {
+      color: #00a6ed;
+      padding-left: 4px;
+    }
+  }
+}
+
+.footer-bottom {
+  height: 80px;
+  width: 100%;
+  background-color: #f0f0f1;
+}
