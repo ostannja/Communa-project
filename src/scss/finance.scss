@@ -4,68 +4,50 @@
   padding-top: 89px;
   padding-bottom: 90px;
 
-  &__header {
-    font-family: "TTRounds";
-    font-size: 32px;
-    font-weight: normal;
+  .title-container {
+    height: 95px;
+    @include flex(space-between, flex-start, row, wrap);
+    margin-bottom: 30px;
+  }
+
+  .block-title {
     line-height: 0.8;
     color: #ffffff;
-    padding-bottom: 23px;
-
-    &-container {
-      padding-bottom: 28.5px;
-    }
   }
 
-  &__button {
-    margin: 0;
-    height: 50px;
-    border: none;
-    background-color: #ffffff;
-    @include flex(space-between, center, row, nowrap);
-    padding: 0 23px 0 25px;
-    box-shadow: 0px 4px 28px 7px rgba(3, 3, 3, 0.25);
+  .button--finance {
+    padding: 0 22px 0 24px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     width: 25.6% !important;
-
-    &-text {
-      font-family: "TTRounds";
-      font-size: 16px;
-      font-weight: bold;
-      line-height: 1.5;
-      letter-spacing: 0.24px;
-      color: #00a6ed;
-    }
   }
+}
 
-  &__social {
-    &-container {
-      margin-left: 100px;
-      @include flex(flex-start, center, row, nowrap);
-    }
+.social-container {
+  margin-left: 100px;
+  @include flex(flex-start, center, row, nowrap);
 
-    &-text {
-      font-family: "TTRounds";
-      font-size: 16px;
-      font-weight: normal;
-      line-height: 1.5;
-      letter-spacing: 0.24px;
-      color: #ffffff;
-      padding-right: 25px;
-    }
-
-    &-button {
-      position: relative;
-      @include flex(center, center, row, nowrap);
-      margin: 0;
-      height: 50px;
-      width: 50px;
-      border: none;
-      background-color: #ffffff;
-      padding: 0;
-      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-      margin-right: 20px;
-    }
+  .text {
+    font-family: "TTRounds";
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+    letter-spacing: 0.24px;
+    color: #ffffff;
+    padding-right: 25px;
   }
+}
+
+.social-button {
+  position: relative;
+  @include flex(center, center, row, nowrap);
+  margin: 0;
+  height: 50px;
+  width: 50px;
+  border: none;
+  background-color: #ffffff;
+  padding: 0;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  margin-right: 20px;
 }
 
 .icon-credit-card {

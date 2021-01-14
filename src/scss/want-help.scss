@@ -1,30 +1,16 @@
 .want-help {
-  padding: 112px 0 100px 0;
+  padding: 112px 0 102px 0;
 
-  &__text {
-    font-family: "TTRounds";
-    font-size: 32px;
-    font-weight: normal;
-    line-height: 0.6;
-    letter-spacing: normal;
-    text-align: left;
-    color: #28283d;
-
-    &--blue {
-      color: #00a6ed;
-    }
-
-    &-block {
-      @include flex(flex-start, flex-start, row, nowrap);
-      padding-bottom: 51px;
-    }
+  .text-block {
+    @include flex(flex-start, flex-start, row, nowrap);
+    padding-bottom: 49px;
   }
 
-  &__img-container {
+  .img-container {
     position: relative;
   }
 
-  &__img-text {
+  .img-text {
     font-family: "TTRounds";
     font-size: 16px;
     font-weight: normal;
@@ -35,40 +21,54 @@
     &--publish {
       position: absolute;
       top: 41.5%;
-      left: 0.9%;
+      left: 0.8%;
     }
 
     &--find {
       position: absolute;
-      top: 41.5%;
-      left: 4%;
+      top: 41.1%;
+      left: 4.15%;
     }
 
     &--embody {
       position: absolute;
       top: 41.5%;
-      left: 0.9%;
+      left: 0.75%;
     }
   }
 
   .icon-chevron-first {
     position: absolute;
-    top: 51.9%;
-    left: 0.79%;
+    top: 52.9%;
+    left: 0.75%;
   }
 
   .icon-chevron-second {
     position: absolute;
-    top: 51.9%;
-    left: -0.3%;
+    top: 52.9%;
+    left: -0.35%;
   }
 
-  .want-help__img-container .icon-chevron-right {
+  .img-container .icon-chevron-right {
     font-size: 20px;
   }
 }
 
-label.want-help__toggle-button {
+.block-title {
+  font-family: "TTRounds";
+  font-size: 32px;
+  font-weight: normal;
+  line-height: 0.6;
+  letter-spacing: normal;
+  text-align: left;
+  color: #28283d;
+
+  &--blue {
+    color: #00a6ed;
+  }
+}
+
+label.toggle-button {
   margin-left: 35px;
   margin-right: 33px;
 }

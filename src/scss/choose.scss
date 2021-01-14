@@ -2,11 +2,11 @@
   padding: 69px 0 73px;
   background-color: #f0f0f1;
 
-  &__container {
+  .container {
     @include flex(flex-start, center, row, nowrap);
   }
 
-  &__form-select {
+  .form-select {
     font-family: TTRounds;
     font-size: 16px;
     font-weight: normal;
@@ -18,28 +18,28 @@
     color: #28283d;
   }
 
-  &__text {
+  .text {
     font-family: "TTRounds";
     font-size: 16px;
     font-weight: normal;
     line-height: 1.5;
     color: #28283d;
   }
-
-  &__button {
-    position: relative;
-    background-color: #42a5f5;
-    @include flex(center, center, row, nowrap);
-    margin: 0;
-    height: 50px;
-    width: 50px;
-    border: none;
-    padding: 0;
-    margin-right: 20px;
-  }
 }
 
-.choose__form-select select {
+.input-button {
+  position: relative;
+  background-color: #42a5f5;
+  @include flex(center, center, row, nowrap);
+  margin: 0;
+  height: 50px;
+  width: 50px;
+  border: none;
+  padding: 0;
+  margin-right: 20px;
+}
+
+.form-select select {
   -moz-appearance: none;
   -webkit-appearance: none;
   background-image: url(../img/chevron-down.svg);
@@ -52,7 +52,7 @@
   padding-right: 4rem;
 }
 
-input.choose__text {
+input.text {
   padding-left: 24px;
 }
 

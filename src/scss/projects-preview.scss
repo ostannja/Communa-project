@@ -1,19 +1,19 @@
 .project-preview {
-  &__block {
+  .block {
     position: relative;
     background-color: #ffffff;
-    border-radius: 2px;
+    border-radius: 4px;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   }
 
-  &__img {
+  .img {
     position: relative;
   }
 
-  &__location {
+  .location {
     position: absolute;
     bottom: 4%;
-    left: 7%;
+    left: 7.5%;
     font-family: TTRounds;
     font-size: 12px;
     font-weight: normal;
@@ -25,9 +25,9 @@
     color: #ffffff;
   }
 
-  &__content {
+  .content {
     height: 130px;
-    padding: 17px 20px 13px 19px;
+    padding: 17px 20px 13px 18.5px;
     @include flex(space-between, stretch, column, nowrap);
 
     &-title {
@@ -41,11 +41,17 @@
     }
 
     &-progress {
+      width: 100%;
+      margin: 11px 0 12px 2px;
+      border-radius: 4px;
+      background-color: #f0f0f1;
       height: 4px;
-      margin-bottom: 12px;
 
       &-status {
         height: 4px;
+        border-radius: 10px;
+        background-color: #00a6ed;
+        width: 10%;
       }
     }
 
@@ -65,20 +71,20 @@
   &__slider {
     padding: 68px 0 63px;
 
-    &-link {
+    .slider-link {
       @include flex(flex-start, center, row, nowrap);
 
       &-text {
         font-family: "TTRounds";
         font-size: 15px;
         font-weight: bold;
-        line-height: 0.5;
+        line-height: 1;
         color: #28283d;
       }
     }
   }
 
-  &__dots {
+  .dots {
     @include flex(flex-end, center, row, nowrap);
   }
 }
@@ -88,13 +94,13 @@
   font-size: 14px;
 }
 
-.project-preview__slider-link .icon-chevron-right {
+.slider-link .icon-chevron-right {
   margin-left: 9px;
   font-size: 12px;
 }
 
-.project-preview__block:hover .project-preview__content-title,
-.project-preview__block:hover .top-project__details-how-much-text,
-.project-preview__block:hover .top-project__details-how-much-figures {
+.block:hover .content-title,
+.block:hover .details-how-much-text,
+.block:hover .details-how-much-figures {
   color: black;
 }
