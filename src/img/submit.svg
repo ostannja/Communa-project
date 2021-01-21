@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="12px" viewBox="0 0 16 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>submit</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="index.desktop" transform="translate(-1043.000000, -2780.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Subscribe" transform="translate(0.000000, 2692.000000)">
+                <path d="M1049.56566,99.7314154 L1058.76565,90.5313946 C1059.07806,90.2189564 1059.07806,89.7124269 1058.76565,89.4000192 L1057.6343,88.2686437 C1057.3219,87.956236 1056.81534,87.956236 1056.50293,88.2686437 L1048.99999,95.771586 L1045.49703,92.2686342 C1045.18463,91.9561959 1044.67807,91.9561959 1044.36566,92.2686342 L1043.23431,93.4000096 C1042.92191,93.7124479 1042.92191,94.2189774 1043.23431,94.5313851 L1048.43431,99.7313849 C1048.74669,100.043823 1049.25322,100.043823 1049.56566,99.7314154 Z" id="submit"></path>
+            </g>
+        </g>
+    </g>
+</svg>

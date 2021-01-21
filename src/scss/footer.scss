@@ -1,14 +1,19 @@
 .footer {
-  padding: 48px 0 52px;
+  padding: 48px 0 52px !important;
+  // @include flex(space-between, flex-start, row, nowrap);
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 85%;
+  padding: 0;
 
   .logo {
     @include flex(flex-start, flex-end, row, nowrap);
   }
 
   .copyright {
-    font-family: "TTRounds";
-    font-size: 15px;
-    font-weight: normal;
+    font-family: "Raleway";
+    font-size: 16px;
     line-height: 1;
     color: #00a6ed;
     padding-left: 5px;
@@ -16,20 +21,21 @@
 
   .menu {
     @include flex(space-between, center, row, nowrap);
-    font-family: "TTRounds";
-    font-size: 15px;
+    font-family: Raleway;
+    font-size: 16px;
     font-weight: normal;
     line-height: 1.5;
     color: #00a6ed;
+    margin-right: 12px;
   }
 
   .mail-us {
-    padding-top: 12px;
-    font-family: "TTRounds";
+    padding-top: 21px;
+    font-family: "Raleway";
     font-size: 13px;
-    font-weight: normal;
+    font-weight: 500;
     line-height: 1.77;
-    color: #39434d;
+    color: #000000;
 
     &--blue {
       color: #00a6ed;
@@ -37,22 +43,15 @@
   }
 
   &__facebook {
-    @include flex(flex-end, center, row, nowrap);
-    font-family: "TTRounds";
-    font-size: 15px;
+    font-family: Raleway;
+    font-size: 16px;
     font-weight: normal;
     line-height: 1.5;
-    padding-right: 87px;
+    color: #00a6ed;
 
     &--blue {
       color: #00a6ed;
       padding-left: 4px;
     }
   }
-}
-
-.footer-bottom {
-  height: 80px;
-  width: 100%;
-  background-color: #f0f0f1;
 }

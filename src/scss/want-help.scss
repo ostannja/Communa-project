@@ -1,74 +1,55 @@
 .want-help {
-  padding: 112px 0 102px 0;
+  padding: 102px 0 102px 0 !important;
 
   .text-block {
-    @include flex(flex-start, flex-start, row, nowrap);
-    padding-bottom: 49px;
+    @include flex(flex-start, flex-start, row, wrap);
+    margin-bottom: 51px;
   }
 
   .img-container {
     position: relative;
-  }
+    @include flex(space-between, center, row, wrap);
+    margin-right: 82px;
 
-  .img-text {
-    font-family: "TTRounds";
-    font-size: 16px;
-    font-weight: normal;
-    line-height: 1.5;
-    letter-spacing: 0.24px;
-    color: #28283d;
+    .img-text-block {
+      @include flex(flex-start, center, row, wrap);
 
-    &--publish {
-      position: absolute;
-      top: 41.5%;
-      left: 0.8%;
+      &--center {
+        padding-right: 25px;
+      }
+
+      .img--center {
+        padding-top: 30px;
+      }
+      .img-text {
+        font-family: "Raleway";
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.38;
+        color: #000000;
+        padding-top: 40px;
+
+        &--photo {
+          padding-left: 37px;
+        }
+        &--target {
+          padding-left: 20px;
+        }
+      }
     }
 
-    &--find {
-      position: absolute;
-      top: 41.1%;
-      left: 4.15%;
+    .chevron-icon {
+      padding-top: 35px;
+      margin-right: 25px;
     }
-
-    &--embody {
-      position: absolute;
-      top: 41.5%;
-      left: 0.75%;
-    }
-  }
-
-  .icon-chevron-first {
-    position: absolute;
-    top: 52.9%;
-    left: 0.75%;
-  }
-
-  .icon-chevron-second {
-    position: absolute;
-    top: 52.9%;
-    left: -0.35%;
-  }
-
-  .img-container .icon-chevron-right {
-    font-size: 20px;
   }
 }
 
 .block-title {
-  font-family: "TTRounds";
-  font-size: 32px;
+  font-family: "DidactGothic";
+  font-size: 35px;
   font-weight: normal;
-  line-height: 0.6;
+  line-height: 0.86;
   letter-spacing: normal;
-  text-align: left;
-  color: #28283d;
-
-  &--blue {
-    color: #00a6ed;
-  }
-}
-
-label.toggle-button {
-  margin-left: 35px;
-  margin-right: 33px;
+  color: #000000;
 }

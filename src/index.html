@@ -11,47 +11,46 @@
 
 <body>
   <header>
-    <nav class="container navbar row">
-      <a class="seven columns logo" href="#">
+    <nav class="navbar">
+      <a class="logo" href="#">
         <img src="img/logo_communa.png" alt="logo">
         <img src="img/logo_alpha.png" class="upper-logo" alt="upper_logo">
       </a>
-      <ul class="five columns navbar-menu">
+      <ul class="navbar-menu">
         <li class="navbar-item">
-          <a class="navbar-text" href="#projects">Проекти</a>
+          <a class="navbar-text" href="#projects">Проєкти</a>
         </li>
         <li class="navbar-item">
           <a class="navbar-text " href="#how_works">Як працює?</a>
         </li>
         <button class="button-primary navbar-button">
-          <a class="navbar-button">Реєстрація</a>
+          <a class="navbar-button-text">Реєстрація</a>
         </button>
         <li class="navbar-enter">
-          <a class="enter-text" href="#">Вхід</a>
+          <a class="enter-text" href="#">Вихід</a>
         </li>
       </ul>
     </nav>
     <div class="background-header">
-      <div class="container container">
-        <div class="six columns text-block">
+      <div class="container">
+        <div class="five columns text-block">
           <p class="title">Пошук суперлюдей для крутих ідей</p>
-          <p class="subtitle eight columns">
+          <p class="subtitle nine columns">
             У одних драйвовий задум, у інших свербить щось робити. Коммуна об'єднує їх.
           </p>
           <div class="button-container twelwe columns">
-            <button class="button five columns">
-              <span class="button-text">Є крута ідея!</span>
+            <button class="button">
+              <span class="button-text">Є крута ідея</span>
+              <!-- <img src="img/arw-btn.svg" alt="icon-chevron-right"> -->
               <span class="icon-chevron-right"></span>
-            </button>
-            <span class="one column between-buttons">або</span>
-            <button type="button" class="button five columns">
+            <button type="button" class="button">
               <span class="button-text">Хочу допомагати</span>
               <span class="icon-chevron-right"></span>
             </button>
           </div>
         </div>
         <div class="img six columns">
-          <img src="img/illustration_header.webp" alt="illustration_header">
+          <img src="img/illustration-desk.png" alt="illustration_header">
         </div>
       </div>
     </div>
@@ -67,18 +66,21 @@
           <div class="info three columns">
             <div class="info-card">
               <a href="#">
-                <p class="info-title">Frankivsk Half Marathon’17</p>
+                <p class="info-title">Frankivsk Half Marathon’21</p>
               </a>
               <p class="info-text">Запрошуємо всіх бажаючих пробігтися столицею Прикарпаття</p>
             </div>
             <div class="info-card">
               <div class="details-orient">
                 <div class=" details-location">
-                  <span class="icon-map-pin"></span>
+                  <!-- <span class="icon-map-pin"></span> -->
+                  <img class="geo" src="img/geo.svg" alt="geo">
                   <span class="details-city">Івано-Франківськ</span>
                 </div>
-                <a class="details-tag" href="#"><span class="icon-hashtag"></span><span
-                    class="details-tag-text">Спорт</span></a>
+                <a class="details-tag" href="#">
+                  <!-- <span class="icon-hashtag"></span> -->
+                  <img src="img/hash.svg" alt="hash">
+                  <span class="details-tag-text">Спорт</span></a>
               </div>
               <div class="progress">
                 <div class="progress-status"></div>
@@ -98,15 +100,15 @@
             </div>
           </div>
         </div>
-        <ul class="tag-list offset-by-one column one columns">
-          <li><a href="#" class="tag-list-item"><span class=" icon-hashtag"></span> Діти</a></li>
-          <li><a href="#" class="tag-list-item"><span class="icon-hashtag"></span> Мистецтво</a></li>
-          <li><a href="#" class="tag-list-item"><span class="icon-hashtag"></span> Місто</a></li>
-          <li><a href="#" class="tag-list-item"><span class="icon-hashtag"></span> Освіта</a></li>
-          <li><a href="#" class="tag-list-item"><span class="icon-hashtag"></span> Події</a></li>
-          <li><a href="#" class="tag-list-item"><span class="icon-hashtag"></span> Спорт</a></li>
-          <li><a href="#" class="tag-list-item"><span class="icon-hashtag"></span> Digital</a></li>
-          <li><a href="#" class="tag-list-item"><span class="icon-hashtag"></span> Інше</a></li>
+        <ul class="tag-list">
+          <li><a href="#" class="tag-list-item"><img src="img/hash.svg" alt="hash"></span> Діти</a></li>
+          <li><a href="#" class="tag-list-item"><img src="img/hash.svg" alt="hash"></span> Мистецтво</a></li>
+          <li><a href="#" class="tag-list-item"><img src="img/hash.svg" alt="hash"></span> Місто</a></li>
+          <li><a href="#" class="tag-list-item"><img src="img/hash.svg" alt="hash"></span> Освіта</a></li>
+          <li><a href="#" class="tag-list-item"><img src="img/hash.svg" alt="hash"></span> Події</a></li>
+          <li><a href="#" class="tag-list-item"><img src="img/hash.svg" alt="hash"></span> Спорт</a></li>
+          <li><a href="#" class="tag-list-item"><img src="img/hash.svg" alt="hash"></span> Digital</a></li>
+          <li><a href="#" class="tag-list-item"><img src="img/hash.svg" alt="hash"></span> Інше</a></li>
         </ul>
       </section>
 
@@ -116,7 +118,6 @@
             <div class="img">
               <a href="#"><img src="img/slider1.png" alt="slider1"></a>
               <div class="location">
-                <span class="icon-map-pin"></span>
                 <span>Київ</span>
               </div>
             </div>
@@ -146,7 +147,6 @@
             <div class="img">
               <a href="#"><img src="img/slider2.png" alt="slider2"></a>
               <div class="location">
-                <span class="icon-map-pin"></span>
                 <span>Львів</span>
               </div>
             </div>
@@ -176,13 +176,12 @@
             <div class="img">
               <a href="#"><img src="img/slider3.png" alt="slider1"></a>
               <div class="location">
-                <span class="icon-map-pin"></span>
                 <span>Дніпро</span>
               </div>
             </div>
             <div class="content">
               <a href="#">
-                <p class="content-title">Безкоштовні курси української мови</p>
+                <p class="content-title content-title--ukr">Безкоштовні курси української мови</p>
               </a>
               <div class="info-card">
                 <div class="progress content-progress">
@@ -235,15 +234,15 @@
         </div>
         <div class="project-preview__slider row">
           <div class="one-half column dots">
-            <span class="icon-circle"></span>
-            <span class="icon-circle-o"></span>
-            <span class="icon-circle-o"></span>
-            <span class="icon-circle-o"></span>
-            <span class="icon-circle-o"></span>
+            <img class="icon-circle" src="img/r-fill.svg" alt="dot fill">
+            <img class="icon-circle" src="img/r.svg" alt="dot empty">
+            <img class="icon-circle" src="img/r.svg" alt="dot empty">
+            <img class="icon-circle" src="img/r.svg" alt="dot empty">
+            <img class="icon-circle" src="img/r.svg" alt="dot empty">
           </div>
           <div class="one-half column slider-link">
-            <p class="slider-link-text">Всі проекти</p>
-            <span class="icon-chevron-right"></span>
+            <p class="slider-link-text">Всі проєкти</p>
+            <img src="img/arw-btn-m.svg" class="icon-chevron-right" alt="icon-chevron-right">
           </div>
         </div>
       </section>
@@ -252,47 +251,51 @@
 
     <section id="how_works" class="container want-help">
       <div class="text-block">
-        <p class="block-title">Є крута ідея</p>
-        <label class="switch toggle-button" for="checkbox">
-          <input type="checkbox" id="checkbox" />
-          <div class="slider round"></div>
-        </label>
-        <p class="block-title block-title--blue">Хочу допомагати</p>
+        <div class="block-title">Маєш класну ідею та прагнеш бути корисним?</div>
       </div>
       <div class="img-container">
-        <img src="img/want-help.png"/>
-        <div class="img-text img-text--publish offset-by-one column two columns">Публікуйся <br> на Communa.net</div>
-        <div class="icon-chevron-first offset-by-three columns one column"><span class="icon-chevron-right"></span></div>
-        <div class="img-text img-text--find offset-by-five columns  two columns">Знаходь<br>своїх</div>
-        <div class="offset-by-seven columns one column icon-chevron-second"><span class="icon-chevron-right "></span></div>
-        <div class="img-text img-text--embody offset-by-nine column two columns">Втілюйте<br>задум разом</div>
+        <div class="img-text-block">
+          <img src="img/icn1.svg" alt="ink"/>
+          <div class="img-text img-text--publish">Публікуйся<br>на Communa.net</div>
+        </div>
+        <img class="chevron-icon" src="img/arw.svg" alt="photo">
+        <div class="img-text-block img-text-block--center">
+          <img class="img--center" src="img/icn2.svg" alt="ink"/>
+          <div class="img-text img-text--photo">Знаходь<br>своїх</div>
+        </div>
+        <img class="chevron-icon" src="img/arw.svg" alt="target">
+        <div class="img-text-block">
+          <img src="img/icn3.svg" alt="ink"/>
+          <div class="img-text img-text--target">Втілюйте<br>задум разом</div>
+        </div>
       </div>
     </section>
 
     <section class="finance">
       <div class="container">
         <div class="row">
-          <div class="five columns title-container">
-            <p class="block-title">Зроби внесок у розвиток </p>
-            <p class="block-title">соціальних проектів в Україні</p>
+          <div class="title-container">
+            <p class="block-title">Зроби внесок у розвиток <br>
+            соціальних проектів в Україні</p>
           </div>
         </div>
         <div class="row">
           <button type="button" class="button button--finance four columns">
             <span class="button-text">Підтримай гривнею</span>
-            <span class="icon-credit-card"></span>
+            <img src="img/arw-btn.svg" class="icon-chevron-right" alt="icon-chevron-right">
           </button>
-          <div class="social-container eight columns">
-            <p class="text">та розкажи про нас усім</p>
+          <div class="social-container ">
+            <p class="text">та розкажи про нас</p>
             <button type="button" class="social-button">
-              <span class="icon-facebook"></span>
+              <img src="img/fb.svg" alt="fb">
             </button>
             <button type="button" class="social-button">
-              <span class="icon-twitter"></span>
+              <img src="img/insta.svg" alt="fb">
             </button>
             <button type="button" class="social-button">
-              <span class="icon-instagram"></span>
+              <img src="img/twitter.svg" alt="fb">
             </button>
+            
           </div>
         </div>
       </div>
@@ -300,22 +303,22 @@
 
     <section class="container kickstarter">
       <div class="row">
-        <div class="seven columns title-container">
-          <p class="block-title">Ми як <span class="block-title--blue">Kickstarter</span>, тільки замість грошей</p> 
-          <p class="block-title">допомагаємо знайти команду</p>
+        <div class="title-container">
+          <p class="block-title">Ми як <span class="block-title--blue">Kickstarter</span>, тільки замість грошей<br> 
+          допомагаємо знайти команду</p>
         </div>
       </div>
       <div class="row container-figures">
-        <div class="four columns ">
-          <p class="figures">46</p>
+        <div class="three columns figure-block">
+          <p class="figures">012</p>
           <p class="figures-text">проектів на сайті</p>
         </div>
-        <div class="three columns">
-          <p class="figures">25</p>
+        <div class="four columns figure-block container-figures--center">
+          <p class="figures">009</p>
           <p class="figures-text">ініціаторів</p>
         </div>
-        <div class="five columns container-figures--last">
-          <p class="figures">490</p>
+        <div class="five columns figure-block container-figures--last">
+          <p class="figures">00024</p>
           <p class="figures-text">добродіїв</p>
         </div>
       </div>
@@ -323,7 +326,7 @@
 
     <section class="choose">
       <div class="container row">
-        <div class="three columns text">Підпишись на нові проекти</div>
+        <div class="three columns text">Підпишись на нові проєкти</div>
         <div class="form-select three columns">
           <select class="u-full-width text" id="exampleRecipientInput">
             <option selected>Всі категорії</option>
@@ -340,36 +343,34 @@
         <div class="three columns">
           <input class="u-full-width text" type="email" placeholder="Введи свій email" id="exampleEmailInput">
         </div>
-        <div class="one column">
           <button type="button" class="input-button">
             <span class="icon-check"></span>
           </button>
-        </div>
       </div>
     </section>
 
     <section class="container footer">
       <div class="row">
         <div class="three columns logo">
-          <img src="img/logo_little.png" alt=""><span class="copyright">&copy; 2018</span>
+          <img src="img/logo_little.png" alt=""><span class="copyright">&copy; 2021</span>
         </div>
         <div class="five columns footer__navbar">
           <div class="menu">
-            <div>Про проект</div>
+            <div>Про проєкт</div>
             <div>Правила</div>
             <div>Угода про конфіденційність</div>
           </div>
           <p class="mail-us">Дуже тішимося порадам — напиши нам на <a href="#"
               class="mail-us--blue">hello@communa.net.</a></p>
         </div>
-        <div class="four columns footer__facebook">Ми
+        <div class="footer__facebook">Ми
           <a href="#" class="footer__facebook--blue">на facebook</a>
         </div>
       </div>
     </section>
-    <section class="footer-bottom">
+    <!-- <section class="footer-bottom">
       <div class="shdw"></div>
-    </section>
+    </section> -->
   </main>
 </body>
 

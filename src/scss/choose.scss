@@ -1,5 +1,5 @@
 .choose {
-  padding: 69px 0 73px;
+  padding: 69px 0 72px;
   background-color: #f0f0f1;
 
   .container {
@@ -7,23 +7,20 @@
   }
 
   .form-select {
-    font-family: TTRounds;
+    font-family: "Raleway";
     font-size: 16px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
+    font-weight: 500;
     line-height: 1.5;
-    letter-spacing: normal;
-    text-align: left;
-    color: #28283d;
+    color: #000000;
+    width: 270px;
   }
 
   .text {
-    font-family: "TTRounds";
+    font-family: "Raleway";
     font-size: 16px;
-    font-weight: normal;
+    font-weight: 500;
     line-height: 1.5;
-    color: #28283d;
+    color: #000000;
   }
 }
 
@@ -36,28 +33,26 @@
   width: 50px;
   border: none;
   padding: 0;
-  margin-right: 20px;
+  margin-left: 22px;
 }
 
 .form-select select {
   -moz-appearance: none;
   -webkit-appearance: none;
-  background-image: url(../img/chevron-down.svg);
+  background-image: url(../img/arw-dwn.svg);
   background-repeat: no-repeat;
-  background-position-x: 96%;
-  background-position-y: 13px;
-  border-radius: 2px;
-  margin-right: 4rem;
-  padding-left: 2.3rem;
-  padding-right: 4rem;
+  background-position-x: 93%;
+  background-position-y: 50%;
+  border-radius: 24.5px;
+  padding-left: 29px;
 }
 
 input.text {
-  padding-left: 24px;
+  padding-left: 29px;
 }
 
 input[type="email"]::placeholder {
-  color: #c6c8d1;
+  color: #000000;
 }
 
 .icon-check {

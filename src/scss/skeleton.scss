@@ -5,7 +5,7 @@
 .container {
   position: relative;
   width: 100%;
-  max-width: 1170px;
+  max-width: 1200px;
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -17,9 +17,18 @@
 }
 
 /* For devices larger than 550px */
+
+/* For devices larger than 400px */
+@media (min-width: 400px) {
+  .container {
+    width: 85%;
+    padding: 0;
+  }
+}
+
 .column,
 .columns {
-  margin-left: 2.564102564%;
+  margin-left: 2.25%;
 }
 .column:first-child,
 .columns:first-child {
@@ -28,37 +37,37 @@
 
 .one.column,
 .one.columns {
-  width: 5.982905983%;
+  width: 6.270833333%;
 }
 .two.columns {
-  width: 14.52991453%;
+  width: 14.79166667%;
 }
 .three.columns {
-  width: 23.07692308%;
+  width: 23.3125%;
 }
 .four.columns {
-  width: 31.62393162%;
+  width: 31.83333333%;
 }
 .five.columns {
-  width: 40.17094017%;
+  width: 40.35416667%;
 }
 .six.columns {
-  width: 48.71794872%;
+  width: 48.875%;
 }
 .seven.columns {
-  width: 57.26495726%;
+  width: 57.39583333%;
 }
 .eight.columns {
-  width: 65.81196581%;
+  width: 65.91666667%;
 }
 .nine.columns {
-  width: 74.35897436%;
+  width: 74.4375%;
 }
 .ten.columns {
-  width: 82.90598291%;
+  width: 82.95833333%;
 }
 .eleven.columns {
-  width: 91.45299145%;
+  width: 91.47916667%;
 }
 .twelve.columns {
   width: 100%;
@@ -66,74 +75,74 @@
 }
 
 .one-third.column {
-  width: 31.62393162%;
+  width: 31.83333333%;
 }
 .two-thirds.column {
-  width: 65.81196581%;
+  width: 65.91666667%;
 }
 
 .one-half.column {
-  width: 48.71794872%;
+  width: 48.875%;
 }
 
 /* Offsets */
 .offset-by-one.column,
 .offset-by-one.columns {
-  margin-left: 8.547008547%;
+  margin-left: 8.520833333%;
 }
 .offset-by-two.column,
 .offset-by-two.columns {
-  margin-left: 17.09401709%;
+  margin-left: 17.04166667%;
 }
 .offset-by-three.column,
 .offset-by-three.columns {
-  margin-left: 25.64102564%;
+  margin-left: 25.5625%;
 }
 .offset-by-four.column,
 .offset-by-four.columns {
-  margin-left: 34.18803419%;
+  margin-left: 34.08333333%;
 }
 .offset-by-five.column,
 .offset-by-five.columns {
-  margin-left: 42.73504274%;
+  margin-left: 42.60416667%;
 }
 .offset-by-six.column,
 .offset-by-six.columns {
-  margin-left: 42.73504274%;
+  margin-left: 51.125%;
 }
 .offset-by-seven.column,
 .offset-by-seven.columns {
-  margin-left: 59.82905983%;
+  margin-left: 59.64583333%;
 }
 .offset-by-eight.column,
 .offset-by-eight.columns {
-  margin-left: 59.82905983%;
+  margin-left: 68.16666667%;
 }
 .offset-by-nine.column,
 .offset-by-nine.columns {
-  margin-left: 76.92307692%;
+  margin-left: 76.6875%;
 }
 .offset-by-ten.column,
 .offset-by-ten.columns {
-  margin-left: 85.47008547%;
+  margin-left: 85.20833333%;
 }
 .offset-by-eleven.column,
 .offset-by-eleven.columns {
-  margin-left: 94.01709402%;
+  margin-left: 93.72916667%;
 }
 
 .offset-by-one-third.column,
 .offset-by-one-third.columns {
-  margin-left: 34.18803419%;
+  margin-left: 34.08333333%;
 }
 .offset-by-two-thirds.column,
 .offset-by-two-thirds.columns {
-  margin-left: 68.37606838%;
+  margin-left: 68.16666667%;
 }
 
 .offset-by-one-half.column,
 .offset-by-one-half.columns {
-  margin-left: 51.28205128%;
+  margin-left: 51.125%;
 }
 
 /* Base Styles
@@ -196,28 +205,6 @@ h6 {
   letter-spacing: 0;
 }
 
-/* Larger than phablet */
-@media (min-width: 550px) {
-  h1 {
-    font-size: 5rem;
-  }
-  h2 {
-    font-size: 4.2rem;
-  }
-  h3 {
-    font-size: 3.6rem;
-  }
-  h4 {
-    font-size: 3rem;
-  }
-  h5 {
-    font-size: 2.4rem;
-  }
-  h6 {
-    font-size: 1.5rem;
-  }
-}
-
 p {
   margin-top: 0;
 }
@@ -236,16 +223,16 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
   display: inline-block;
-  padding: 0 25px;
+  padding: 0 26px;
   color: #555;
   text-align: center;
   font-size: 11px;
-  line-height: 38px;
+  line-height: 34px;
   letter-spacing: 0.1rem;
   text-decoration: none;
   white-space: nowrap;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 24.5px;
   border: 1px solid #bbb;
   cursor: pointer;
   box-sizing: border-box;
@@ -270,8 +257,8 @@ input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
   color: #fff;
-  background-color: #33c3f0;
-  border-color: #33c3f0;
+  background-color: #00a6ed;
+  border-color: #00a6ed;
 }
 .button.button-primary:hover,
 button.button-primary:hover,
@@ -300,10 +287,11 @@ input[type="password"],
 textarea,
 select {
   height: 50px;
-  padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+  width: 270px;
+  padding: 14px 12px; /* The 6px vertically centers text on FF, ignored by Webkit */
   background-color: #fff;
   border: none;
-  border-radius: 4px;
+  border-radius: 24.5px;
   box-shadow: none;
   box-sizing: border-box;
 }
@@ -447,6 +435,22 @@ on small devices, paste the mobile query code up in the buttons section and styl
 there.
 */
 
+// @media (min-width: 1200px) {
+//   .container {
+//     max-width: 1200px;
+//     margin: 0 auto;
+//     box-sizing: border-box;
+//     background-color: blue;
+//   }
+
+//   .column,
+//   .columns {
+//     width: 85%;
+//     float: left;
+//     box-sizing: border-box;
+//   }
+// }
+
 /* Larger than mobile */
 @media (min-width: 400px) {
 }
@@ -464,5 +468,3 @@ there.
 }
 
 /* Larger than Desktop HD */
-@media (min-width: 1200px) {
-}

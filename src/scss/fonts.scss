@@ -1,29 +1,40 @@
 @font-face {
-  font-family: "TTRounds";
-  src: url("../../dist/fonts/tt-thin.woff");
+  font-family: "Raleway";
+  src: url("../../dist/fonts/Raleway-Thin.woff");
   font-weight: 100;
 }
 
 @font-face {
-  font-family: "TTRounds";
-  src: url("../../dist/fonts/tt-light.woff");
+  font-family: "Raleway";
+  src: url("../../dist/fonts/Raleway-Light.woff");
   font-weight: 300;
 }
 
 @font-face {
-  font-family: "TTRounds";
-  src: url("../../dist/fonts/tt-regular.woff");
+  font-family: "Raleway";
+  src: url("../../dist/fonts/Raleway-Regular.woff");
   font-weight: 400;
 }
 
 @font-face {
-  font-family: "TTRounds";
-  src: url("../../dist/fonts/tt-bold.woff");
+  font-family: "Raleway";
+  src: url("../../dist/fonts/Raleway-Medium.woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../../dist/fonts/Raleway-Bold.woff");
   font-weight: 700;
 }
 
 @font-face {
-  font-family: "TTRounds";
-  src: url("../../dist/fonts/tt-black.woff");
+  font-family: "Raleway";
+  src: url("../../dist/fonts/Raleway-Black.woff");
   font-weight: 900;
+}
+
+@font-face {
+  font-family: "DidactGothic";
+  src: url("../../dist/fonts/DidactGothic-Regular.woff");
 }

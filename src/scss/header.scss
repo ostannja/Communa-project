@@ -1,8 +1,16 @@
 .navbar {
   @include flex(space-between, center, row, nowrap);
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 85%;
+  padding: 0;
 
   &-menu {
-    @include flex(space-between, center, row, nowrap);
+    margin-top: 23px;
+    margin-bottom: 11px;
+    @include flex(flex-end, center, row, nowrap);
   }
 
   .logo {
@@ -14,24 +22,24 @@
   }
 
   &-item {
-    margin-top: 28px;
-    margin-bottom: 18px;
+    margin-left: 44px;
   }
 
   &-text {
-    font-family: "TTRounds";
+    font-family: "Raleway";
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 500;
     line-height: 0.71;
-    letter-spacing: 1.19px;
     color: #000000;
-    text-transform: uppercase;
   }
 
   &-button {
-    font-family: "TTRounds";
-    height: 34px;
-    margin-top: 10px;
+    margin-left: 43px;
+  }
+
+  &-button-text {
+    font-family: "Raleway";
+    font-weight: 500;
     font-size: 14px;
     line-height: 0.71;
     letter-spacing: 0.21px;
@@ -39,14 +47,15 @@
   }
 
   &-enter {
-    font-family: "TTRounds";
-    margin-top: 10px;
+    font-family: "Raleway";
+    margin-top: -1px;
+    margin-left: 38px;
   }
 }
 
 .enter-text {
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 1.71;
   letter-spacing: 0.21px;
   color: #00a6ed;
@@ -57,7 +66,7 @@
   @extend %backgr;
 
   .container {
-    padding-top: 36px;
+    padding-top: 30px;
     @include flex(space-between, flex-end, row, nowrap);
   }
 
@@ -66,17 +75,17 @@
   }
 
   .title {
-    font-family: "TTRounds";
-    font-size: 51.5px;
+    font-family: "DidactGothic";
+    font-size: 55px;
     font-weight: normal;
-    line-height: 1.22;
-    letter-spacing: 0.77px;
+    line-height: 1.15;
+    letter-spacing: normal;
     color: #f7f8f8;
   }
 
   .subtitle {
-    margin: 31px 0 44px 3px;
-    font-family: "TTRounds";
+    margin: 30px 0 44px 0px;
+    font-family: "Raleway";
     font-size: 16px;
     font-weight: normal;
     line-height: 1.63;
@@ -86,46 +95,45 @@
 
   .img {
     min-width: 576px;
-    margin-right: -60px;
+    margin-right: -165px;
   }
 
   .button-container {
     @include flex(flex-start, center, row, nowrap);
-    padding-bottom: 63px;
+    padding-bottom: 64px;
     margin: 0;
     margin-left: 3px;
-    .between-buttons {
-      margin: 0;
-      padding: 0 38px 0 23px;
-      font-family: "TTRounds";
-      font-size: 13px;
-      font-weight: normal;
-      line-height: 1.85;
-      letter-spacing: 0.2px;
-      color: #ffffff;
+
+    :first-child {
+      margin-right: 30px;
+    }
+
+    :last-child {
+      margin-right: -6px;
     }
   }
 }
 
 .button {
   margin: 0;
-  height: 50px;
+  height: 49px;
+  width: 230px;
   border: none;
   background-color: #ffffff;
   @include flex(space-between, center, row, nowrap);
-  padding: 0 18px 0 25px;
-  box-shadow: 0px 4px 28px 7px rgba(3, 3, 3, 0.25);
+  padding: 0 23px 0 29px;
 
   &-text {
-    font-family: "TTRounds";
+    font-family: "Raleway";
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.24px;
-    color: #00a6ed;
+    color: #000000;
   }
 }
 
 .button-container .icon-chevron-right {
-  color: #00a6ed;
+  color: #000000;
+  font-size: 12px;
 }

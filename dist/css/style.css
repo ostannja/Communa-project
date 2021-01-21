@@ -8,7 +8,7 @@
 .container {
   position: relative;
   width: 100%;
-  max-width: 1170px;
+  max-width: 1200px;
   margin: 0 auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -24,9 +24,11 @@
 
 /* For devices larger than 550px */
 
+/* For devices larger than 400px */
+
 .column,
 .columns {
-  margin-left: 2.564102564%;
+  margin-left: 2.25%;
 }
 
 .column:first-child,
@@ -36,47 +38,47 @@
 
 .one.column,
 .one.columns {
-  width: 5.982905983%;
+  width: 6.270833333%;
 }
 
 .two.columns {
-  width: 14.52991453%;
+  width: 14.79166667%;
 }
 
 .three.columns {
-  width: 23.07692308%;
+  width: 23.3125%;
 }
 
 .four.columns {
-  width: 31.62393162%;
+  width: 31.83333333%;
 }
 
 .five.columns {
-  width: 40.17094017%;
+  width: 40.35416667%;
 }
 
 .six.columns {
-  width: 48.71794872%;
+  width: 48.875%;
 }
 
 .seven.columns {
-  width: 57.26495726%;
+  width: 57.39583333%;
 }
 
 .eight.columns {
-  width: 65.81196581%;
+  width: 65.91666667%;
 }
 
 .nine.columns {
-  width: 74.35897436%;
+  width: 74.4375%;
 }
 
 .ten.columns {
-  width: 82.90598291%;
+  width: 82.95833333%;
 }
 
 .eleven.columns {
-  width: 91.45299145%;
+  width: 91.47916667%;
 }
 
 .twelve.columns {
@@ -85,87 +87,87 @@
 }
 
 .one-third.column {
-  width: 31.62393162%;
+  width: 31.83333333%;
 }
 
 .two-thirds.column {
-  width: 65.81196581%;
+  width: 65.91666667%;
 }
 
 .one-half.column {
-  width: 48.71794872%;
+  width: 48.875%;
 }
 
 /* Offsets */
 
 .offset-by-one.column,
 .offset-by-one.columns {
-  margin-left: 8.547008547%;
+  margin-left: 8.520833333%;
 }
 
 .offset-by-two.column,
 .offset-by-two.columns {
-  margin-left: 17.09401709%;
+  margin-left: 17.04166667%;
 }
 
 .offset-by-three.column,
 .offset-by-three.columns {
-  margin-left: 25.64102564%;
+  margin-left: 25.5625%;
 }
 
 .offset-by-four.column,
 .offset-by-four.columns {
-  margin-left: 34.18803419%;
+  margin-left: 34.08333333%;
 }
 
 .offset-by-five.column,
 .offset-by-five.columns {
-  margin-left: 42.73504274%;
+  margin-left: 42.60416667%;
 }
 
 .offset-by-six.column,
 .offset-by-six.columns {
-  margin-left: 42.73504274%;
+  margin-left: 51.125%;
 }
 
 .offset-by-seven.column,
 .offset-by-seven.columns {
-  margin-left: 59.82905983%;
+  margin-left: 59.64583333%;
 }
 
 .offset-by-eight.column,
 .offset-by-eight.columns {
-  margin-left: 59.82905983%;
+  margin-left: 68.16666667%;
 }
 
 .offset-by-nine.column,
 .offset-by-nine.columns {
-  margin-left: 76.92307692%;
+  margin-left: 76.6875%;
 }
 
 .offset-by-ten.column,
 .offset-by-ten.columns {
-  margin-left: 85.47008547%;
+  margin-left: 85.20833333%;
 }
 
 .offset-by-eleven.column,
 .offset-by-eleven.columns {
-  margin-left: 94.01709402%;
+  margin-left: 93.72916667%;
 }
 
 .offset-by-one-third.column,
 .offset-by-one-third.columns {
-  margin-left: 34.18803419%;
+  margin-left: 34.08333333%;
 }
 
 .offset-by-two-thirds.column,
 .offset-by-two-thirds.columns {
-  margin-left: 68.37606838%;
+  margin-left: 68.16666667%;
 }
 
 .offset-by-one-half.column,
 .offset-by-one-half.columns {
-  margin-left: 51.28205128%;
+  margin-left: 51.125%;
 }
 
 /* Base Styles
@@ -238,8 +240,6 @@ h6 {
   letter-spacing: 0;
 }
 
-/* Larger than phablet */
-
 p {
   margin-top: 0;
 }
@@ -256,16 +256,16 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
   display: inline-block;
-  padding: 0 25px;
+  padding: 0 26px;
   color: #555;
   text-align: center;
   font-size: 11px;
-  line-height: 38px;
+  line-height: 34px;
   letter-spacing: 0.1rem;
   text-decoration: none;
   white-space: nowrap;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 24.5px;
   border: 1px solid #bbb;
   cursor: pointer;
   -webkit-box-sizing: border-box;
@@ -293,8 +293,8 @@ input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
   color: #fff;
-  background-color: #33c3f0;
-  border-color: #33c3f0;
+  background-color: #00a6ed;
+  border-color: #00a6ed;
 }
 
 .button.button-primary:hover,
@@ -325,11 +325,12 @@ input[type="password"],
 textarea,
 select {
   height: 50px;
-  padding: 6px 10px;
+  width: 270px;
+  padding: 14px 12px;
   /* The 6px vertically centers text on FF, ignored by Webkit */
   background-color: #fff;
   border: none;
-  border-radius: 4px;
+  border-radius: 24.5px;
   -webkit-box-shadow: none;
           box-shadow: none;
   -webkit-box-sizing: border-box;
@@ -510,33 +511,44 @@ there.
 /* Larger than Desktop HD */
 
 @font-face {
-  font-family: "TTRounds";
-  src: url("../../dist/fonts/tt-thin.woff");
+  font-family: "Raleway";
+  src: url("../../dist/fonts/Raleway-Thin.woff");
   font-weight: 100;
 }
 
 @font-face {
-  font-family: "TTRounds";
-  src: url("../../dist/fonts/tt-light.woff");
+  font-family: "Raleway";
+  src: url("../../dist/fonts/Raleway-Light.woff");
   font-weight: 300;
 }
 
 @font-face {
-  font-family: "TTRounds";
-  src: url("../../dist/fonts/tt-regular.woff");
+  font-family: "Raleway";
+  src: url("../../dist/fonts/Raleway-Regular.woff");
   font-weight: 400;
 }
 
 @font-face {
-  font-family: "TTRounds";
-  src: url("../../dist/fonts/tt-bold.woff");
+  font-family: "Raleway";
+  src: url("../../dist/fonts/Raleway-Medium.woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../../dist/fonts/Raleway-Bold.woff");
   font-weight: 700;
 }
 
 @font-face {
-  font-family: "TTRounds";
-  src: url("../../dist/fonts/tt-black.woff");
+  font-family: "Raleway";
+  src: url("../../dist/fonts/Raleway-Black.woff");
   font-weight: 900;
+}
+
+@font-face {
+  font-family: "DidactGothic";
+  src: url("../../dist/fonts/DidactGothic-Regular.woff");
 }
 
 .background-header,
@@ -544,63 +556,6 @@ there.
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 100%;
-}
-
-.switch {
-  display: inline-block;
-  height: 24px;
-  position: relative;
-  width: 36px;
-}
-
-.switch input {
-  display: none;
-}
-
-.slider {
-  border: 2px solid #00a6ed;
-  background-color: white;
-  bottom: 0;
-  cursor: pointer;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  -webkit-transition: 0.4s;
-  -o-transition: 0.4s;
-  transition: 0.4s;
-}
-
-.slider:before {
-  background-color: #00a6ed;
-  bottom: 2px;
-  content: "";
-  height: 16px;
-  left: 2px;
-  position: absolute;
-  -webkit-transition: 0.4s;
-  -o-transition: 0.4s;
-  transition: 0.4s;
-  width: 16px;
-}
-
-input:checked + .slider {
-  background-color: #00a6ed;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(13px);
-      -ms-transform: translateX(13px);
-          transform: translateX(13px);
-  background-color: white;
-}
-
-.slider.round {
-  border-radius: 20px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
 }
 
 * {
@@ -622,6 +577,7 @@ a {
 ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 li {
@@ -652,15 +608,24 @@ img {
           flex-direction: row;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 85%;
+  padding: 0;
 }
 
 .navbar-menu {
+  margin-top: 23px;
+  margin-bottom: 11px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -695,24 +660,24 @@ img {
 }
 
 .navbar-item {
-  margin-top: 28px;
-  margin-bottom: 18px;
+  margin-left: 44px;
 }
 
 .navbar-text {
-  font-family: "TTRounds";
+  font-family: "Raleway";
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 0.71;
-  letter-spacing: 1.19px;
   color: #000000;
-  text-transform: uppercase;
 }
 
 .navbar-button {
-  font-family: "TTRounds";
-  height: 34px;
-  margin-top: 10px;
+  margin-left: 43px;
+}
+
+.navbar-button-text {
+  font-family: "Raleway";
+  font-weight: 500;
   font-size: 14px;
   line-height: 0.71;
   letter-spacing: 0.21px;
@@ -720,13 +685,14 @@ img {
 }
 
 .navbar-enter {
-  font-family: "TTRounds";
-  margin-top: 10px;
+  font-family: "Raleway";
+  margin-top: -1px;
+  margin-left: 38px;
 }
 
 .enter-text {
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 1.71;
   letter-spacing: 0.21px;
   color: #00a6ed;
@@ -740,7 +706,7 @@ img {
 }
 
 .background-header .container {
-  padding-top: 36px;
+  padding-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -763,17 +729,17 @@ img {
 }
 
 .background-header .title {
-  font-family: "TTRounds";
-  font-size: 51.5px;
+  font-family: "DidactGothic";
+  font-size: 55px;
   font-weight: normal;
-  line-height: 1.22;
-  letter-spacing: 0.77px;
+  line-height: 1.15;
+  letter-spacing: normal;
   color: #f7f8f8;
 }
 
 .background-header .subtitle {
-  margin: 31px 0 44px 3px;
-  font-family: "TTRounds";
+  margin: 30px 0 44px 0px;
+  font-family: "Raleway";
   font-size: 16px;
   font-weight: normal;
   line-height: 1.63;
@@ -783,7 +749,7 @@ img {
 
 .background-header .img {
   min-width: 576px;
-  margin-right: -60px;
+  margin-right: -165px;
 }
 
 .background-header .button-container {
@@ -802,25 +768,23 @@ img {
           flex-direction: row;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  padding-bottom: 63px;
+  padding-bottom: 64px;
   margin: 0;
   margin-left: 3px;
 }
 
-.background-header .button-container .between-buttons {
-  margin: 0;
-  padding: 0 38px 0 23px;
-  font-family: "TTRounds";
-  font-size: 13px;
-  font-weight: normal;
-  line-height: 1.85;
-  letter-spacing: 0.2px;
-  color: #ffffff;
+.background-header .button-container :first-child {
+  margin-right: 30px;
+}
+
+.background-header .button-container :last-child {
+  margin-right: -6px;
 }
 
 .button {
   margin: 0;
-  height: 50px;
+  height: 49px;
+  width: 230px;
   border: none;
   background-color: #ffffff;
   display: -webkit-box;
@@ -838,22 +802,21 @@ img {
           flex-direction: row;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  padding: 0 18px 0 25px;
-  -webkit-box-shadow: 0px 4px 28px 7px rgba(3, 3, 3, 0.25);
-          box-shadow: 0px 4px 28px 7px rgba(3, 3, 3, 0.25);
+  padding: 0 23px 0 29px;
 }
 
 .button-text {
-  font-family: "TTRounds";
+  font-family: "Raleway";
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.24px;
-  color: #00a6ed;
+  color: #000000;
 }
 
 .button-container .icon-chevron-right {
-  color: #00a6ed;
+  color: #000000;
+  font-size: 12px;
 }
 
 .projects {
@@ -863,18 +826,23 @@ img {
 
 .top-project .card {
   margin-bottom: 90px;
+  margin-right: 73px;
   position: relative;
-  height: 321px;
-  width: 77% !important;
+  height: 320px;
+  width: 76.7% !important;
   background-color: #ffffff;
-  border-radius: 4px;
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
 .top-project .img {
-  width: 63.8% !important;
+  width: 63.7% !important;
   margin: 0;
+}
+
+.top-project .img img {
+  min-width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .top-project .info {
@@ -883,7 +851,7 @@ img {
   margin: 0;
   border-radius: 4px;
   width: 33.623932% !important;
-  padding: 24px 3px 12px 23px;
+  padding: 17px 7px 12px 26px;
   background-color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -903,18 +871,19 @@ img {
 }
 
 .top-project .info-title {
-  font-family: "TTRounds";
-  font-size: 24px;
+  font-family: "DidactGothic";
+  font-size: 26px;
   font-weight: normal;
-  line-height: 1.33;
+  line-height: 1.25;
   letter-spacing: 0.36px;
   color: #00a6ed;
+  margin-bottom: 17px;
 }
 
 .top-project .info-text {
-  margin-top: 12px;
-  font-family: "TTRounds";
+  font-family: "Raleway";
   font-size: 14px;
+  margin-right: 30px;
   font-weight: normal;
   line-height: 1.43;
   letter-spacing: 0.21px;
@@ -923,15 +892,13 @@ img {
 
 .top-project .progress {
   width: 100%;
-  height: 8px;
-  margin: 11px 0 14px 2px;
-  border-radius: 4px;
+  height: 5px;
+  margin: 13px 0 21px 2px;
   background-color: #f0f0f1;
 }
 
 .top-project .progress-status {
-  height: 8px;
-  border-radius: 10px;
+  height: 5px;
   background-color: #00a6ed;
   width: 10%;
 }
@@ -954,7 +921,8 @@ img {
       flex-wrap: nowrap;
   margin: 0;
   padding: 0;
-  height: 293px;
+  padding-top: 27px;
+  height: 301px;
 }
 
 .tag-list-item {
@@ -975,11 +943,9 @@ img {
       flex-wrap: nowrap;
   margin: 0;
   padding: 0;
-  font-family: "TTRounds";
-  font-size: 17px;
-  font-weight: bold;
+  font-family: "DidactGothic";
+  font-size: 18px;
   line-height: 0.8;
-  letter-spacing: -0.5px;
   color: #28283d;
 }
 
@@ -1001,13 +967,31 @@ img {
       flex-wrap: nowrap;
 }
 
-.info-card .details-location .icon-map-pin {
-  margin-right: 4px;
+.info-card .details-location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.info-card .details-location .geo {
+  padding-left: 3px;
 }
 
 .info-card .details-city {
-  font-family: "TTRounds";
-  font-size: 12px;
+  font-family: "Raleway";
+  font-size: 14px;
   font-weight: normal;
   line-height: 2.33;
   letter-spacing: 0.18px;
@@ -1030,13 +1014,13 @@ img {
           flex-direction: row;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  margin-right: 50px;
+  margin-right: 46px;
 }
 
 .info-card .details-tag-text {
   margin-left: 4px;
-  font-family: "TTRounds";
-  font-size: 12px;
+  font-family: "Raleway";
+  font-size: 14px;
   font-weight: normal;
   line-height: 2.33;
   letter-spacing: 0.18px;
@@ -1062,7 +1046,7 @@ img {
 }
 
 .info-card .details-how-much-text {
-  font-family: "TTRounds";
+  font-family: "Raleway";
   font-size: 12px;
   font-weight: normal;
   line-height: 1.1;
@@ -1071,10 +1055,10 @@ img {
 }
 
 .info-card .details-how-much-figures {
-  font-family: "TTRounds";
-  font-size: 17px;
+  font-family: "Raleway";
+  font-size: 12px;
   font-weight: normal;
-  line-height: 1.65;
+  line-height: 1.75;
   letter-spacing: normal;
   color: #5b5e70;
 }
@@ -1098,7 +1082,7 @@ img {
 }
 
 .info-card .details-time {
-  margin-right: 28px;
+  margin-right: 33px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1131,22 +1115,27 @@ img {
 .project-preview .block {
   position: relative;
   background-color: #ffffff;
-  border-radius: 4px;
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  min-width: 279px;
 }
 
 .project-preview .img {
   position: relative;
 }
 
+.project-preview .img img {
+  min-width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .project-preview .location {
   position: absolute;
   bottom: 4%;
   left: 7.5%;
-  font-family: TTRounds;
+  font-family: "Raleway";
   font-size: 12px;
-  font-weight: normal;
+  font-weight: 500;
   font-stretch: normal;
   font-style: normal;
   line-height: 2.33;
@@ -1156,7 +1145,7 @@ img {
 }
 
 .project-preview .content {
-  height: 130px;
+  height: 135px;
   padding: 17px 20px 13px 18.5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1176,8 +1165,8 @@ img {
 }
 
 .project-preview .content-title {
-  font-family: "TTRounds";
-  font-size: 15px;
+  font-family: "Raleway";
+  font-size: 14px;
   font-weight: normal;
   line-height: 1.33;
   letter-spacing: 0.23px;
@@ -1185,35 +1174,39 @@ img {
   color: #00a6ed;
 }
 
+.project-preview .content-title--ukr {
+  width: 60%;
+}
+
 .project-preview .content-progress {
   width: 100%;
-  margin: 11px 0 12px 2px;
-  border-radius: 4px;
+  margin-bottom: 16px;
   background-color: #f0f0f1;
-  height: 4px;
+  height: 3px;
 }
 
 .project-preview .content-progress-status {
-  height: 4px;
-  border-radius: 10px;
+  height: 3px;
   background-color: #00a6ed;
   width: 10%;
 }
 
 .project-preview .content-time {
-  margin-right: 11px;
+  margin-right: 0;
 }
 
 .project-preview .content-how-much-text {
-  font-size: 11px;
+  font-size: 12px;
+  font-weight: 500;
 }
 
 .project-preview .content-how-much-figures {
-  font-size: 14px;
+  font-size: 12px;
+  font-weight: 500;
 }
 
 .project-preview__slider {
-  padding: 68px 0 63px;
+  padding: 65px 0 63px;
 }
 
 .project-preview__slider .slider-link {
@@ -1235,9 +1228,9 @@ img {
 }
 
 .project-preview__slider .slider-link-text {
-  font-family: "TTRounds";
-  font-size: 15px;
-  font-weight: bold;
+  font-family: "Raleway";
+  font-size: 14px;
+  font-weight: 500;
   line-height: 1;
   color: #28283d;
 }
@@ -1258,15 +1251,17 @@ img {
           flex-direction: row;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  height: 15px;
+  padding-right: 11.5px;
 }
 
-.icon-circle-o {
-  margin-left: 7.5px;
+.icon-circle {
+  margin-left: 6px;
   font-size: 14px;
 }
 
 .slider-link .icon-chevron-right {
-  margin-left: 9px;
+  margin-left: 12px;
   font-size: 12px;
 }
 
@@ -1277,7 +1272,7 @@ img {
 }
 
 .want-help {
-  padding: 112px 0 102px 0;
+  padding: 102px 0 102px 0 !important;
 }
 
 .want-help .text-block {
@@ -1294,75 +1289,86 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  padding-bottom: 49px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 51px;
 }
 
 .want-help .img-container {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: 82px;
 }
 
-.want-help .img-text {
-  font-family: "TTRounds";
+.want-help .img-container .img-text-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.want-help .img-container .img-text-block--center {
+  padding-right: 25px;
+}
+
+.want-help .img-container .img-text-block .img--center {
+  padding-top: 30px;
+}
+
+.want-help .img-container .img-text-block .img-text {
+  font-family: "Raleway";
   font-size: 16px;
-  font-weight: normal;
-  line-height: 1.5;
-  letter-spacing: 0.24px;
-  color: #28283d;
+  font-weight: 500;
+  line-height: 1.38;
+  color: #000000;
+  padding-top: 40px;
 }
 
-.want-help .img-text--publish {
-  position: absolute;
-  top: 41.5%;
-  left: 0.8%;
+.want-help .img-container .img-text-block .img-text--photo {
+  padding-left: 37px;
 }
 
-.want-help .img-text--find {
-  position: absolute;
-  top: 41.1%;
-  left: 4.15%;
+.want-help .img-container .img-text-block .img-text--target {
+  padding-left: 20px;
 }
 
-.want-help .img-text--embody {
-  position: absolute;
-  top: 41.5%;
-  left: 0.75%;
-}
-
-.want-help .icon-chevron-first {
-  position: absolute;
-  top: 52.9%;
-  left: 0.75%;
-}
-
-.want-help .icon-chevron-second {
-  position: absolute;
-  top: 52.9%;
-  left: -0.35%;
-}
-
-.want-help .img-container .icon-chevron-right {
-  font-size: 20px;
+.want-help .img-container .chevron-icon {
+  padding-top: 35px;
+  margin-right: 25px;
 }
 
 .block-title {
-  font-family: "TTRounds";
-  font-size: 32px;
+  font-family: "DidactGothic";
+  font-size: 35px;
   font-weight: normal;
-  line-height: 0.6;
+  line-height: 0.86;
   letter-spacing: normal;
-  text-align: left;
-  color: #28283d;
-}
-
-.block-title--blue {
-  color: #00a6ed;
-}
-
-label.toggle-button {
-  margin-left: 35px;
-  margin-right: 33px;
+  color: #000000;
 }
 
 .finance {
@@ -1370,8 +1376,8 @@ label.toggle-button {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 100%;
-  padding-top: 89px;
-  padding-bottom: 90px;
+  padding-top: 72px;
+  padding-bottom: 89px;
 }
 
 .finance .title-container {
@@ -1391,19 +1397,20 @@ label.toggle-button {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 30px;
+  margin-bottom: 48px;
 }
 
 .finance .block-title {
-  line-height: 0.8;
+  line-height: 1.45;
   color: #ffffff;
 }
 
 .finance .button--finance {
-  padding: 0 22px 0 24px;
+  padding: 0 18px 0 28px;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  width: 25.6% !important;
+  width: 299px;
+  height: 50px;
 }
 
 .social-container {
@@ -1426,13 +1433,16 @@ label.toggle-button {
 }
 
 .social-container .text {
-  font-family: "TTRounds";
+  font-family: "Raleway";
   font-size: 16px;
-  font-weight: normal;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
   line-height: 1.5;
-  letter-spacing: 0.24px;
+  letter-spacing: normal;
   color: #ffffff;
-  padding-right: 25px;
+  padding-right: 35px;
+  padding-left: 163px;
 }
 
 .social-button {
@@ -1458,9 +1468,7 @@ label.toggle-button {
   border: none;
   background-color: #ffffff;
   padding: 0;
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .icon-credit-card {
@@ -1491,7 +1499,7 @@ label.toggle-button {
 }
 
 .kickstarter {
-  padding: 89px 0 43px;
+  padding: 72px 0 54px !important;
 }
 
 .kickstarter .title-container {
@@ -1514,7 +1522,7 @@ label.toggle-button {
 }
 
 .kickstarter .block-title {
-  line-height: 0.8;
+  line-height: 1.45;
 }
 
 .kickstarter .block-title--blue {
@@ -1522,34 +1530,44 @@ label.toggle-button {
 }
 
 .kickstarter .container-figures {
-  margin-top: 52px;
+  margin-top: 58px;
 }
 
-.kickstarter .container-figures--last {
+.kickstarter .container-figures .figure-block {
+  margin-left: -8px;
+}
+
+.kickstarter .container-figures--center {
   margin-left: 100px !important;
   margin-right: -100px !important;
 }
 
+.kickstarter .container-figures--last {
+  margin-left: 130px !important;
+  margin-right: -130px !important;
+}
+
 .kickstarter .figures {
-  font-family: "TTRounds";
-  font-size: 100px;
+  padding-left: -5px;
+  font-family: "Raleway";
+  font-size: 120px;
   font-weight: 100;
-  line-height: 0.94;
-  letter-spacing: 1.5px;
+  line-height: 0.73;
   color: #00a6ed;
 }
 
 .kickstarter .figures-text {
-  font-family: "TTRounds";
-  font-size: 24px;
-  font-weight: normal;
-  line-height: 2.15;
-  letter-spacing: 0.36px;
+  font-family: "Raleway";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
   color: #00a6ed;
+  padding-top: 34px;
+  margin-left: 7px;
 }
 
 .choose {
-  padding: 69px 0 73px;
+  padding: 69px 0 72px;
   background-color: #f0f0f1;
 }
 
@@ -1572,23 +1590,20 @@ label.toggle-button {
 }
 
 .choose .form-select {
-  font-family: TTRounds;
+  font-family: "Raleway";
   font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
+  font-weight: 500;
   line-height: 1.5;
-  letter-spacing: normal;
-  text-align: left;
-  color: #28283d;
+  color: #000000;
+  width: 270px;
 }
 
 .choose .text {
-  font-family: "TTRounds";
+  font-family: "Raleway";
   font-size: 16px;
-  font-weight: normal;
+  font-weight: 500;
   line-height: 1.5;
-  color: #28283d;
+  color: #000000;
 }
 
 .input-button {
@@ -1614,44 +1629,42 @@ label.toggle-button {
   width: 50px;
   border: none;
   padding: 0;
-  margin-right: 20px;
+  margin-left: 22px;
 }
 
 .form-select select {
   -moz-appearance: none;
   -webkit-appearance: none;
-  background-image: url(../img/chevron-down.svg);
+  background-image: url(../img/arw-dwn.svg);
   background-repeat: no-repeat;
-  background-position-x: 96%;
-  background-position-y: 13px;
-  border-radius: 2px;
-  margin-right: 4rem;
-  padding-left: 2.3rem;
-  padding-right: 4rem;
+  background-position-x: 93%;
+  background-position-y: 50%;
+  border-radius: 24.5px;
+  padding-left: 29px;
 }
 
 input.text {
-  padding-left: 24px;
+  padding-left: 29px;
 }
 
 input[type="email"]::-webkit-input-placeholder {
-  color: #c6c8d1;
+  color: #000000;
 }
 
 input[type="email"]::-moz-placeholder {
-  color: #c6c8d1;
+  color: #000000;
 }
 
 input[type="email"]:-ms-input-placeholder {
-  color: #c6c8d1;
+  color: #000000;
 }
 
 input[type="email"]::-ms-input-placeholder {
-  color: #c6c8d1;
+  color: #000000;
 }
 
 input[type="email"]::placeholder {
-  color: #c6c8d1;
+  color: #000000;
 }
 
 .icon-check {
@@ -1660,7 +1673,13 @@ input[type="email"]::placeholder {
 }
 
 .footer {
-  padding: 48px 0 52px;
+  padding: 48px 0 52px !important;
+  max-width: 1200px;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 85%;
+  padding: 0;
 }
 
 .footer .logo {
@@ -1682,9 +1701,8 @@ input[type="email"]::placeholder {
 }
 
 .footer .copyright {
-  font-family: "TTRounds";
-  font-size: 15px;
-  font-weight: normal;
+  font-family: "Raleway";
+  font-size: 16px;
   line-height: 1;
   color: #00a6ed;
   padding-left: 5px;
@@ -1706,20 +1724,21 @@ input[type="email"]::placeholder {
           flex-direction: row;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  font-family: "TTRounds";
-  font-size: 15px;
+  font-family: Raleway;
+  font-size: 16px;
   font-weight: normal;
   line-height: 1.5;
   color: #00a6ed;
+  margin-right: 12px;
 }
 
 .footer .mail-us {
-  padding-top: 12px;
-  font-family: "TTRounds";
+  padding-top: 21px;
+  font-family: "Raleway";
   font-size: 13px;
-  font-weight: normal;
+  font-weight: 500;
   line-height: 1.77;
-  color: #39434d;
+  color: #000000;
 }
 
 .footer .mail-us--blue {
@@ -1727,26 +1746,11 @@ input[type="email"]::placeholder {
 }
 
 .footer__facebook {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  font-family: "TTRounds";
-  font-size: 15px;
+  font-family: Raleway;
+  font-size: 16px;
   font-weight: normal;
   line-height: 1.5;
-  padding-right: 87px;
+  color: #00a6ed;
 }
 
 .footer__facebook--blue {
@@ -1754,35 +1758,10 @@ input[type="email"]::placeholder {
   padding-left: 4px;
 }
 
-.footer-bottom {
-  height: 80px;
-  width: 100%;
-  background-color: #f0f0f1;
-}
-
-@media (min-width: 550px) {
-  h1 {
-    font-size: 5rem;
-  }
-
-  h2 {
-    font-size: 4.2rem;
-  }
-
-  h3 {
-    font-size: 3.6rem;
-  }
-
-  h4 {
-    font-size: 3rem;
-  }
-
-  h5 {
-    font-size: 2.4rem;
-  }
-
-  h6 {
-    font-size: 1.5rem;
+@media (min-width: 400px) {
+  .container {
+    width: 85%;
+    padding: 0;
   }
 }
 

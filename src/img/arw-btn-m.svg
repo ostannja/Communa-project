@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="6px" height="9px" viewBox="0 0 6 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>arw-btn-m</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="index.mobile" transform="translate(-215.000000, -1732.000000)" fill="#000000" fill-rule="nonzero">
+            <g id="Projects" transform="translate(0.000000, 668.000000)">
+                <path d="M216.779914,1072.37723 L220.575682,1068.58147 C220.75873,1068.3984 220.75873,1068.10162 220.575663,1067.91857 L216.779914,1064.1228 C216.596867,1063.93975 216.300084,1063.93975 216.117017,1064.1228 L215.674303,1064.56552 C215.491542,1064.74828 215.491198,1065.04447 215.673521,1065.22765 L218.681727,1068.25001 L215.673521,1071.27239 C215.491198,1071.45557 215.491542,1071.75176 215.674303,1071.93452 L216.117017,1072.37723 C216.300065,1072.56028 216.596848,1072.56028 216.779914,1072.37723 Z" id="arw-btn-m"></path>
+            </g>
+        </g>
+    </g>
+</svg>
