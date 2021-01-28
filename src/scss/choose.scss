@@ -3,7 +3,20 @@
   background-color: #f0f0f1;
 
   .container {
-    @include flex(flex-start, center, row, nowrap);
+    @include flex(flex-start, center, row, wrap);
+  }
+
+  .form-container {
+    @include flex(flex-start, flex-start, row, nowrap);
+
+    .form-choose {
+      @include flex(flex-start, flex-start, row, nowrap);
+    }
+
+    .u-full-width.text {
+      margin-right: 30px;
+      margin-bottom: 0;
+    }
   }
 
   .form-select {
@@ -13,6 +26,7 @@
     line-height: 1.5;
     color: #000000;
     width: 270px;
+    margin-right: 30px;
   }
 
   .text {
@@ -21,6 +35,7 @@
     font-weight: 500;
     line-height: 1.5;
     color: #000000;
+    margin-right: 98px;
   }
 }
 
@@ -33,7 +48,6 @@
   width: 50px;
   border: none;
   padding: 0;
-  margin-left: 22px;
 }
 
 .form-select select {
@@ -58,4 +72,71 @@ input[type="email"]::placeholder {
 .icon-check {
   font-size: 16px;
   color: #ffffff;
+}
+
+@media (max-width: 991px) {
+  .choose {
+    padding-top: 55px;
+    padding-bottom: 60px;
+  }
+
+  .form-container {
+    margin-top: 30px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .choose {
+    padding-top: 18px;
+    padding-bottom: 31px;
+
+    .container > .text {
+      font-family: "DidactGothic";
+      font-size: 30px;
+      line-height: 1.17;
+      margin-right: 25px;
+    }
+
+    .form-container {
+      flex-direction: column;
+      margin-top: 24px !important;
+
+      .form-choose .u-full-width {
+        width: 256px;
+        margin-right: 20px;
+        height: 44px;
+        margin-right: 20px;
+        padding-top: 11px;
+        padding-bottom: 10px;
+        padding-left: 22px;
+      }
+    }
+
+    .form-select {
+      width: 320px !important;
+      margin-bottom: 16px;
+
+      .u-full-width.text {
+        height: 44px;
+        padding-top: 11px;
+        padding-bottom: 10px;
+        padding-left: 22px;
+      }
+    }
+
+    .input-button {
+      width: 44px;
+      height: 44px;
+    }
+
+    .form-select select {
+      background-position-x: 95%;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .container .text br {
+    display: none;
+  }
 }

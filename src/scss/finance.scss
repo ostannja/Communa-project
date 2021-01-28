@@ -1,8 +1,12 @@
 .finance {
-  @include backgr(url(../img/gradient2.jpg));
-  @extend %backgr;
+  background-image: linear-gradient(105deg, #00a6ed -1%, #00eb98 100%);
   padding-top: 72px;
   padding-bottom: 89px;
+
+  .button-block {
+    @include flex(space-between, flex-start, row, wrap);
+    max-width: 818px;
+  }
 
   .title-container {
     height: 95px;
@@ -13,18 +17,17 @@
   .block-title {
     line-height: 1.45;
     color: #ffffff;
+    max-width: 500px;
   }
 
   .button--finance {
     padding: 0 18px 0 28px;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     width: 299px;
     height: 50px;
   }
 }
 
 .social-container {
-  margin-left: 100px;
   @include flex(flex-start, center, row, nowrap);
 
   .text {
@@ -36,8 +39,7 @@
     line-height: 1.5;
     letter-spacing: normal;
     color: #ffffff;
-    padding-right: 35px;
-    padding-left: 163px;
+    padding-right: 25px;
   }
 }
 
@@ -50,7 +52,7 @@
   border: none;
   background-color: #ffffff;
   padding: 0;
-  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .icon-credit-card {
@@ -64,4 +66,56 @@
   @include flex(center, center, row, nowrap);
   font-size: 20px;
   color: #00a6ed;
+}
+
+@media (max-width: 991px) {
+  .finance {
+    background-image: linear-gradient(114deg, #00a6ed -2%, #00eb98 100%);
+    padding-top: 46px;
+    padding-bottom: 71px;
+
+    .title-container {
+      margin-bottom: 45.5px;
+    }
+    .block-title {
+      line-height: 1.33;
+      max-width: 470px;
+    }
+  }
+
+  .social-container {
+    .text {
+      padding-right: 15px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .finance {
+    background-image: linear-gradient(136deg, #00a6ed -6%, #00eb98 100%);
+    padding-top: 16px;
+    padding-bottom: 26px;
+
+    .title-container {
+      margin-bottom: 36px;
+      height: auto;
+    }
+
+    .button--finance {
+      width: 230px;
+      height: 44px;
+      padding: 0 15px 0 21px;
+      margin-bottom: 74px;
+    }
+
+    .social-button {
+      margin-left: 6px;
+      width: 44px;
+      height: 44px;
+    }
+
+    .social-container .text {
+      padding-right: 17px;
+    }
+  }
 }

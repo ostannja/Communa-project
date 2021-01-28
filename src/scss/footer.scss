@@ -1,14 +1,28 @@
 .footer {
   padding: 48px 0 52px !important;
-  // @include flex(space-between, flex-start, row, nowrap);
+  @include flex(space-between, flex-start, row, nowrap);
   max-width: 1200px;
   margin: 0 auto;
   box-sizing: border-box;
   width: 85%;
   padding: 0;
 
+  .footer__navbar {
+    min-width: 470px;
+  }
+
+  .block {
+    @include flex(space-between, flex-start, row, wrap);
+    width: 895px;
+  }
+
   .logo {
     @include flex(flex-start, flex-end, row, nowrap);
+    margin-right: 147px;
+
+    img {
+      max-width: none;
+    }
   }
 
   .copyright {
@@ -17,6 +31,7 @@
     line-height: 1;
     color: #00a6ed;
     padding-left: 5px;
+    width: 56px;
   }
 
   .menu {
@@ -26,7 +41,6 @@
     font-weight: normal;
     line-height: 1.5;
     color: #00a6ed;
-    margin-right: 12px;
   }
 
   .mail-us {
@@ -34,7 +48,7 @@
     font-family: "Raleway";
     font-size: 13px;
     font-weight: 500;
-    line-height: 1.77;
+    line-height: 1.62;
     color: #000000;
 
     &--blue {
@@ -47,11 +61,87 @@
     font-size: 16px;
     font-weight: normal;
     line-height: 1.5;
-    color: #00a6ed;
+    color: #000000;
 
     &--blue {
       color: #00a6ed;
-      padding-left: 4px;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .footer {
+    padding-top: 54px !important;
+
+    .logo {
+      margin-right: 64px;
+    }
+
+    .footer__navbar {
+      min-width: 477px;
+    }
+  }
+
+  .footer__facebook {
+    margin-top: 51px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer {
+    padding-top: 21px !important;
+    flex-wrap: wrap;
+
+    .logo {
+      margin-bottom: 35px;
+
+      img {
+        width: 95px !important;
+      }
+    }
+
+    .mail-us {
+      padding-top: 57px;
+    }
+
+    .copyright {
+      font-size: 13px;
+    }
+    .footer__navbar {
+      @include flex(space-between, flex-start, column, wrap);
+      min-width: auto;
+    }
+
+    .block {
+      width: auto;
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
+
+    .menu {
+      flex-wrap: wrap;
+      flex-direction: row;
+      font-size: 13px;
+      align-items: flex-start;
+      max-width: 170px;
+
+      .central {
+        margin-right: 26px;
+        padding-bottom: 8px;
+      }
+    }
+
+    .footer__facebook {
+      margin-top: -50px;
+      font-size: 13px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    .mail-us br {
+      display: none;
     }
   }
 }

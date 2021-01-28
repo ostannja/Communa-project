@@ -16,16 +16,28 @@
   box-sizing: border-box;
 }
 
-/* For devices larger than 550px */
-
-/* For devices larger than 400px */
-@media (min-width: 400px) {
+@media (min-width: 320px) {
   .container {
     width: 85%;
     padding: 0;
   }
 }
 
+@media (min-width: 700px) {
+  .container {
+    width: 91.1%;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 91.1%;
+    padding: 0;
+  }
+}
+
+/* For devices larger than 550px */
 .column,
 .columns {
   margin-left: 2.25%;
@@ -208,12 +220,6 @@ h6 {
 p {
   margin-top: 0;
 }
-
-/* Links
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-// a:hover {
-//   color: #000000;
-// }
 
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -418,7 +424,7 @@ hr {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 /* Self Clearing Goodness */
-.container:after,
+// .container:after,
 .row:after,
 .u-cf {
   content: "";
