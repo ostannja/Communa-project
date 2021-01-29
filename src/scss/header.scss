@@ -1,7 +1,6 @@
 .navbar {
   @include flex(space-between, flex-start, row, nowrap);
-  margin-top: 23px;
-  margin-bottom: 11px;
+  padding: 23px 0 11px;
 
   img {
     max-width: none;
@@ -148,8 +147,8 @@
 
 @media (max-width: 767px) {
   .navbar {
-    margin-top: 16px;
-    margin-bottom: 21px;
+    padding-top: 16px;
+    padding-bottom: 21px;
     &-menu {
       display: none;
     }

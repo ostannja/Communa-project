@@ -1,5 +1,5 @@
 .want-help {
-  padding: 104px 0 101px 0 !important;
+  padding: 104px 0 101px 0;
 
   .text-block {
     @include flex(flex-start, flex-start, row, wrap);
@@ -57,7 +57,7 @@
 
 @media (max-width: 991px) {
   .want-help {
-    padding: 53px 0 54px 0 !important;
+    padding: 53px 0 54px 0;
 
     .text-block {
       margin-bottom: 50px;
@@ -68,12 +68,12 @@
     }
 
     .img-text-block {
-      flex-direction: column !important;
-      align-items: flex-start !important;
+      flex-direction: column;
+      align-items: flex-start;
       height: 201px;
 
       &--center {
-        padding-right: 3px !important;
+        padding-right: 3px;
       }
     }
 
@@ -114,7 +114,6 @@
 
         &--left {
           padding-left: 8px;
-          // margin-left: 15px;
         }
 
         &--right {
@@ -128,8 +127,8 @@
 
 @media (max-width: 767px) {
   .want-help {
-    padding-top: 18px !important;
-    padding-bottom: 39px !important;
+    padding-top: 18px;
+    padding-bottom: 39px;
 
     .text-block {
       margin-bottom: 23px;
@@ -140,18 +139,18 @@
     }
 
     .img-text-block {
-      flex-direction: row !important;
-      align-items: flex-end !important;
-      justify-content: flex-end !important;
+      flex-direction: row;
+      align-items: flex-end;
+      justify-content: flex-end;
       height: auto;
-      padding: 0 !important;
+      padding-left: 0 !important;
 
       &:last-child {
-        padding-top: 18px !important;
+        padding-top: 18px;
       }
 
       .img--center {
-        padding-top: 49px !important;
+        padding-top: 49px;
       }
 
       .img-text {

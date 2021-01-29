@@ -17,7 +17,7 @@
   }
 
   .img {
-    width: 63.7% !important;
+    width: 63.7%;
     margin: 0;
 
     img {
@@ -29,7 +29,7 @@
 
   .info {
     margin: 0;
-    width: 334px !important ;
+    width: 334px;
     padding: 17px 28px 13px 26px;
     background-color: #ffffff;
     @include flex(space-between, stretch, column, nowrap);
@@ -157,10 +157,7 @@
     font-size: 18px;
     line-height: 0.8;
     color: #000000;
-    filter: brightness(0) !important;
-  }
-
-  .img {
+    filter: brightness(0);
   }
 }
 
@@ -179,26 +176,28 @@
 @media (max-width: 991px) {
   .projects {
     padding-top: 60px;
-  }
 
-  .top-project {
-    justify-content: center;
-  }
+    .top-project {
+      justify-content: center;
+    }
 
-  .card {
-    width: auto !important;
-    margin-right: 0 !important;
-    margin-bottom: 60px !important;
-  }
-  .tag-list {
-    display: none;
+    .card {
+      width: auto;
+      margin-right: 0;
+      margin-bottom: 60px;
+    }
+    .tag-list {
+      display: none;
+    }
   }
 }
 
 @media (max-width: 800px) {
-  .card {
-    .img {
-      width: 52.7% !important;
+  .projects {
+    .card {
+      .img {
+        width: 52.7%;
+      }
     }
   }
 }
@@ -208,64 +207,59 @@
     padding-top: 31px;
   }
   .top-project {
-    .card {
-      flex-direction: column;
-      height: auto;
-      margin-bottom: 30px !important;
-    }
-
-    img {
-      height: auto !important;
-    }
-
-    .img {
-      width: auto !important;
-    }
-
-    .info {
-      width: auto !important;
-      padding: 13px 25px 14px 20px;
-
-      .info-text {
-        margin-bottom: 20px;
-      }
-
-      .details-how-much-figures {
-        line-height: 1.9;
-      }
-
-      .progress {
-        margin-top: 19px;
-        margin-bottom: 15px;
-        height: 3.5px;
-      }
-
-      .progress-status {
-        height: 3.5px;
-      }
-
-      .details-time {
-        margin-right: 39px;
-      }
-    }
-  }
-}
-
-@media (max-width: 450px) {
-  .top-project {
-    .info-title {
-      font-size: calc(15px + (12 + 11 * 0.7) * ((100vw - 375px) / 768));
-    }
-
-    .info-text,
-    .details-orient {
-      display: none;
-    }
-  }
-}
-
-@media (max-width: 767px) {
-  .top-project {
     display: none;
+
+    // .card {
+    //   flex-direction: column;
+    //   height: auto;
+    //   margin-bottom: 30px;
+
+    //   img {
+    //     height: auto;
+    //   }
+    //   .img {
+    //     width: auto;
+    //   }
+    // }
+
+    // .info {
+    //   width: auto;
+    //   padding: 13px 25px 14px 20px;
+
+    //   .info-text {
+    //     margin-bottom: 20px;
+    //   }
+
+    //   .details-how-much-figures {
+    //     line-height: 1.9;
+    //   }
+
+    //   .progress {
+    //     margin-top: 19px;
+    //     margin-bottom: 15px;
+    //     height: 3.5px;
+    //   }
+
+    //   .progress-status {
+    //     height: 3.5px;
+    //   }
+
+    //   .details-time {
+    //     margin-right: 39px;
+    //   }
+    // }
   }
 }
+
+// @media (max-width: 450px) {
+//   .top-project {
+//     .info-title {
+//       font-size: calc(15px + (12 + 11 * 0.7) * ((100vw - 375px) / 768));
+//     }
+
+//     .info-text,
+//     .details-orient {
+//       display: none;
+//     }
+//   }
+// }
