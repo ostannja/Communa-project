@@ -5,7 +5,7 @@
 
   .block {
     background-color: #ffffff;
-    min-width: 279px;
+    width: 24%;
 
     &:not(:first-child) {
       margin-left: 27px;
@@ -49,10 +49,6 @@
       line-height: 1.5;
       text-align: left;
       color: #00a6ed;
-
-      &--ukr {
-        width: 60%;
-      }
     }
 
     &-progress {
@@ -123,18 +119,24 @@
 }
 
 @media (max-width: 991px) {
-  .project-preview__slider {
-    padding-top: 57.5px;
-    padding-bottom: 57px;
-  }
+  .project-preview {
+    .block {
+      min-width: 279px;
+    }
 
-  .slider-link {
-    margin-left: 26px;
-    margin-right: -20px;
-  }
+    .project-preview__slider {
+      padding-top: 57.5px;
+      padding-bottom: 57px;
+    }
 
-  .slider-link .icon-chevron-right {
-    margin-left: 15px;
+    .slider-link {
+      // margin-left: 26px;
+      margin-right: -20px;
+    }
+
+    .slider-link .icon-chevron-right {
+      margin-left: 15px;
+    }
   }
 }
 
@@ -147,6 +149,7 @@
 
     .block {
       min-width: 309px;
+      width: auto;
 
       &:not(:last-child) {
         margin-bottom: 30px;
@@ -223,7 +226,12 @@
 
 @media (min-width: 700px) {
   .project-preview .button {
-    display: none;
+    width: auto;
+    height: auto;
+    background-color: inherit;
+    padding-left: 27px;
+    letter-spacing: inherit;
+    margin-left: 0;
   }
 }
 

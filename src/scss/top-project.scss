@@ -29,7 +29,6 @@
 
   .info {
     margin: 0;
-    border-radius: 4px;
     width: 334px !important ;
     padding: 17px 28px 13px 26px;
     background-color: #ffffff;
@@ -157,7 +156,11 @@
     font-family: "DidactGothic";
     font-size: 18px;
     line-height: 0.8;
-    color: #28283d;
+    color: #000000;
+    filter: brightness(0) !important;
+  }
+
+  .img {
   }
 }
 
