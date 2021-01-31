@@ -579,6 +579,25 @@ img {
   margin: 0;
 }
 
+.button-block-try {
+  background-color: chartreuse;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -706,6 +725,10 @@ img {
       flex-wrap: nowrap;
 }
 
+.background-header .container .header-img {
+  overflow: hidden;
+}
+
 .background-header .text-block {
   margin-left: -3px;
   display: -webkit-box;
@@ -748,6 +771,7 @@ img {
 .background-header .img {
   min-width: 585px;
   margin-right: -27px;
+  overflow: hidden;
 }
 
 .background-header .button-container {
@@ -1533,8 +1557,8 @@ img {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   margin: 0;
-  height: 50px;
-  width: 50px;
+  min-height: 50px;
+  min-width: 50px;
   border: none;
   background-color: #ffffff;
   padding: 0;
@@ -1666,6 +1690,10 @@ img {
       flex-wrap: wrap;
 }
 
+.choose .container > .text {
+  margin-right: 98px;
+}
+
 .choose .form-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1680,8 +1708,8 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .choose .form-container .form-choose {
@@ -1702,9 +1730,31 @@ img {
       flex-wrap: nowrap;
 }
 
-.choose .form-container .u-full-width.text {
+.choose .form-container .form-choose .u-full-width {
   margin-right: 30px;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  width: 270px;
+}
+
+.choose .form-container .u-full-width.text {
   margin-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .choose .form-select {
@@ -1723,7 +1773,6 @@ img {
   font-weight: 500;
   line-height: 1.5;
   color: #000000;
-  margin-right: 98px;
 }
 
 .input-button {
@@ -1745,8 +1794,8 @@ img {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   margin: 0;
-  height: 50px;
-  width: 50px;
+  min-height: 50px;
+  min-width: 50px;
   border: none;
   padding: 0;
 }
@@ -1759,7 +1808,8 @@ img {
   background-position-x: 93%;
   background-position-y: 50%;
   border-radius: 24.5px;
-  padding-left: 29px;
+  padding-left: 20px;
+  padding-top: 11px;
 }
 
 input.text {
@@ -1967,6 +2017,10 @@ input[type="email"]::placeholder {
     background-image: linear-gradient(126deg, #00a6ed -4%, #00eb98 100%);
   }
 
+  .header-img {
+    overflow: hidden;
+  }
+
   .projects {
     padding-top: 60px;
   }
@@ -1989,6 +2043,10 @@ input[type="email"]::placeholder {
 
   .project-preview .block {
     min-width: 279px;
+  }
+
+  .project-preview .block-container {
+    overflow: hidden;
   }
 
   .project-preview .project-preview__slider {
@@ -2124,6 +2182,10 @@ input[type="email"]::placeholder {
     padding-bottom: 60px;
   }
 
+  .choose .form-select {
+    margin-right: 20px;
+  }
+
   .form-container {
     margin-top: 30px;
   }
@@ -2200,7 +2262,7 @@ input[type="email"]::placeholder {
     width: auto;
     max-width: 375px;
     margin: 23px 0 29px 0;
-    letter-spacing: -0.1px;
+    letter-spacing: 0px;
   }
 
   .background-header .button-container {
@@ -2212,6 +2274,7 @@ input[type="email"]::placeholder {
         -ms-flex-align: start;
             align-items: flex-start;
     padding-bottom: 41px;
+    max-width: 400px;
   }
 
   .background-header .button-container button:first-of-type {
@@ -2313,6 +2376,24 @@ input[type="email"]::placeholder {
     padding-bottom: 27px;
   }
 
+  .finance .button-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
   .finance .title-container {
     margin-bottom: 36px;
     height: auto;
@@ -2327,8 +2408,8 @@ input[type="email"]::placeholder {
 
   .finance .social-button {
     margin-left: 6px;
-    width: 44px;
-    height: 44px;
+    min-width: 44px;
+    min-height: 44px;
   }
 
   .finance .social-container .text {
@@ -2357,7 +2438,7 @@ input[type="email"]::placeholder {
   }
 
   .kickstarter .figure-block {
-    margin: auto 18px 32px -5px;
+    margin: auto 17px 32px -5px;
     padding-right: 9px;
   }
 
@@ -2368,6 +2449,10 @@ input[type="email"]::placeholder {
   .choose {
     padding-top: 18px;
     padding-bottom: 31px;
+  }
+
+  .choose .container {
+    display: block !important;
   }
 
   .choose .container > .text {
@@ -2383,6 +2468,7 @@ input[type="email"]::placeholder {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-top: 24px;
+    display: block !important;
   }
 
   .choose .form-container .form-choose .u-full-width {
@@ -2395,21 +2481,44 @@ input[type="email"]::placeholder {
     padding-left: 22px;
   }
 
-  .choose .form-select {
-    width: 320px;
+  .choose .form-container .form-select {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    width: auto;
+    margin-right: 0;
     margin-bottom: 16px;
   }
 
-  .choose .form-select .u-full-width.text {
+  .choose .form-container .form-select .u-full-width {
+    width: 320px;
+    height: 44px;
+    margin-right: 0;
+  }
+
+  .choose .form-container .form-select .u-full-width .text {
     height: 44px;
     padding-top: 11px;
     padding-bottom: 10px;
     padding-left: 22px;
+    margin-right: 0;
   }
 
   .choose .input-button {
-    width: 44px;
-    height: 44px;
+    min-width: 44px;
+    min-height: 44px;
   }
 
   .choose .form-select select {
@@ -2505,7 +2614,6 @@ input[type="email"]::placeholder {
   }
 
   .project-preview .block {
-    min-width: 309px;
     width: auto;
   }
 

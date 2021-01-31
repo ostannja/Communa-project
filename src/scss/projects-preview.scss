@@ -124,6 +124,10 @@
       min-width: 279px;
     }
 
+    .block-container {
+      overflow: hidden;
+    }
+
     .project-preview__slider {
       padding-top: 57.5px;
       padding-bottom: 57px;
@@ -147,7 +151,7 @@
     }
 
     .block {
-      min-width: 309px;
+      // min-width: 309px;
       width: auto;
 
       &:not(:last-child) {
@@ -240,3 +244,11 @@
     }
   }
 }
+
+// @media (max-width: 392px) {
+//   .project-preview {
+//     .img img {
+//       min-height: auto;
+//     }
+//   }
+// }

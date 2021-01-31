@@ -4,18 +4,27 @@
 
   .container {
     @include flex(flex-start, center, row, wrap);
+
+    & > .text {
+      margin-right: 98px;
+    }
   }
 
   .form-container {
-    @include flex(flex-start, flex-start, row, nowrap);
+    @include flex(flex-start, flex-start, row, wrap);
 
     .form-choose {
       @include flex(flex-start, flex-start, row, nowrap);
+      .u-full-width {
+        margin-right: 30px;
+        display: flex !important;
+        width: 270px;
+      }
     }
 
     .u-full-width.text {
-      margin-right: 30px;
       margin-bottom: 0;
+      @include flex(space-between, center, row, wrap);
     }
   }
 
@@ -26,6 +35,7 @@
     line-height: 1.5;
     color: #000000;
     width: 270px;
+    // @include flex(space-between, flex-start, row, wrap);
     margin-right: 30px;
   }
 
@@ -35,7 +45,6 @@
     font-weight: 500;
     line-height: 1.5;
     color: #000000;
-    margin-right: 98px;
   }
 }
 
@@ -44,8 +53,8 @@
   background-color: #42a5f5;
   @include flex(center, center, row, nowrap);
   margin: 0;
-  height: 50px;
-  width: 50px;
+  min-height: 50px;
+  min-width: 50px;
   border: none;
   padding: 0;
 }
@@ -58,7 +67,8 @@
   background-position-x: 93%;
   background-position-y: 50%;
   border-radius: 24.5px;
-  padding-left: 29px;
+  padding-left: 20px;
+  padding-top: 11px;
 }
 
 input.text {
@@ -79,6 +89,10 @@ input[type="email"]::placeholder {
   .choose {
     padding-top: 55px;
     padding-bottom: 60px;
+
+    .form-select {
+      margin-right: 20px;
+    }
   }
 
   .form-container {
@@ -91,6 +105,10 @@ input[type="email"]::placeholder {
     padding-top: 18px;
     padding-bottom: 31px;
 
+    .container {
+      display: block !important;
+    }
+
     .container > .text {
       font-family: "DidactGothic";
       font-size: 30px;
@@ -101,6 +119,12 @@ input[type="email"]::placeholder {
     .form-container {
       flex-direction: column;
       margin-top: 24px;
+      display: block !important;
+
+      // .u-full-width.text {
+      //   padding-top: 11px;
+      //   padding-bottom: 21px;
+      // }
 
       .form-choose .u-full-width {
         width: 256px;
@@ -111,23 +135,31 @@ input[type="email"]::placeholder {
         padding-bottom: 10px;
         padding-left: 22px;
       }
-    }
 
-    .form-select {
-      width: 320px;
-      margin-bottom: 16px;
+      .form-select {
+        @include flex(flex-start, flex-start, row, nowrap);
+        width: auto;
+        margin-right: 0;
+        margin-bottom: 16px;
 
-      .u-full-width.text {
-        height: 44px;
-        padding-top: 11px;
-        padding-bottom: 10px;
-        padding-left: 22px;
+        .u-full-width {
+          width: 320px;
+          height: 44px;
+          margin-right: 0;
+          .text {
+            height: 44px;
+            padding-top: 11px;
+            padding-bottom: 10px;
+            padding-left: 22px;
+            margin-right: 0;
+          }
+        }
       }
     }
 
     .input-button {
-      width: 44px;
-      height: 44px;
+      min-width: 44px;
+      min-height: 44px;
     }
 
     .form-select select {
