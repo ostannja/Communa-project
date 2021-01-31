@@ -96,6 +96,7 @@
         .img-text {
           &--publish {
             padding: 0;
+            margin-bottom: 0px;
           }
 
           &--photo {
@@ -156,12 +157,17 @@
       .img-text {
         padding-left: 18px !important;
 
+        &--publish {
+          margin-bottom: -5px !important;
+        }
+
         &--photo {
           padding-bottom: 12px !important;
         }
 
         &--target {
           padding-bottom: 18px !important;
+          margin-left: 0px !important;
         }
       }
 

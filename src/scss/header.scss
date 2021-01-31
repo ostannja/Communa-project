@@ -67,6 +67,10 @@
     @include flex(space-between, flex-end, row, nowrap);
   }
 
+  .header-img {
+    overflow: hidden;
+  }
+
   .text-block {
     margin-left: -3px;
     @include flex(space-between, flex-start, column, nowrap);
@@ -143,7 +147,7 @@
 @media (max-width: 1200px) {
   .background-header {
     .container .header-img {
-      overflow: hidden !important;
+      // overflow: hidden !important;
     }
   }
 }
@@ -151,10 +155,16 @@
 @media (max-width: 991px) {
   .background-header {
     background-image: linear-gradient(126deg, #00a6ed -4%, #00eb98 100%);
+
+    .img {
+      img {
+        overflow: scroll;
+      }
+    }
   }
 
   .header-img {
-    overflow: scroll;
+    overflow: hidden;
   }
 }
 
