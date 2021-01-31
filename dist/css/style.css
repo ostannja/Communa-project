@@ -725,10 +725,6 @@ img {
       flex-wrap: nowrap;
 }
 
-.background-header .container .header-img {
-  overflow: hidden;
-}
-
 .background-header .text-block {
   margin-left: -3px;
   display: -webkit-box;
@@ -2011,6 +2007,12 @@ input[type="email"]::placeholder {
   }
 }
 
+@media (max-width: 1200px) {
+  .background-header .container .header-img {
+    overflow: hidden !important;
+  }
+}
+
 @media (max-width: 991px) {
   .background-header {
     background-image: -o-linear-gradient(324deg, #00a6ed -4%, #00eb98 100%);
@@ -2018,7 +2020,7 @@ input[type="email"]::placeholder {
   }
 
   .header-img {
-    overflow: hidden;
+    overflow: scroll;
   }
 
   .projects {
