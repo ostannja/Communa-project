@@ -126,6 +126,7 @@
 
     .block-container {
       overflow: scroll;
+      -webkit-overflow-scrolling: touch;
     }
 
     .project-preview__slider {
