@@ -577,25 +577,6 @@ img {
   margin: 0;
 }
 
-.button-block-try {
-  background-color: chartreuse;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -769,7 +750,7 @@ img {
 .background-header .img {
   min-width: 585px;
   margin-right: -27px;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 .background-header .button-container {
@@ -2033,7 +2014,7 @@ img {
   }
 
   .project-preview .block-container {
-    overflow: hidden;
+    overflow: scroll;
   }
 
   .project-preview .project-preview__slider {
