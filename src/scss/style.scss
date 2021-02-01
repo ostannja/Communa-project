@@ -36,11 +36,6 @@ img {
   margin: 0;
 }
 
-.button-block-try {
-  background-color: chartreuse;
-  @include flex(space-between, flex-start, row, wrap);
-}
-
 @import "header.scss";
 @import "top-project.scss";
 @import "projects-preview.scss";
