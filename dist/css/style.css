@@ -1969,6 +1969,10 @@ img {
 }
 
 @media (min-width: 768px) {
+  .navbar .toggle_button {
+    display: none;
+  }
+
   .container .text br {
     display: none;
   }
@@ -1997,7 +2001,7 @@ img {
   }
 
   .background-header .img img {
-    overflow: scroll;
+    overflow: hidden;
   }
 
   .header-img {
@@ -2203,6 +2207,9 @@ img {
   .navbar {
     padding-top: 16px;
     padding-bottom: 21px;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
 
   .navbar-menu {
@@ -2211,6 +2218,39 @@ img {
 
   .navbar .img-logo {
     width: 112px;
+  }
+
+  .navbar .toggle_button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    height: 14px;
+    width: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  .navbar .toggle_button:focus {
+    outline: none;
+  }
+
+  .navbar .toggle_button__line {
+    width: 20px;
+    height: 2px;
+    background-color: #00a6ed;
   }
 
   .background-header {
