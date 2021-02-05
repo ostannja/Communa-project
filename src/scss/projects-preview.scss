@@ -14,6 +14,7 @@
 
   .img {
     position: relative;
+    height: 152px;
 
     img {
       min-width: 100%;
@@ -149,10 +150,10 @@
     padding-bottom: 47px;
     .block-container {
       flex-direction: column;
+      overflow: hidden;
     }
 
     .block {
-      // min-width: 309px;
       width: auto;
 
       &:not(:last-child) {
@@ -168,6 +169,7 @@
       }
 
       .img {
+        height: auto;
         img {
           height: auto;
         }

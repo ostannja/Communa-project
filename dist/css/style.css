@@ -543,6 +543,12 @@ there.
   src: url("../../dist/fonts/DidactGothic-Regular.woff");
 }
 
+.background-header .background-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100%;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -705,7 +711,18 @@ img {
 }
 
 .background-header .header-img {
-  overflow: hidden;
+  width: 584px;
+  height: 470px;
+  z-index: 100;
+}
+
+.background-header .background-img {
+  background-image: url(../img/illustration_header.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100%;
+  height: inherit;
+  background-position-x: left;
 }
 
 .background-header .text-block {
@@ -771,7 +788,6 @@ img {
       flex-wrap: nowrap;
   padding-bottom: 64px;
   margin: 0;
-  margin-left: 3px;
 }
 
 .background-header .button-container button:first-of-type {
@@ -1132,6 +1148,7 @@ img {
       flex-wrap: nowrap;
   margin: 0;
   padding: 0;
+  font-weight: normal;
   font-family: "DidactGothic";
   font-size: 18px;
   line-height: 0.8;
@@ -1181,6 +1198,7 @@ img {
 
 .project-preview .img {
   position: relative;
+  height: 152px;
 }
 
 .project-preview .img img {
@@ -2000,7 +2018,7 @@ img {
   }
 
   .projects .card {
-    width: auto;
+    width: 100%;
     margin-right: 0;
     margin-bottom: 60px;
   }
@@ -2015,6 +2033,7 @@ img {
 
   .project-preview .block-container {
     overflow: scroll;
+    -webkit-overflow-scrolling: touch;
   }
 
   .project-preview .project-preview__slider {
@@ -2185,12 +2204,22 @@ img {
 }
 
 @media (max-width: 767px) {
+  .navbar_container {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #ffffff;
+    z-index: 100;
+  }
+
   .navbar {
+    width: 85%;
     padding-top: 16px;
     padding-bottom: 21px;
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
+    margin: 0 auto;
   }
 
   .navbar-menu {
@@ -2237,6 +2266,7 @@ img {
   .background-header {
     background-image: -o-linear-gradient(299deg, #00a6ed -9%, #00eb98 100%);
     background-image: linear-gradient(151deg, #00a6ed -9%, #00eb98 100%);
+    margin-top: 57px;
   }
 
   .background-header .container {
@@ -2610,6 +2640,7 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    overflow: hidden;
   }
 
   .project-preview .block {
@@ -2626,6 +2657,10 @@ img {
 
   .project-preview .block:last-child {
     display: none;
+  }
+
+  .project-preview .block .img {
+    height: auto;
   }
 
   .project-preview .block .img img {
@@ -2723,3 +2758,5 @@ img {
     height: fit-content !important;
   }
 }
+
+.webp .background-header .background-img{ background-image: url(../img/illustration_header.webp); }

@@ -68,7 +68,15 @@
   }
 
   .header-img {
-    overflow: hidden;
+    width: 584px;
+    height: 470px;
+  }
+
+  .background-img {
+    @include backgr(url(../img/illustration_header.png));
+    @extend %backgr;
+    height: inherit;
+    background-position-x: left;
   }
 
   .text-block {
@@ -106,7 +114,6 @@
     @include flex(flex-start, center, row, nowrap);
     padding-bottom: 64px;
     margin: 0;
-    margin-left: 3px;
 
     button:first-of-type {
       margin-right: 30px;
@@ -161,10 +168,20 @@
 }
 
 @media (max-width: 767px) {
+  .navbar_container {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #ffffff;
+    z-index: 100;
+  }
+
   .navbar {
+    width: 85%;
     padding-top: 16px;
     padding-bottom: 21px;
     align-items: flex-end;
+    margin: 0 auto;
 
     &-menu {
       display: none;
@@ -197,6 +214,7 @@
 
   .background-header {
     background-image: linear-gradient(151deg, #00a6ed -9%, #00eb98 100%);
+    margin-top: 57px;
 
     .container {
       flex-direction: column;

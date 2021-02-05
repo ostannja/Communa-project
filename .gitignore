@@ -8,5 +8,6 @@ npm-debug.log*
 package-lock.json*
 
 index.psd*
+bugs.txt*
 
 debug.log*
