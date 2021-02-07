@@ -27,6 +27,10 @@
   }
 }
 
+.social-button-container {
+  @include flex(space-between, flex-start, row, wrap);
+}
+
 .social-container {
   @include flex(flex-start, center, row, nowrap);
 
@@ -97,7 +101,7 @@
     padding-bottom: 27px;
 
     .button-block {
-      @include flex(space-between, flex-start, row, wrap);
+      @include flex(space-between, flex-start, column, wrap);
     }
 
     .title-container {
@@ -118,8 +122,21 @@
       min-height: 44px;
     }
 
-    .social-container .text {
-      padding-right: 17px;
+    .social-container {
+      @include flex(space-between, center, row, nowrap);
+      // min-width: 319px;
+      width: 100%;
+      max-width: 393px;
+
+      .social-button-container {
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        width: 45%;
+      }
+
+      &.text {
+        padding-right: 17px;
+      }
     }
   }
 }

@@ -81,7 +81,7 @@
   }
 
   &__slider {
-    padding: 65px 0 60px;
+    padding: 65px 0 63px;
 
     .slider-link {
       @include flex(flex-start, center, row, nowrap);
@@ -90,7 +90,7 @@
         font-family: "Raleway";
         font-size: 14px;
         font-weight: 500;
-        line-height: 1;
+        line-height: 0.8;
         color: #28283d;
       }
     }
@@ -98,7 +98,7 @@
 
   .dots {
     @include flex(flex-end, center, row, nowrap);
-    height: 15px;
+    height: 12px;
     padding-right: 11.5px;
   }
 }
@@ -109,7 +109,7 @@
 }
 
 .slider-link .icon-chevron-right {
-  margin-left: 12px;
+  margin-left: 15px;
   font-size: 12px;
 }
 
@@ -131,8 +131,8 @@
     }
 
     .project-preview__slider {
-      padding-top: 57.5px;
-      padding-bottom: 57px;
+      padding-top: 59px;
+      padding-bottom: 58px;
     }
 
     .slider-link {
@@ -233,7 +233,7 @@
     width: auto;
     height: auto;
     background-color: inherit;
-    padding-left: 27px;
+    padding-left: 25px;
     letter-spacing: inherit;
     margin-left: 0;
   }

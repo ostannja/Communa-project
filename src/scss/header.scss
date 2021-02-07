@@ -61,22 +61,30 @@
 
 .background-header {
   background-image: linear-gradient(151deg, #00a6ed -9%, #00eb98 100%);
+  position: relative;
+  height: 500px;
+  overflow: hidden;
 
   .container {
-    padding-top: 29px;
+    padding-top: 134px;
     @include flex(space-between, flex-end, row, nowrap);
   }
 
   .header-img {
     width: 584px;
     height: 470px;
+    top: 31px;
+    left: 53%;
+    overflow: hidden;
+    position: absolute;
   }
 
   .background-img {
-    @include backgr(url(../img/illustration_header.png));
+    @include backgr(url(../img/illustration-desk.png));
     @extend %backgr;
     height: inherit;
     background-position-x: left;
+    overflow: hidden;
   }
 
   .text-block {
@@ -85,7 +93,7 @@
   }
 
   .title {
-    width: 464px;
+    // width: 464px;
     font-family: "DidactGothic";
     font-size: 55px;
     font-weight: normal;
@@ -96,7 +104,7 @@
 
   .subtitle {
     margin: 33px 0 44px 0px;
-    width: 345px;
+    // width: 345px;
     font-family: "Raleway";
     font-size: 16px;
     font-weight: normal;
@@ -151,6 +159,15 @@
   margin: 0;
 }
 
+@media (max-width: 1050px) {
+  .background-header {
+    .header-img {
+      overflow: hidden;
+      left: 565px;
+    }
+  }
+}
+
 @media (max-width: 991px) {
   .background-header {
     background-image: linear-gradient(126deg, #00a6ed -4%, #00eb98 100%);
@@ -160,10 +177,6 @@
         overflow: hidden;
       }
     }
-  }
-
-  .header-img {
-    overflow: hidden;
   }
 }
 
@@ -215,6 +228,11 @@
   .background-header {
     background-image: linear-gradient(151deg, #00a6ed -9%, #00eb98 100%);
     margin-top: 57px;
+    height: auto;
+
+    .header-img {
+      display: none;
+    }
 
     .container {
       flex-direction: column;
@@ -228,15 +246,15 @@
 
     .title {
       font-size: calc(40px + (50 + 11 * 0.7) * ((100vw - 375px) / 1440));
-      width: auto;
+      // width: auto;
       line-height: 1;
       letter-spacing: -0.5px;
     }
 
     .subtitle {
       font-size: calc(13px + (16 + 11 * 0.7) * ((100vw - 375px) / 1440));
-      width: auto;
-      max-width: 375px;
+      // width: auto;
+      // max-width: 375px;
       margin: 23px 0 29px 0;
       letter-spacing: 0px;
     }
@@ -270,15 +288,19 @@
 
 @media (max-width: 450px) {
   .background-header .title {
-    max-width: 280px;
+    // max-width: 280px;
   }
 
   .background-header .subtitle {
-    max-width: 290px;
+    // max-width: 290px;
   }
 }
 
 @media (min-width: 768px) {
+  .header-img-mob {
+    display: none;
+  }
+
   .navbar {
     .toggle_button {
       display: none;

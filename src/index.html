@@ -41,10 +41,15 @@
     <div class="background-header">
       <div class="container">
         <div class="text-block">
-          <p class="title">Пошук суперлюдей для крутих ідей</p>
-          <p class="subtitle">
-            У одних драйвовий задум, у інших свербить щось робити. Коммуна об'єднує їх.
-          </p>
+          <div class="title">
+            <p>Пошук суперлюдей </p>
+            <p>для крутих ідей</p>
+          </div>
+
+          <div class="subtitle">
+            <p>У одних драйвовий задум, у інших свербить</p>
+            <p>щось робити. Коммуна об'єднує їх.</p>
+          </div>
           <div class="button-container">
             <button type="button" class="button">
               <span class="button-text">Є крута ідея</span>
@@ -56,9 +61,12 @@
             </button>
           </div>
         </div>
-        <div class="header-img">
-          <div class="background-img"></div>
+        <div class="header-img-mob">
+          <img class="img" src="img/illustration-desk.png" alt="illustration_header">
         </div>
+      </div>
+      <div class="header-img">
+        <div class="background-img"></div>
       </div>
     </div>
   </header>
@@ -108,14 +116,14 @@
           </div>
         </div>
         <ul class="tag-list">
-          <li><a href="#" class="tag-list-item"><img src="img/hash.svg" alt="hash"> Діти</a></li>
-          <li><a href="#" class="tag-list-item"><img src="img/hash.svg" alt="hash">Мистецтво</a></li>
-          <li><a href="#" class="tag-list-item"><img src="img/hash.svg" alt="hash">Місто</a></li>
-          <li><a href="#" class="tag-list-item"><img src="img/hash.svg" alt="hash">Освіта</a></li>
-          <li><a href="#" class="tag-list-item"><img src="img/hash.svg" alt="hash">Події</a></li>
-          <li><a href="#" class="tag-list-item"><img src="img/hash.svg" alt="hash">Спорт</a></li>
-          <li><a href="#" class="tag-list-item"><img src="img/hash.svg" alt="hash">Digital</a></li>
-          <li><a href="#" class="tag-list-item"><img src="img/hash.svg" alt="hash">Інше</a></li>
+          <li><a href="#" class="tag-list-item">&#35;<span>Діти</span></a></li>
+          <li><a href="#" class="tag-list-item">&#35;<span>Мистецтво</span></a></li>
+          <li><a href="#" class="tag-list-item">&#35;<span>Місто</span></a></li>
+          <li><a href="#" class="tag-list-item">&#35;<span>Освіта</span></a></li>
+          <li><a href="#" class="tag-list-item">&#35;<span>Події</span></a></li>
+          <li><a href="#" class="tag-list-item">&#35;<span>Спорт</span></a></li>
+          <li><a href="#" class="tag-list-item">&#35;<span>Digital</span></a></li>
+          <li><a href="#" class="tag-list-item">&#35;<span>Інше</span></a></li>
         </ul>
       </section>
 
@@ -295,15 +303,17 @@
           </button>
           <div class="social-container ">
             <p class="text">та розкажи про нас</p>
-            <button type="button" class="social-button">
-              <img src="img/fb.svg" alt="fb">
-            </button>
-            <button type="button" class="social-button">
-              <img src="img/insta.svg" alt="fb">
-            </button>
-            <button type="button" class="social-button">
-              <img src="img/twitter.svg" alt="fb">
-            </button>
+            <div class="social-button-container">
+              <button type="button" class="social-button">
+                <img src="img/fb.svg" alt="fb">
+              </button>
+              <button type="button" class="social-button">
+                <img src="img/insta.svg" alt="fb">
+              </button>
+              <button type="button" class="social-button">
+                <img src="img/twitter.svg" alt="fb">
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -331,33 +341,29 @@
     </section>
 
     <section class="choose">
-      
       <div class="container">
-        
         <div class="text">Підпишись <br> на нові проєкти</div>
-        
         <div class="form-container">
-          
           <div class="form-select ">
-              <select class="u-full-width text" id="exampleRecipientInput">
-                <option selected>Всі категорії</option>
-                <option value="1">Діти</option>
-                <option value="2">Мистецтво</option>
-                <option value="3">Місто</option>
-                <option value="4">Освіта</option>
-                <option value="5">Події</option>
-                <option value="6">Спорт</option>
-                <option value="7">Digital</option>
-                <option value="8">Інше</option>
-              </select>
-            </div>
+            <select class="u-full-width text" id="exampleRecipientInput">
+              <option selected>Всі категорії</option>
+              <option value="1">Діти</option>
+              <option value="2">Мистецтво</option>
+              <option value="3">Місто</option>
+              <option value="4">Освіта</option>
+              <option value="5">Події</option>
+              <option value="6">Спорт</option>
+              <option value="7">Digital</option>
+              <option value="8">Інше</option>
+            </select>
+          </div>
           <div class="form-choose">
             <input class="u-full-width text" type="email" placeholder="Введи свій email" id="exampleEmailInput">
             <button type="button" class="input-button">
               <img src="img/submit.svg" alt="icon-check">
             </button>
           </div>
-          
+
         </div>
       </div>
     </section>
@@ -373,7 +379,7 @@
             <div class="central">Правила</div>
             <div>Угода про конфіденційність</div>
           </div>
-          <p class="mail-us">Дуже тішимося порадам  — <br>напиши нам на <a href="#"
+          <p class="mail-us">Дуже тішимося порадам — <br>напиши нам на <a href="#"
               class="mail-us--blue">hello@communa.ua</a></p>
         </div>
         <div class="footer__facebook">Ми
@@ -382,7 +388,7 @@
       </div>
     </section>
 
-    
+
   </main>
 </body>
 

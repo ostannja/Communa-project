@@ -62,7 +62,7 @@
   .progress {
     width: 100%;
     height: 5px;
-    margin: 20px 0 20px 1px;
+    margin: 21px 0 20px 1px;
     background-color: #f0f0f1;
 
     &-status {
@@ -99,10 +99,10 @@
 
     &-tag {
       @include flex(center, center, row, nowrap);
-      margin-right: 48px;
+      margin-right: 49px;
 
       &-text {
-        margin-left: 4px;
+        margin-left: 5px;
         font-family: "Raleway";
         font-size: 14px;
         font-weight: 500;
@@ -162,16 +162,16 @@
   }
 }
 
-.details-orient .icon-hashtag {
-  color: #00a6ed;
-}
-
 .tag-list-item .icon-hashtag {
   line-height: 0.9;
   font-size: 14px;
   width: 16.5px;
   font-weight: 100;
   color: #5b5e70;
+}
+
+.tag-list-item span {
+  margin-left: 5px;
 }
 
 @media (max-width: 991px) {
@@ -209,58 +209,5 @@
   }
   .top-project {
     display: none;
-
-    // .card {
-    //   flex-direction: column;
-    //   height: auto;
-    //   margin-bottom: 30px;
-
-    //   img {
-    //     height: auto;
-    //   }
-    //   .img {
-    //     width: auto;
-    //   }
-    // }
-
-    // .info {
-    //   width: auto;
-    //   padding: 13px 25px 14px 20px;
-
-    //   .info-text {
-    //     margin-bottom: 20px;
-    //   }
-
-    //   .details-how-much-figures {
-    //     line-height: 1.9;
-    //   }
-
-    //   .progress {
-    //     margin-top: 19px;
-    //     margin-bottom: 15px;
-    //     height: 3.5px;
-    //   }
-
-    //   .progress-status {
-    //     height: 3.5px;
-    //   }
-
-    //   .details-time {
-    //     margin-right: 39px;
-    //   }
-    // }
   }
 }
-
-// @media (max-width: 450px) {
-//   .top-project {
-//     .info-title {
-//       font-size: calc(15px + (12 + 11 * 0.7) * ((100vw - 375px) / 768));
-//     }
-
-//     .info-text,
-//     .details-orient {
-//       display: none;
-//     }
-//   }
-// }
