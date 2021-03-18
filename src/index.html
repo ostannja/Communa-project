@@ -9,11 +9,11 @@
   <title>Communa</title>
 </head>
 
-<body>
+<body id="body" >
   <header>
     <div class="container navbar_container">
       <nav class="navbar">
-        <a class="logo" href="#">
+        <a class="logo">
           <img class="img-logo" src="img/logo_communa.png" alt="logo">
           <img src="img/logo_alpha.png" class="upper-logo" alt="upper_logo">
         </a>
@@ -29,14 +29,15 @@
           <li class="navbar-item">
             <a class="navbar-text " href="#how_works">Як працює?</a>
           </li>
-          <button class="button-primary navbar-button">
-            <a class="navbar-button-text">Реєстрація</a>
+          <button class="popup-button navbar-button button-primary" href="#registration">
+            Реєстрація
           </button>
-          <li class="navbar-enter">
-            <a class="enter-text" href="#">Вихід</a>
+          <li id="form_authorization" class="navbar-enter">
+            <a class="enter-text popup-button" href="#authorization">Увійти</a>
           </li>
         </ul>
       </nav>
+
     </div>
     <div class="background-header">
       <div class="container">
@@ -75,7 +76,7 @@
     <section id="projects" class="projects">
       <section class="container top-project">
         <div class="card">
-          <div class="img ">
+          <div class="img">
             <img src="img/main_marathon.webp" alt="Marathon’17">
           </div>
           <div class="info ">
@@ -368,27 +369,9 @@
       </div>
     </section>
 
-    <!-- <section class="container footer">
-      <div class="logo">
-        <img src="img/logo-f-desk.svg" alt="footer logo"><span class="copyright">&copy; 2021</span>
-      </div>
-      <div class="block">
-        <div class="footer__navbar">
-          <div class="menu">
-            <div>Про проєкт</div>
-            <div class="central">Правила</div>
-            <div>Угода про конфіденційність</div>
-          </div>
-          <p class="mail-us">Дуже тішимося порадам — <br>напиши нам на <a href="#"
-              class="mail-us--blue">hello@communa.ua</a></p>
-        </div>
-        <div class="footer__facebook">Ми
-          <a href="#" class="footer__facebook--blue">на facebook</a>
-        </div>
-      </div>
-    </section> -->
-
-    <section class="container footer grid">
+  </main>
+  
+  <footer class="container footer grid">
       <div class=" grid-item1">
         <div class="logo">
           <img src="img/logo-f-desk.svg" alt="footer logo" />
@@ -410,10 +393,48 @@
         Ми
         <a href="#" class="footer__facebook--blue">на facebook</a>
       </div>
-    </section>
+    </footer>
+
+  <!-- <section class="form_registration">
+    <div class="modal_content">
+      asdfe
+      <div class="close">
+      X
+      </div> 
+    </div>
+  </section>
+
+  <section class="form_authorization">
+    <div class="modal_content">
+      asdfe
+      <div class="close">
+      X
+      </div> 
+    </div>
+  </section> -->
 
 
-  </main>
+  
+  <div id="registration" class="popup">
+    <div class="popup-content">
+      <div class="popup-header">
+        <span class="closed">×</span>
+        <h2>Modal Header</h2>
+      </div> 
+    </div>
+  </div>
+  
+  <div id="authorization" class="popup">
+    <div class="popup-content">
+      <div class="popup-header">
+        <span class="closed">×</span>
+        <h2>Modal Header</h2>
+      </div>
+    </div>
+  </div>
+
+  
+  <script src="js/script.js"></script>
 </body>
 
 </html>
