@@ -549,6 +549,32 @@ there.
   background-position: 100%;
 }
 
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+/* Add Popup Animation */
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -843,53 +869,6 @@ img {
   margin: 0;
 }
 
-.form_registration,
-.form_authorization {
-  position: fixed;
-  width: 100%;
-  opacity: 0.8;
-  background-color: #000000;
-  height: 100%;
-  overflow-y: auto;
-  top: 0;
-  left: 0;
-  display: none;
-  cursor: pointer;
-}
-
-.close {
-  position: absolute;
-  top: 0;
-  right: 0;
-  cursor: pointer;
-}
-
-.modal_content {
-  position: relative;
-  background-color: #ffffff;
-  margin: 0 auto;
-  width: 595px;
-  -o-object-fit: contain;
-     object-fit: contain;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  margin-top: 2.8%;
-  overflow-y: auto;
-}
-
 /* The Modal (background) */
 
 .popup {
@@ -899,7 +878,7 @@ img {
   /* Stay in place */
   z-index: 1;
   /* Sit on top */
-  padding-top: 100px;
+  padding-top: 143px;
   /* Location of the box */
   left: 0;
   top: 0;
@@ -911,7 +890,7 @@ img {
   /* Enable scroll if needed */
   background-color: black;
   /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.8);
   /* Black w/ opacity */
 }
 
@@ -925,69 +904,293 @@ img {
   color: #ffffff;
 }
 
-/* Modal Content */
-
-.popup-content {
+.popup-wrapper {
   position: relative;
   background-color: #fefefe;
   margin: auto;
   padding: 0;
-  border: 1px solid #888;
-  width: 80%;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.4s;
-  animation-name: animatetop;
-  animation-duration: 0.4s;
+  width: 720px;
 }
 
-/* Add Animation */
-
-@-webkit-keyframes animatetop {
-  from {
-    top: -300px;
-    opacity: 0;
-  }
-
-  to {
-    top: 0;
-    opacity: 1;
-  }
+.popup-content {
+  background-color: #f0f0f1;
+  color: #000000;
+  padding: 27px 40px 47px 40px;
 }
 
-@keyframes animatetop {
-  from {
-    top: -300px;
-    opacity: 0;
-  }
+.popup-content .title {
+  font-family: "DidactGothic";
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 1.37;
+  color: #000000;
+}
 
-  to {
-    top: 0;
-    opacity: 1;
-  }
+.popup-content .popup-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 31px;
+}
+
+.popup-content .popup-form--authorization {
+  padding-top: 41px;
+}
+
+.popup-content .popup-form .form-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.popup-content .popup-form .form-wrapper .u-full-width--authorization {
+  width: 304px !important;
+}
+
+.popup-content .popup-form .form-wrapper input {
+  border-radius: 0;
+  height: 52px;
+  width: 304px;
+  padding-left: 18px;
+}
+
+.popup-content .popup-form .form-wrapper input::-webkit-input-placeholder {
+  font-family: "Raleway";
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+.popup-content .popup-form .form-wrapper input::-moz-placeholder {
+  font-family: "Raleway";
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+.popup-content .popup-form .form-wrapper input:-ms-input-placeholder {
+  font-family: "Raleway";
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+.popup-content .popup-form .form-wrapper input::-ms-input-placeholder {
+  font-family: "Raleway";
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+.popup-content .popup-form .form-wrapper input::placeholder {
+  font-family: "Raleway";
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+.popup-content .popup-form .form-wrapper input[type="email"] {
+  width: 393px;
+}
+
+.popup-content .popup-form .form-wrapper label {
+  font-family: "Raleway";
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  color: #28283d;
+  margin-top: 19px;
+}
+
+.popup-content .popup-form button {
+  padding: 13px 19px 13px 30px;
+  border-radius: 25px;
+  width: 225px;
+}
+
+.popup-content .popup-form button .text {
+  font-family: "Raleway";
+  font-size: 16px;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.24px;
+  color: #ffffff;
+  margin-right: 27px;
+}
+
+.popup-content .popup-form .input-button--authorization {
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+}
+
+.popup-content .popup-form .input-button--authorization .icon-chevron-right {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.popup-content .popup-form .submit-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 41px;
+  margin-bottom: 39px;
+}
+
+.popup-content .popup-form .submit-wrapper--authorization {
+  margin-top: 29px;
+  margin-bottom: 41px;
+}
+
+.popup-content .popup-form .submit-wrapper--authorization .consent {
+  font-size: 14px !important;
+  padding-left: 44px !important;
+}
+
+.popup-content .popup-form .submit-wrapper .consent {
+  width: 300px;
+  font-family: "Raleway";
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.67;
+  color: #28283d;
+  padding-left: 34px;
+}
+
+.popup-content .popup-form .submit-wrapper .consent span {
+  color: #00a6ed;
+}
+
+.popup-content hr {
+  width: 640px;
+  height: 2px;
+  margin: 0 auto;
+  background-color: #dadada;
+}
+
+.popup-content .facebook,
+.popup-content .google {
+  width: 294px;
+  height: 50px;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.popup-content .facebook--authorization,
+.popup-content .google--authorization {
+  width: 245px;
+}
+
+.popup-content .facebook .button-text,
+.popup-content .google .button-text {
+  font-family: "Raleway";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.24px;
+  color: #ffffff;
+}
+
+.popup-content .facebook {
+  margin-top: 39px;
+  background-color: #3a5793;
+}
+
+.popup-content .google {
+  background-color: #ea4235;
+  margin-top: 23px;
 }
 
 /* The Close Button */
 
 .closed {
-  color: white;
-  float: right;
-  font-size: 28px;
+  color: #000;
+  position: absolute;
+  top: 39px;
+  right: 39px;
+  font-size: 42px;
   font-weight: bold;
 }
 
 .closed:hover,
 .closed:focus {
-  color: #000;
   text-decoration: none;
   cursor: pointer;
-}
-
-.popup-header {
-  padding: 2px 16px;
-  background-color: #5cb85c;
-  color: white;
 }
 
 .projects {
@@ -1934,31 +2137,6 @@ img {
   padding-left: 29px;
 }
 
-.choose .input-button {
-  position: relative;
-  background-color: #42a5f5;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  margin: 0;
-  min-height: 50px;
-  min-width: 50px;
-  border: none;
-  padding: 0;
-}
-
 .choose input.text {
   padding-left: 29px;
 }
@@ -1986,6 +2164,31 @@ img {
 .choose input[type="email"]::placeholder {
   color: #000000;
   opacity: 1;
+}
+
+.input-button {
+  position: relative;
+  background-color: #42a5f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin: 0;
+  min-height: 50px;
+  min-width: 50px;
+  border: none;
+  padding: 0;
 }
 
 .footer {

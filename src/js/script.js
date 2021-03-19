@@ -1,30 +1,33 @@
 // "use strict";
+
 // Get the button that opens the modal
-var btn = document.querySelectorAll(".popup-button");
+let btn = document.querySelectorAll(".popup-button");
 
 // All page modals
-var modals = document.querySelectorAll(".popup");
+let modals = document.querySelectorAll(".popup");
 
 // Get the <span> element that closes the modal
-var spans = document.getElementsByClassName("closed");
+let spans = document.getElementsByClassName("closed");
 
 // When the user clicks the button, open the modal
-for (var i = 0; i < btn.length; i++) {
+for (let i = 0; i < btn.length; i++) {
   btn[i].onclick = function (e) {
     e.preventDefault();
     popup = document.querySelector(e.target.getAttribute("href"));
     popup.style.display = "block";
-    document.getElementById("body").style.overflow = "hidden";
+    window.onscroll = function () {
+      window.scrollTo(0, 0);
+    };
   };
 }
 
 // When the user clicks on <span> (x), close the modal
-for (var i = 0; i < spans.length; i++) {
+for (let i = 0; i < spans.length; i++) {
   spans[i].onclick = function () {
-    for (var index in modals) {
+    for (let index in modals) {
       if (typeof modals[index].style !== "undefined")
         modals[index].style.display = "none";
-      document.getElementById("body").style.overflow = "scroll";
+      window.onscroll = true;
     }
   };
 }
@@ -32,7 +35,7 @@ for (var i = 0; i < spans.length; i++) {
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
   if (event.target.classList.contains("popup")) {
-    for (var index in modals) {
+    for (let index in modals) {
       if (typeof modals[index].style !== "undefined")
         modals[index].style.display = "none";
     }
