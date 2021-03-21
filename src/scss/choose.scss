@@ -72,12 +72,26 @@
 .input-button {
   position: relative;
   background-color: #42a5f5;
+  border: solid 2px #00a6ed !important;
   @include flex(center, center, row, nowrap);
   margin: 0;
   min-height: 50px;
   min-width: 50px;
   border: none;
   padding: 0;
+
+  .submit {
+    fill: #ffffff;
+    width: 16px;
+    height: 12px;
+  }
+
+  &:hover {
+    background-color: #ffffff;
+    .submit {
+      fill: #00a6ed;
+    }
+  }
 }
 
 @media (max-width: 1200px) {

@@ -13,7 +13,7 @@
   <header>
     <div class="container navbar_container">
       <nav class="navbar">
-        <a class="logo">
+        <a class="logo" href="index.html">
           <img class="img-logo" src="img/logo_communa.png" alt="logo">
           <img src="img/logo_alpha.png" class="upper-logo" alt="upper_logo">
         </a>
@@ -24,16 +24,16 @@
         </button>
         <ul class="navbar-menu">
           <li class="navbar-item">
-            <a class="navbar-text" href="#projects">Проєкти</a>
+            <a class="navbar-text" href="catalog.html">Проєкти</a>
           </li>
           <li class="navbar-item">
-            <a class="navbar-text " href="#how_works">Як працює?</a>
+            <a class="navbar-text " href="#how">Як працює?</a>
           </li>
-          <button class="popup-button navbar-button button-primary" href="#registration">
+          <button class="popup-button navbar-button button-primary" href="#signup">
             Реєстрація
           </button>
           <li id="form_authorization" class="navbar-enter">
-            <a class="enter-text popup-button" href="#authorization">Увійти</a>
+            <a class="enter-text popup-button" href="#signin">Увійти</a>
           </li>
         </ul>
       </nav>
@@ -54,11 +54,15 @@
           <div class="button-container">
             <button type="button" class="button">
               <span class="button-text">Є крута ідея</span>
-              <img src="img/arw-btn.svg" alt="icon-chevron-right">
+              <svg class="arw-btn">
+                <use xlink:href="sprite.svg#arw-btn"></use>
+              </svg>
             </button>
             <button type="button" class="button">
               <span class="button-text">Хочу допомагати</span>
-              <img src="img/arw-btn.svg" alt="icon-chevron-right">
+              <svg class="arw-btn">
+                <use xlink:href="sprite.svg#arw-btn"></use>
+              </svg>
             </button>
           </div>
         </div>
@@ -73,7 +77,7 @@
   </header>
 
   <section>
-    <div id="registration" class="popup">
+    <div id="signup" class="popup">
       <div class="popup-wrapper">
         <div class="popup-content">
           <span class="closed">
@@ -109,12 +113,17 @@
             <div class="submit-wrapper">
               <button type="button" class="input-button button-primary">
                 <p class="text">Зареєструватися</p>
-                <img src="img/submit.svg" alt="icon-check">
+                <svg class="submit">
+                  <use xlink:href="sprite.svg#submit"></use>
+                </svg>
               </button>
 
               <p class="consent">
                 Натискаючи кнопку ти погоджуєшся з нашою
-                <span>угодою про конфіденційність</span>
+                <a href="#"> 
+                  <span class="agreement">угодою про конфіденційність</span>
+                </a>
+               
               </p>
             </div>
           </form>
@@ -133,7 +142,7 @@
       </div>
     </div>
 
-    <div id="authorization" class="popup">
+    <div id="signin" class="popup">
       <div class="popup-wrapper">
         <div class="popup-content">
           <span class="closed">
@@ -155,10 +164,12 @@
             <div class="submit-wrapper submit-wrapper--authorization">
               <button type="button" class="input-button input-button--authorization button-primary">
                 <p class="text">Увійти</p>
-                <img src="img/arw-btn.svg" class="icon-chevron-right" alt="icon-chevron-right">
+                <svg class="arw-btn">
+                  <use xlink:href="sprite.svg#arw-btn"></use>
+                </svg>
               </button>
               <a class="password-recovery" href="#">
-                <span class="popup-button" href="#password-recovery">Відновлення паролю</span>
+                <span class="popup-button" href="#recover">Відновлення паролю</span>
               </a>
 
               <p class="password-wrong" href="#">
@@ -182,7 +193,7 @@
       </div>
     </div>
 
-    <div id="password-recovery" class="popup">
+    <div id="recover" class="popup">
       <div class="popup-wrapper">
         <div class="popup-content popup-content--recovery">
           <span class="closed">
@@ -198,8 +209,10 @@
 
             <div class="submit-wrapper submit-wrapper--recovery">
               <button type="button" class="input-button button-primary popup-button" >
-                <p class="text " href="#password-recovery-done">Скинути пароль</p>
-                <img src="img/arw-btn.svg" class="icon-chevron-right" alt="icon-chevron-right">
+                <p class="text " href="#reset">Скинути пароль</p>
+                <svg class="arw-btn">
+                  <use xlink:href="sprite.svg#arw-btn"></use>
+                </svg>
               </button>
             </div>
           </form>
@@ -208,7 +221,7 @@
       </div>
     </div>
 
-    <div id="password-recovery-done" class="popup">
+    <div id="reset" class="popup">
       <div class="popup-wrapper">
         <div class="popup-content popup-content--recovery">
           <span class="closed">
@@ -225,7 +238,6 @@
   </section>
 
   <main>
-
     <section id="projects" class="projects">
       <section class="container top-project">
         <div class="card">
@@ -242,12 +254,10 @@
             <div class="info-card">
               <div class="details-orient">
                 <div class=" details-location">
-                  <!-- <span class="icon-map-pin"></span> -->
                   <img class="geo" src="img/geo.svg" alt="geo">
                   <span class="details-city">Івано-Франківськ</span>
                 </div>
                 <a class="details-tag" href="#">
-                  <!-- <span class="icon-hashtag"></span> -->
                   <img src="img/hash.svg" alt="hash">
                   <span class="details-tag-text">Спорт</span></a>
               </div>
@@ -407,22 +417,48 @@
         </div>
         <div class="project-preview__slider row">
           <div class="one-half column dots">
-            <img class="icon-circle" src="img/r-fill.svg" alt="dot fill">
-            <img class="icon-circle" src="img/r.svg" alt="dot empty">
-            <img class="icon-circle" src="img/r.svg" alt="dot empty">
-            <img class="icon-circle" src="img/r.svg" alt="dot empty">
-            <img class="icon-circle" src="img/r.svg" alt="dot empty">
+            <a href="#">
+              <svg class="r-hover icon-circle first">
+                <use xlink:href="sprite.svg#r-hover"></use>
+              </svg>
+            </a>
+            <a href="#">
+              <svg class="r-hover icon-circle">
+                <use xlink:href="sprite.svg#r-hover"></use>
+              </svg>
+            </a>
+            <a href="#">
+              <svg class="r-hover icon-circle">
+                <use xlink:href="sprite.svg#r-hover"></use>
+              </svg>
+            </a>
+            <a href="#">
+              <svg class="r-hover icon-circle">
+                <use xlink:href="sprite.svg#r-hover"></use>
+              </svg>
+            </a>
+            <a href="#">
+              <svg class="r-hover icon-circle">
+                <use xlink:href="sprite.svg#r-hover"></use>
+              </svg>
+            </a>
+
+            
+           
           </div>
           <div class="one-half column slider-link button">
             <p class="slider-link-text">Всі проєкти</p>
-            <img src="img/arw-prjct.svg" class="icon-chevron-right" alt="icon-chevron-right">
+            <svg class="arw-btn icon-chevron-right">
+              <use xlink:href="sprite.svg#arw-btn"></use>
+            </svg>
+            
           </div>
         </div>
       </section>
 
     </section>
 
-    <section id="how_works" class="container want-help">
+    <section id="how" class="container want-help">
       <div class="text-block">
         <div class="block-title">Маєш класну ідею та прагнеш бути корисним?</div>
       </div>
@@ -453,19 +489,31 @@
         <div class="button-block">
           <button type="button" class="button button--finance">
             <span class="button-text">Підтримай гривнею</span>
-            <img src="img/arw-btn.svg" class="icon-chevron-right" alt="icon-chevron-right">
+            <!-- <img src="img/arw-btn.svg" class="icon-chevron-right" alt="icon-chevron-right"> -->
+            <svg class="arw-btn icon-chevron-right">
+              <use xlink:href="sprite.svg#arw-btn"></use>
+            </svg>
           </button>
           <div class="social-container ">
             <p class="text">та розкажи про нас</p>
             <div class="social-button-container">
-              <button type="button" class="social-button">
-                <img src="img/fb.svg" alt="fb">
+              <button type="button" class="social-button facebook">
+                <!-- <img src="img/fb.svg" alt="facebook-icon"> -->
+                <svg class="fb">
+                  <use xlink:href="sprite.svg#fb"></use>
+                </svg>
               </button>
-              <button type="button" class="social-button">
-                <img src="img/insta.svg" alt="fb">
+              <button type="button" class="social-button instagram">
+                <!-- <img src="img/insta.svg" alt="instagram-icon"> -->
+                <svg class="insta">
+                  <use xlink:href="sprite.svg#insta"></use>
+                </svg>
               </button>
-              <button type="button" class="social-button">
-                <img src="img/twitter.svg" alt="fb">
+              <button type="button" class="social-button twitter">
+                <!-- <img src="img/twitter.svg" alt="twitter-icon"> -->
+                <svg class="twitter">
+                  <use xlink:href="sprite.svg#twitter"></use>
+                </svg>
               </button>
             </div>
           </div>
@@ -514,7 +562,9 @@
           <div class="form-choose">
             <input class="u-full-width text" type="email" placeholder="Введи свій email">
             <button type="button" class="input-button">
-              <img src="img/submit.svg" alt="icon-check">
+              <svg class="submit">
+                <use xlink:href="sprite.svg#submit"></use>
+              </svg>
             </button>
           </div>
 
@@ -547,9 +597,6 @@
       <a href="#" class="footer__facebook--blue">на facebook</a>
     </div>
   </footer>
-
-
-
 
   <script src="js/script.js"></script>
 </body>

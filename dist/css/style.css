@@ -656,6 +656,11 @@ img {
   margin-left: 44px;
 }
 
+.navbar-item :hover {
+  color: #00a6ed;
+  text-decoration: underline;
+}
+
 .navbar-text {
   font-family: "Raleway";
   font-size: 14px;
@@ -690,6 +695,11 @@ img {
   font-family: "Raleway";
   margin-top: -1px;
   margin-left: 38px;
+}
+
+.navbar-enter :hover {
+  color: #000000 !important;
+  text-decoration: underline;
 }
 
 .enter-text {
@@ -813,8 +823,18 @@ img {
   margin-right: 30px;
 }
 
+.background-header .button-container button:first-of-type:hover {
+  background-image: -o-linear-gradient(339deg, #00bbd2 -1%, #00c8c2 100%);
+  background-image: linear-gradient(111deg, #00bbd2 -1%, #00c8c2 100%);
+}
+
 .background-header .button-container button:last-of-type {
   margin-right: 44px;
+}
+
+.background-header .button-container button:last-of-type:hover {
+  background-image: -o-linear-gradient(339deg, #00cac1 -1%, #00d7b1 100%);
+  background-image: linear-gradient(111deg, #00cac1 -1%, #00d7b1 100%);
 }
 
 .button {
@@ -839,6 +859,7 @@ img {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   padding: 0 19px 0 29px;
+  border: solid 2px #ffffff;
 }
 
 .button-text {
@@ -849,6 +870,24 @@ img {
   letter-spacing: 0.24px;
   color: #000000;
   letter-spacing: -0.1px;
+}
+
+.button .arw-btn {
+  fill: #000000;
+  width: 6px;
+  height: 10px;
+}
+
+.button:hover {
+  border: solid 2px #ffffff;
+}
+
+.button:hover .button-text {
+  color: #ffffff;
+}
+
+.button:hover .arw-btn {
+  fill: #ffffff;
 }
 
 .button-container .icon-chevron-right {
@@ -1051,6 +1090,18 @@ img {
           justify-content: space-between !important;
 }
 
+.popup-content .popup-form .input-button .arw-btn {
+  fill: white;
+  width: 7px;
+  height: 10px;
+}
+
+.popup-content .popup-form .input-button .submit {
+  width: 12px;
+  height: 9px;
+  fill: white;
+}
+
 .popup-content .popup-form .submit-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1089,6 +1140,11 @@ img {
   background-color: #f0f0f1;
 }
 
+.popup-content .popup-form .submit-wrapper .input-button:hover .arw-btn,
+.popup-content .popup-form .submit-wrapper .input-button:hover .submit {
+  fill: #00a6ed;
+}
+
 .popup-content .popup-form .submit-wrapper--authorization {
   margin-top: 29px;
   margin-bottom: 41px;
@@ -1110,16 +1166,16 @@ img {
   padding-left: 34px;
 }
 
-.popup-content .popup-form .submit-wrapper .consent:hover,
-.popup-content .popup-form .submit-wrapper .password-recovery:hover {
-  text-decoration: underline;
-  -webkit-text-decoration-color: #00a6ed;
-          text-decoration-color: #00a6ed;
-}
-
 .popup-content .popup-form .submit-wrapper .consent span,
 .popup-content .popup-form .submit-wrapper .password-recovery span {
   color: #00a6ed;
+}
+
+.popup-content .popup-form .submit-wrapper .password-recovery:hover,
+.popup-content .popup-form .submit-wrapper .agreement:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #00a6ed;
+          text-decoration-color: #00a6ed;
 }
 
 .popup-content .popup-form .submit-wrapper .password-recovery {
@@ -1313,6 +1369,12 @@ img {
       flex-wrap: nowrap;
 }
 
+.top-project .info:hover .info-title {
+  color: #000000;
+  text-decoration: underline;
+  font-weight: normal;
+}
+
 .top-project .info:first-child {
   width: 278px;
 }
@@ -1502,6 +1564,14 @@ img {
       flex-wrap: nowrap;
 }
 
+li:hover .tag-list-item {
+  color: #00a6ed !important;
+}
+
+li:hover .tag-list-item span {
+  text-decoration: underline;
+}
+
 .tag-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1547,8 +1617,6 @@ img {
   font-size: 18px;
   line-height: 0.8;
   color: #000000;
-  -webkit-filter: brightness(0);
-          filter: brightness(0);
 }
 
 .tag-list-item .icon-hashtag {
@@ -1639,6 +1707,12 @@ img {
       flex-wrap: nowrap;
 }
 
+.project-preview .content:hover .content-title {
+  color: #000000;
+  text-decoration: underline;
+  font-weight: 500 !important;
+}
+
 .project-preview .content-title {
   font-family: "Raleway";
   font-size: 14px;
@@ -1697,6 +1771,23 @@ img {
       flex-wrap: nowrap;
 }
 
+.project-preview__slider .slider-link:hover {
+  text-decoration: underline;
+  color: #00a6ed;
+}
+
+.project-preview__slider .slider-link:hover .arw-btn {
+  fill: #00a6ed !important;
+}
+
+.project-preview__slider .slider-link:hover .slider-link-text {
+  color: #00a6ed;
+}
+
+.project-preview__slider .slider-link .button {
+  border: none !important;
+}
+
 .project-preview__slider .slider-link-text {
   font-family: "Raleway";
   font-size: 14px;
@@ -1725,20 +1816,34 @@ img {
   padding-right: 11.5px;
 }
 
+.project-preview .dots .r-hover.first {
+  fill: #000000 !important;
+}
+
+.project-preview .dots a:focus .r-hover {
+  fill: #000000 !important;
+  stroke: #000000 !important;
+}
+
+.project-preview .dots .r-hover {
+  fill: #ffffff !important;
+  stroke: #000000 !important;
+  width: 10px;
+  height: 10px;
+}
+
+.project-preview .dots .r-hover:hover {
+  fill: #ffffff !important;
+  stroke: #00a6ed !important;
+}
+
 .icon-circle {
   margin-left: 6px;
-  font-size: 14px;
 }
 
 .slider-link .icon-chevron-right {
   margin-left: 15px;
   font-size: 12px;
-}
-
-.block:hover .content-title,
-.block:hover .details-how-much-text,
-.block:hover .details-how-much-figures {
-  color: black;
 }
 
 .want-help {
@@ -1900,6 +2005,11 @@ img {
   height: 50px;
 }
 
+.finance .button--finance:hover {
+  background-image: -o-linear-gradient(339deg, #00b0e0 -1%, #00c6c6 100%);
+  background-image: linear-gradient(111deg, #00b0e0 -1%, #00c6c6 100%);
+}
+
 .social-button-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1972,6 +2082,34 @@ img {
   background-color: #ffffff;
   padding: 0;
   margin-left: 10px;
+  border: solid 2px #ffffff !important;
+}
+
+.facebook:hover {
+  background-image: -o-linear-gradient(339deg, #00ccbf -1%, #00cebc 100%);
+  background-image: linear-gradient(111deg, #00ccbf -1%, #00cebc 100%);
+}
+
+.facebook:hover .fb {
+  fill: #ffffff;
+}
+
+.instagram:hover {
+  background-image: -o-linear-gradient(339deg, #00cebc -1%, #00d1b8 100%);
+  background-image: linear-gradient(111deg, #00cebc -1%, #00d1b8 100%);
+}
+
+.instagram:hover .insta {
+  fill: #ffffff;
+}
+
+.twitter:hover {
+  background-image: -o-linear-gradient(339deg, #00d1b8 -1%, #00d4b5 100%);
+  background-image: linear-gradient(111deg, #00d1b8 -1%, #00d4b5 100%);
+}
+
+.twitter:hover .twitter {
+  fill: #ffffff;
 }
 
 .icon-credit-card {
@@ -1979,26 +2117,11 @@ img {
   color: #00a6ed;
 }
 
-.icon-facebook,
-.icon-twitter,
-.icon-instagram {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  font-size: 20px;
-  color: #00a6ed;
+.fb,
+.insta,
+.twitter {
+  width: 16px;
+  height: 16px;
 }
 
 .kickstarter {
@@ -2208,6 +2331,7 @@ img {
 .input-button {
   position: relative;
   background-color: #42a5f5;
+  border: solid 2px #00a6ed !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2228,6 +2352,20 @@ img {
   min-width: 50px;
   border: none;
   padding: 0;
+}
+
+.input-button .submit {
+  fill: #ffffff;
+  width: 16px;
+  height: 12px;
+}
+
+.input-button:hover {
+  background-color: #ffffff;
+}
+
+.input-button:hover .submit {
+  fill: #00a6ed;
 }
 
 .footer {
@@ -2328,6 +2466,11 @@ img {
   width: 473px;
 }
 
+.footer .menu div:hover {
+  color: #000000 !important;
+  text-decoration: underline;
+}
+
 .footer .mail-us {
   padding-top: 23px;
   font-family: "Raleway";
@@ -2339,6 +2482,11 @@ img {
 
 .footer .mail-us--blue {
   color: #00a6ed;
+}
+
+.footer .mail-us--blue:hover {
+  color: #000000 !important;
+  text-decoration: underline;
 }
 
 .footer__facebook {
@@ -2367,6 +2515,11 @@ img {
 .footer__facebook--blue {
   color: #00a6ed;
   padding-left: 5px;
+}
+
+.footer__facebook--blue:hover {
+  color: #000000 !important;
+  text-decoration: underline;
 }
 
 .grid {
@@ -2408,6 +2561,7 @@ img {
     padding-left: 25px;
     letter-spacing: inherit;
     margin-left: 0;
+    border: none;
   }
 }
 

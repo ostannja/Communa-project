@@ -43,6 +43,12 @@
     padding: 14px 20px 13px 18.5px;
     @include flex(space-between, stretch, column, nowrap);
 
+    &:hover .content-title {
+      color: #000000;
+      text-decoration: underline;
+      font-weight: 500 !important;
+    }
+
     &-title {
       font-family: "Raleway";
       font-size: 14px;
@@ -86,6 +92,23 @@
     .slider-link {
       @include flex(flex-start, center, row, nowrap);
 
+      &:hover {
+        text-decoration: underline;
+        color: #00a6ed;
+
+        .arw-btn {
+          fill: #00a6ed !important;
+        }
+
+        .slider-link-text {
+          color: #00a6ed;
+        }
+      }
+
+      .button {
+        border: none !important;
+      }
+
       &-text {
         font-family: "Raleway";
         font-size: 14px;
@@ -100,23 +123,39 @@
     @include flex(flex-end, center, row, nowrap);
     height: 12px;
     padding-right: 11.5px;
+
+    .r-hover.first {
+      fill: #000000 !important;
+    }
+
+    a:focus {
+      .r-hover {
+        fill: #000000 !important;
+        stroke: #000000 !important;
+      }
+    }
+
+    .r-hover {
+      fill: #ffffff !important;
+      stroke: #000000 !important;
+      width: 10px;
+      height: 10px;
+
+      &:hover {
+        fill: #ffffff !important;
+        stroke: #00a6ed !important;
+      }
+    }
   }
 }
 
 .icon-circle {
   margin-left: 6px;
-  font-size: 14px;
 }
 
 .slider-link .icon-chevron-right {
   margin-left: 15px;
   font-size: 12px;
-}
-
-.block:hover .content-title,
-.block:hover .details-how-much-text,
-.block:hover .details-how-much-figures {
-  color: black;
 }
 
 @media (max-width: 991px) {
@@ -236,6 +275,7 @@
     padding-left: 25px;
     letter-spacing: inherit;
     margin-left: 0;
+    border: none;
   }
 }
 
@@ -247,11 +287,3 @@
     }
   }
 }
-
-// @media (max-width: 392px) {
-//   .project-preview {
-//     .img img {
-//       min-height: auto;
-//     }
-//   }
-// }

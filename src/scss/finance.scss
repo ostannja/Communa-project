@@ -24,6 +24,10 @@
     padding: 0 18px 0 28px;
     width: 299px;
     height: 50px;
+
+    &:hover {
+      background-image: linear-gradient(111deg, #00b0e0 -1%, #00c6c6 100%);
+    }
   }
 }
 
@@ -57,6 +61,30 @@
   background-color: #ffffff;
   padding: 0;
   margin-left: 10px;
+  border: solid 2px #ffffff !important;
+}
+
+.facebook:hover {
+  background-image: linear-gradient(111deg, #00ccbf -1%, #00cebc 100%);
+
+  .fb {
+    fill: #ffffff;
+  }
+}
+
+.instagram:hover {
+  background-image: linear-gradient(111deg, #00cebc -1%, #00d1b8 100%);
+
+  .insta {
+    fill: #ffffff;
+  }
+}
+.twitter:hover {
+  background-image: linear-gradient(111deg, #00d1b8 -1%, #00d4b5 100%);
+
+  .twitter {
+    fill: #ffffff;
+  }
 }
 
 .icon-credit-card {
@@ -64,12 +92,11 @@
   color: #00a6ed;
 }
 
-.icon-facebook,
-.icon-twitter,
-.icon-instagram {
-  @include flex(center, center, row, nowrap);
-  font-size: 20px;
-  color: #00a6ed;
+.fb,
+.insta,
+.twitter {
+  width: 16px;
+  height: 16px;
 }
 
 @media (max-width: 991px) {

@@ -147,6 +147,17 @@
         &--authorization {
           justify-content: space-between !important;
         }
+
+        .arw-btn {
+          fill: rgb(255, 255, 255);
+          width: 7px;
+          height: 10px;
+        }
+        .submit {
+          width: 12px;
+          height: 9px;
+          fill: rgb(255, 255, 255);
+        }
       }
 
       .submit-wrapper {
@@ -168,6 +179,11 @@
             .text {
               color: #00a6ed;
               background-color: #f0f0f1;
+            }
+
+            .arw-btn,
+            .submit {
+              fill: #00a6ed;
             }
           }
         }
@@ -192,13 +208,16 @@
           color: #28283d;
           padding-left: 34px;
 
+          span {
+            color: #00a6ed;
+          }
+        }
+
+        .password-recovery,
+        .agreement {
           &:hover {
             text-decoration: underline;
             text-decoration-color: #00a6ed;
-          }
-
-          span {
-            color: #00a6ed;
           }
         }
 
