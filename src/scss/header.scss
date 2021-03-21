@@ -33,6 +33,14 @@
   &-button {
     margin-left: 43px;
     width: 130px;
+
+    &:hover,
+    &:focus {
+      background-color: #ffffff !important;
+      border: solid 2px #00a6ed;
+      color: #00a6ed !important;
+      font-weight: 600;
+    }
   }
 
   &-button-text {
@@ -283,16 +291,6 @@
         }
       }
     }
-  }
-}
-
-@media (max-width: 450px) {
-  .background-header .title {
-    // max-width: 280px;
-  }
-
-  .background-header .subtitle {
-    // max-width: 290px;
   }
 }
 

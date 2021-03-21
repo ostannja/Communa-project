@@ -4,8 +4,9 @@
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   padding-top: 143px; /* Location of the box */
+  padding-bottom: 100px;
   left: 0;
-  top: 0;
+  top: 70px;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
@@ -35,6 +36,22 @@
     color: #000000;
     padding: 27px 40px 47px 40px;
 
+    &--recovery {
+      padding-bottom: 0;
+
+      .recovery-text {
+        padding-top: 47px;
+        padding-bottom: 32px;
+        font-family: "Raleway";
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.69;
+        letter-spacing: normal;
+        color: #28283d;
+        width: 383px;
+      }
+    }
+
     .title {
       font-family: "DidactGothic";
       font-size: 30px;
@@ -47,7 +64,8 @@
       @include flex(space-between, flex-start, row, wrap);
       padding-top: 31px;
 
-      &--authorization {
+      &--authorization,
+      &--recovery {
         padding-top: 41px;
       }
 
@@ -63,20 +81,22 @@
           height: 52px;
           width: 304px;
           padding-left: 18px;
+          font-family: "Raleway";
+          font-size: 16px !important;
+          font-weight: 500;
+          line-height: 1.5;
+          color: #000000 !important;
 
-          &::placeholder {
-            font-family: "Raleway";
-            font-size: 16px;
-            font-weight: 500;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: 1.5;
-            letter-spacing: normal;
-            color: #000000;
+          &[type="password"] {
+            font-size: 42px !important;
           }
 
           &[type="email"] {
             width: 393px;
+          }
+
+          &.u-full-width--recovery[type="email"] {
+            width: 418px;
           }
         }
 
@@ -90,6 +110,15 @@
           letter-spacing: normal;
           color: #28283d;
           margin-top: 19px;
+        }
+
+        input[type="email"]:focus,
+        input[type="text"]:focus,
+        input[type="password"]:focus,
+        textarea:focus,
+        select:focus {
+          border: solid 2px #ff6c6c;
+          outline: 0;
         }
       }
 
@@ -111,11 +140,12 @@
         }
       }
 
-      .input-button--authorization {
-        justify-content: space-between !important;
-
+      .input-button {
         .icon-chevron-right {
           filter: invert(1);
+        }
+        &--authorization {
+          justify-content: space-between !important;
         }
       }
 
@@ -123,6 +153,24 @@
         @include flex(flex-start, center, row, wrap);
         margin-top: 41px;
         margin-bottom: 39px;
+
+        &--recovery {
+          margin-top: 29px;
+        }
+
+        .input-button {
+          border: solid 2px #00a6ed;
+          height: 48px;
+
+          &:hover {
+            background-color: #f0f0f1;
+
+            .text {
+              color: #00a6ed;
+              background-color: #f0f0f1;
+            }
+          }
+        }
 
         &--authorization {
           margin-top: 29px;
@@ -134,7 +182,8 @@
           }
         }
 
-        .consent {
+        .consent,
+        .password-recovery {
           width: 300px;
           font-family: "Raleway";
           font-size: 12px;
@@ -143,8 +192,32 @@
           color: #28283d;
           padding-left: 34px;
 
+          &:hover {
+            text-decoration: underline;
+            text-decoration-color: #00a6ed;
+          }
+
           span {
             color: #00a6ed;
+          }
+        }
+
+        .password-recovery {
+          font-size: 14px;
+          width: auto;
+        }
+
+        .password-wrong {
+          font-family: "Raleway";
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 2;
+          color: #ff6c6c;
+          padding-left: 45px;
+
+          img {
+            display: inline;
+            padding-right: 9.3px;
           }
         }
       }
@@ -181,11 +254,31 @@
     .facebook {
       margin-top: 39px;
       background-color: #3a5793;
+      border: solid 2px #3a5793;
+
+      &:hover {
+        background-color: #f0f0f1;
+
+        .button-text {
+          color: #3a5793;
+          font-weight: 500;
+        }
+      }
     }
 
     .google {
       background-color: #ea4235;
       margin-top: 23px;
+      border: solid 2px #ea4235;
+
+      &:hover {
+        background-color: #f0f0f1;
+
+        .button-text {
+          color: #ea4235;
+          font-weight: 500;
+        }
+      }
     }
   }
 }

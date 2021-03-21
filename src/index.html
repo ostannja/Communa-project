@@ -71,6 +71,159 @@
       </div>
     </div>
   </header>
+
+  <section>
+    <div id="registration" class="popup">
+      <div class="popup-wrapper">
+        <div class="popup-content">
+          <span class="closed">
+            <img src="img/close-popup.svg" alt="close-popup">
+          </span>
+          <div class="title">Реєстрація</div>
+          <form class="popup-form">
+            <div class="form-wrapper">
+              <label for="name">Ім'я</label>
+              <input class="u-full-width" type="text" id="name">
+            </div>
+
+            <div class="form-wrapper">
+              <label for="surname">Прізвище</label>
+              <input class="u-full-width" type="text" id="surname">
+            </div>
+
+            <div class="form-wrapper">
+              <label for="exampleEmailInput">E-mail</label>
+              <input class="u-full-width" type="email" id="exampleEmailInput">
+            </div>
+
+            <div class="form-wrapper">
+              <label for="examplePasswordInput">Придумай пароль</label>
+              <input class="u-full-width" type="password" id="examplePasswordInput">
+            </div>
+
+            <div class="form-wrapper">
+              <label for="exampleRepeatPasswordInput">Повтори пароль</label>
+              <input class="u-full-width" type="password" id="exampleRepeatPasswordInput">
+            </div>
+
+            <div class="submit-wrapper">
+              <button type="button" class="input-button button-primary">
+                <p class="text">Зареєструватися</p>
+                <img src="img/submit.svg" alt="icon-check">
+              </button>
+
+              <p class="consent">
+                Натискаючи кнопку ти погоджуєшся з нашою
+                <span>угодою про конфіденційність</span>
+              </p>
+            </div>
+          </form>
+
+          <hr>
+
+          <button class="button facebook" type="button">
+            <span class="button-text">Реєстрація через Facebook</span>
+          </button>
+
+          <button class="button google" type="button">
+            <span class="button-text">Реєстрація через Google</span>
+          </button>
+
+        </div>
+      </div>
+    </div>
+
+    <div id="authorization" class="popup">
+      <div class="popup-wrapper">
+        <div class="popup-content">
+          <span class="closed">
+            <img src="img/close-popup.svg" alt="close-popup">
+          </span>
+          <div class="title">Авторизація</div>
+          <form class="popup-form popup-form--authorization">
+
+            <div class="form-wrapper">
+              <label for="email">E-mail</label>
+              <input class="u-full-width u-full-width--authorization" type="email" id="email">
+            </div>
+
+            <div class="form-wrapper">
+              <label for="password">Пароль</label>
+              <input class="u-full-width" type="password" id="password">
+            </div>
+
+            <div class="submit-wrapper submit-wrapper--authorization">
+              <button type="button" class="input-button input-button--authorization button-primary">
+                <p class="text">Увійти</p>
+                <img src="img/arw-btn.svg" class="icon-chevron-right" alt="icon-chevron-right">
+              </button>
+              <a class="password-recovery" href="#">
+                <span class="popup-button" href="#password-recovery">Відновлення паролю</span>
+              </a>
+
+              <p class="password-wrong" href="#">
+                <img src="img/alarm-red.svg" alt="wrong password">
+                <span>E-mail або пароль невірний</span>
+              </p>
+            </div>
+          </form>
+
+          <hr>
+
+          <button class="button facebook facebook--authorization" type="button">
+            <span class="button-text">Вхід через Facebook</span>
+          </button>
+
+          <button class="button google google--authorization" type="button">
+            <span class="button-text">Вхід через Google</span>
+          </button>
+
+        </div>
+      </div>
+    </div>
+
+    <div id="password-recovery" class="popup">
+      <div class="popup-wrapper">
+        <div class="popup-content popup-content--recovery">
+          <span class="closed">
+            <img src="img/close-popup.svg" alt="close-popup">
+          </span>
+          <div class="title">Відновлення паролю</div>
+          <form class="popup-form popup-form--recovery">
+
+            <div class="form-wrapper">
+              <label for="exampleEmailInput">E-mail</label>
+              <input class="u-full-width u-full-width--recovery" type="email" id="exampleEmailInput">
+            </div>
+
+            <div class="submit-wrapper submit-wrapper--recovery">
+              <button type="button" class="input-button button-primary popup-button" >
+                <p class="text " href="#password-recovery-done">Скинути пароль</p>
+                <img src="img/arw-btn.svg" class="icon-chevron-right" alt="icon-chevron-right">
+              </button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+    <div id="password-recovery-done" class="popup">
+      <div class="popup-wrapper">
+        <div class="popup-content popup-content--recovery">
+          <span class="closed">
+            <img src="img/close-popup.svg" alt="close-popup">
+          </span>
+          <div class="title">Відновлення паролю</div>
+          <div class="recovery-text">
+            Новий тимчасовий пароль надісланий на пошту, якщо листа довго немає — перевір спам
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
   <main>
 
     <section id="projects" class="projects">
@@ -359,7 +512,7 @@
             </select>
           </div>
           <div class="form-choose">
-            <input class="u-full-width text" type="email" placeholder="Введи свій email" id="exampleEmailInput">
+            <input class="u-full-width text" type="email" placeholder="Введи свій email">
             <button type="button" class="input-button">
               <img src="img/submit.svg" alt="icon-check">
             </button>
@@ -395,112 +548,7 @@
     </div>
   </footer>
 
-  <div id="registration" class="popup">
-    <div class="popup-wrapper">
-      <div class="popup-content">
-        <span class="closed">
-          <img src="img/close-popup.svg" alt="close-popup">
-        </span>
-        <div class="title">Реєстрація</div>
-        <form class="popup-form">
-          <div class="form-wrapper">
-            <label for="exampleEmailInput">Ім'я</label>
-            <input class="u-full-width" type="text" id="exampleEmailInput">
-          </div>
 
-          <div class="form-wrapper">
-            <label for="exampleEmailInput">Прізвище</label>
-            <input class="u-full-width" type="text" id="exampleEmailInput">
-          </div>
-
-          <div class="form-wrapper">
-            <label for="exampleEmailInput">E-mail</label>
-            <input class="u-full-width" type="email" placeholder="artem@zubkevich.com" id="exampleEmailInput">
-          </div>
-
-          <div class="form-wrapper">
-            <label for="exampleEmailInput">Придумай пароль</label>
-            <input class="u-full-width" type="password" id="exampleEmailInput">
-          </div>
-
-          <div class="form-wrapper">
-            <label for="exampleEmailInput">Повтори пароль</label>
-            <input class="u-full-width" type="password" id="exampleEmailInput">
-          </div>
-
-          <!-- <input class="button-primary" type="submit" value="Зареєструватися"> -->
-          <div class="submit-wrapper">
-            <button type="button" class="input-button button-primary">
-              <p class="text">Зареєструватися</p>
-              <img src="img/submit.svg" alt="icon-check">
-            </button>
-
-            <p class="consent">
-              Натискаючи кнопку ти погоджуєшся з нашою
-              <span>угодою про конфіденційність</span>
-            </p>
-          </div>
-        </form>
-
-        <hr>
-
-        <button class="button facebook" type="button">
-          <span class="button-text">Реєстрація через Facebook</span>
-        </button>
-
-        <button class="button google" type="button">
-          <span class="button-text">Реєстрація через Google</span>
-        </button>
-
-      </div>
-    </div>
-  </div>
-
-  <div id="authorization" class="popup">
-    <div class="popup-wrapper">
-      <div class="popup-content">
-        <span class="closed">
-          <img src="img/close-popup.svg" alt="close-popup">
-        </span>
-        <div class="title">Авторизація</div>
-        <form class="popup-form popup-form--authorization">
-
-          <div class="form-wrapper">
-            <label for="exampleEmailInput">E-mail</label>
-            <input class="u-full-width u-full-width--authorization" type="email" placeholder="artem@zubkevich.com"
-              id="exampleEmailInput">
-          </div>
-
-          <div class="form-wrapper">
-            <label for="exampleEmailInput">Пароль</label>
-            <input class="u-full-width" type="password" id="exampleEmailInput">
-          </div>
-
-          <!-- <input class="button-primary" type="submit" value="Зареєструватися"> -->
-          <div class="submit-wrapper submit-wrapper--authorization">
-            <button type="button" class="input-button input-button--authorization button-primary">
-              <p class="text">Увійти</p>
-              <img src="img/arw-btn.svg" class="icon-chevron-right" alt="icon-chevron-right">
-            </button>
-            <a class="consent" href="#">
-              <span>Відновлення паролю</span>
-            </a>
-          </div>
-        </form>
-
-        <hr>
-
-        <button class="button facebook facebook--authorization" type="button">
-          <span class="button-text">Вхід через Facebook</span>
-        </button>
-
-        <button class="button google google--authorization" type="button">
-          <span class="button-text">Вхід через Google</span>
-        </button>
-
-      </div>
-    </div>
-  </div>
 
 
   <script src="js/script.js"></script>

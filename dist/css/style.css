@@ -294,6 +294,7 @@ input[type="button"].button-primary {
 
 .button.button-primary:hover,
 button.button-primary:hover,
+button.button-primary:hover .text,
 input[type="submit"].button-primary:hover,
 input[type="reset"].button-primary:hover,
 input[type="button"].button-primary:hover,
@@ -304,7 +305,6 @@ input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
   color: #fff;
   background-color: #1eaedb;
-  border-color: #1eaedb;
 }
 
 /* Forms
@@ -360,7 +360,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  border: 1px solid #33c3f0;
+  border: none;
   outline: 0;
 }
 
@@ -481,26 +481,6 @@ hr {
   display: table;
   clear: both;
 }
-
-/* Media Queries
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-/*
-Note: The best way to structure the use of media queries is to create the queries
-near the relevant code. For example, if you wanted to change the styles for buttons
-on small devices, paste the mobile query code up in the buttons section and style it
-there.
-*/
-
-/* Larger than mobile */
-
-/* Larger than phablet (also point when grid becomes active) */
-
-/* Larger than tablet */
-
-/* Larger than desktop */
-
-/* Larger than Desktop HD */
 
 @font-face {
   font-family: "Raleway";
@@ -687,6 +667,14 @@ img {
 .navbar-button {
   margin-left: 43px;
   width: 130px;
+}
+
+.navbar-button:hover,
+.navbar-button:focus {
+  background-color: #ffffff !important;
+  border: solid 2px #00a6ed;
+  color: #00a6ed !important;
+  font-weight: 600;
 }
 
 .navbar-button-text {
@@ -880,8 +868,9 @@ img {
   /* Sit on top */
   padding-top: 143px;
   /* Location of the box */
+  padding-bottom: 100px;
   left: 0;
-  top: 0;
+  top: 70px;
   width: 100%;
   /* Full width */
   height: 100%;
@@ -918,6 +907,22 @@ img {
   padding: 27px 40px 47px 40px;
 }
 
+.popup-content--recovery {
+  padding-bottom: 0;
+}
+
+.popup-content--recovery .recovery-text {
+  padding-top: 47px;
+  padding-bottom: 32px;
+  font-family: "Raleway";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.69;
+  letter-spacing: normal;
+  color: #28283d;
+  width: 383px;
+}
+
 .popup-content .title {
   font-family: "DidactGothic";
   font-size: 30px;
@@ -945,7 +950,8 @@ img {
   padding-top: 31px;
 }
 
-.popup-content .popup-form--authorization {
+.popup-content .popup-form--authorization,
+.popup-content .popup-form--recovery {
   padding-top: 41px;
 }
 
@@ -976,65 +982,23 @@ img {
   height: 52px;
   width: 304px;
   padding-left: 18px;
+  font-family: "Raleway";
+  font-size: 16px !important;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #000000 !important;
 }
 
-.popup-content .popup-form .form-wrapper input::-webkit-input-placeholder {
-  font-family: "Raleway";
-  font-size: 16px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.5;
-  letter-spacing: normal;
-  color: #000000;
-}
-
-.popup-content .popup-form .form-wrapper input::-moz-placeholder {
-  font-family: "Raleway";
-  font-size: 16px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.5;
-  letter-spacing: normal;
-  color: #000000;
-}
-
-.popup-content .popup-form .form-wrapper input:-ms-input-placeholder {
-  font-family: "Raleway";
-  font-size: 16px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.5;
-  letter-spacing: normal;
-  color: #000000;
-}
-
-.popup-content .popup-form .form-wrapper input::-ms-input-placeholder {
-  font-family: "Raleway";
-  font-size: 16px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.5;
-  letter-spacing: normal;
-  color: #000000;
-}
-
-.popup-content .popup-form .form-wrapper input::placeholder {
-  font-family: "Raleway";
-  font-size: 16px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.5;
-  letter-spacing: normal;
-  color: #000000;
+.popup-content .popup-form .form-wrapper input[type="password"] {
+  font-size: 42px !important;
 }
 
 .popup-content .popup-form .form-wrapper input[type="email"] {
   width: 393px;
+}
+
+.popup-content .popup-form .form-wrapper input.u-full-width--recovery[type="email"] {
+  width: 418px;
 }
 
 .popup-content .popup-form .form-wrapper label {
@@ -1047,6 +1011,15 @@ img {
   letter-spacing: normal;
   color: #28283d;
   margin-top: 19px;
+}
+
+.popup-content .popup-form .form-wrapper input[type="email"]:focus,
+.popup-content .popup-form .form-wrapper input[type="text"]:focus,
+.popup-content .popup-form .form-wrapper input[type="password"]:focus,
+.popup-content .popup-form .form-wrapper textarea:focus,
+.popup-content .popup-form .form-wrapper select:focus {
+  border: solid 2px #ff6c6c;
+  outline: 0;
 }
 
 .popup-content .popup-form button {
@@ -1067,15 +1040,15 @@ img {
   margin-right: 27px;
 }
 
+.popup-content .popup-form .input-button .icon-chevron-right {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
 .popup-content .popup-form .input-button--authorization {
   -webkit-box-pack: justify !important;
       -ms-flex-pack: justify !important;
           justify-content: space-between !important;
-}
-
-.popup-content .popup-form .input-button--authorization .icon-chevron-right {
-  -webkit-filter: invert(1);
-          filter: invert(1);
 }
 
 .popup-content .popup-form .submit-wrapper {
@@ -1098,6 +1071,24 @@ img {
   margin-bottom: 39px;
 }
 
+.popup-content .popup-form .submit-wrapper--recovery {
+  margin-top: 29px;
+}
+
+.popup-content .popup-form .submit-wrapper .input-button {
+  border: solid 2px #00a6ed;
+  height: 48px;
+}
+
+.popup-content .popup-form .submit-wrapper .input-button:hover {
+  background-color: #f0f0f1;
+}
+
+.popup-content .popup-form .submit-wrapper .input-button:hover .text {
+  color: #00a6ed;
+  background-color: #f0f0f1;
+}
+
 .popup-content .popup-form .submit-wrapper--authorization {
   margin-top: 29px;
   margin-bottom: 41px;
@@ -1108,7 +1099,8 @@ img {
   padding-left: 44px !important;
 }
 
-.popup-content .popup-form .submit-wrapper .consent {
+.popup-content .popup-form .submit-wrapper .consent,
+.popup-content .popup-form .submit-wrapper .password-recovery {
   width: 300px;
   font-family: "Raleway";
   font-size: 12px;
@@ -1118,8 +1110,35 @@ img {
   padding-left: 34px;
 }
 
-.popup-content .popup-form .submit-wrapper .consent span {
+.popup-content .popup-form .submit-wrapper .consent:hover,
+.popup-content .popup-form .submit-wrapper .password-recovery:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #00a6ed;
+          text-decoration-color: #00a6ed;
+}
+
+.popup-content .popup-form .submit-wrapper .consent span,
+.popup-content .popup-form .submit-wrapper .password-recovery span {
   color: #00a6ed;
+}
+
+.popup-content .popup-form .submit-wrapper .password-recovery {
+  font-size: 14px;
+  width: auto;
+}
+
+.popup-content .popup-form .submit-wrapper .password-wrong {
+  font-family: "Raleway";
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 2;
+  color: #ff6c6c;
+  padding-left: 45px;
+}
+
+.popup-content .popup-form .submit-wrapper .password-wrong img {
+  display: inline;
+  padding-right: 9.3px;
 }
 
 .popup-content hr {
@@ -1169,11 +1188,31 @@ img {
 .popup-content .facebook {
   margin-top: 39px;
   background-color: #3a5793;
+  border: solid 2px #3a5793;
+}
+
+.popup-content .facebook:hover {
+  background-color: #f0f0f1;
+}
+
+.popup-content .facebook:hover .button-text {
+  color: #3a5793;
+  font-weight: 500;
 }
 
 .popup-content .google {
   background-color: #ea4235;
   margin-top: 23px;
+  border: solid 2px #ea4235;
+}
+
+.popup-content .google:hover {
+  background-color: #f0f0f1;
+}
+
+.popup-content .google:hover .button-text {
+  color: #ea4235;
+  font-weight: 500;
 }
 
 /* The Close Button */
