@@ -905,9 +905,6 @@ img {
   /* Stay in place */
   z-index: 1;
   /* Sit on top */
-  padding-top: 143px;
-  /* Location of the box */
-  padding-bottom: 100px;
   left: 0;
   top: 70px;
   width: 100%;
@@ -920,6 +917,7 @@ img {
   /* Fallback color */
   background-color: rgba(0, 0, 0, 0.8);
   /* Black w/ opacity */
+  height: calc(100vh - 70px);
 }
 
 .popup-button {
@@ -934,16 +932,35 @@ img {
 
 .popup-wrapper {
   position: relative;
-  background-color: #fefefe;
   margin: auto;
   padding: 0;
-  width: 720px;
+  max-width: 720px;
+  width: 51%;
+  min-width: 550px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .popup-content {
+  position: relative;
   background-color: #f0f0f1;
+  width: 100%;
   color: #000000;
-  padding: 27px 40px 47px 40px;
+  padding: 2.9vh 5.5% 5.2vh 5.5%;
 }
 
 .popup-content--recovery {
@@ -964,7 +981,7 @@ img {
 
 .popup-content .title {
   font-family: "DidactGothic";
-  font-size: 30px;
+  font-size: calc(27px + (3 + 11 * 0.6) * ((100vw - 992px) / 1440));
   font-weight: normal;
   line-height: 1.37;
   color: #000000;
@@ -986,12 +1003,12 @@ img {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-top: 31px;
+  padding-top: 3.5vh;
 }
 
 .popup-content .popup-form--authorization,
 .popup-content .popup-form--recovery {
-  padding-top: 41px;
+  padding-top: 4.6vh;
 }
 
 .popup-content .popup-form .form-wrapper {
@@ -1010,16 +1027,26 @@ img {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 47.5%;
+}
+
+.popup-content .popup-form .form-wrapper--recover {
+  width: 100%;
+}
+
+.popup-content .popup-form .form-wrapper--email {
+  width: 80%;
 }
 
 .popup-content .popup-form .form-wrapper .u-full-width--authorization {
-  width: 304px !important;
+  width: 100% !important;
 }
 
 .popup-content .popup-form .form-wrapper input {
   border-radius: 0;
-  height: 52px;
-  width: 304px;
+  height: 5.75vh;
+  max-height: 52px;
+  width: 100%;
   padding-left: 18px;
   font-family: "Raleway";
   font-size: 16px !important;
@@ -1033,7 +1060,7 @@ img {
 }
 
 .popup-content .popup-form .form-wrapper input[type="email"] {
-  width: 393px;
+  width: 76.7%;
 }
 
 .popup-content .popup-form .form-wrapper input.u-full-width--recovery[type="email"] {
@@ -1049,7 +1076,8 @@ img {
   line-height: 1.71;
   letter-spacing: normal;
   color: #28283d;
-  margin-top: 19px;
+  margin-top: 2.1vh;
+  margin-bottom: 0.6vh;
 }
 
 .popup-content .popup-form .form-wrapper input[type="email"]:focus,
@@ -1062,13 +1090,13 @@ img {
 }
 
 .popup-content .popup-form button {
-  padding: 13px 19px 13px 30px;
+  padding: 0 2.8% 0 4.7%;
   border-radius: 25px;
-  width: 225px;
 }
 
 .popup-content .popup-form button .text {
   font-family: "Raleway";
+  font-size: calc(12px + (2 + 19 * 0.6) * ((100vw - 992px) / 1440));
   font-size: 16px;
   font-weight: 400;
   font-stretch: normal;
@@ -1076,7 +1104,12 @@ img {
   line-height: 1.5;
   letter-spacing: 0.24px;
   color: #ffffff;
-  margin-right: 27px;
+}
+
+.popup-content .popup-form .input-button {
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
 }
 
 .popup-content .popup-form .input-button .icon-chevron-right {
@@ -1088,6 +1121,7 @@ img {
   -webkit-box-pack: justify !important;
       -ms-flex-pack: justify !important;
           justify-content: space-between !important;
+  width: 35.4% !important;
 }
 
 .popup-content .popup-form .input-button .arw-btn {
@@ -1118,17 +1152,21 @@ img {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 41px;
-  margin-bottom: 39px;
+  margin-top: 4.4vh;
+  margin-bottom: 4.3vh;
 }
 
 .popup-content .popup-form .submit-wrapper--recovery {
   margin-top: 29px;
+  width: 92%;
 }
 
 .popup-content .popup-form .submit-wrapper .input-button {
   border: solid 2px #00a6ed;
-  height: 48px;
+  height: 5.5vh;
+  max-height: 50px;
+  width: 38.4%;
+  min-height: unset;
 }
 
 .popup-content .popup-form .submit-wrapper .input-button:hover {
@@ -1146,8 +1184,24 @@ img {
 }
 
 .popup-content .popup-form .submit-wrapper--authorization {
-  margin-top: 29px;
-  margin-bottom: 41px;
+  margin-top: 3.3vh;
+  margin-bottom: 4.6vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .popup-content .popup-form .submit-wrapper--authorization .consent {
@@ -1157,13 +1211,13 @@ img {
 
 .popup-content .popup-form .submit-wrapper .consent,
 .popup-content .popup-form .submit-wrapper .password-recovery {
-  width: 300px;
+  width: 53%;
   font-family: "Raleway";
   font-size: 12px;
   font-weight: 500;
   line-height: 1.67;
   color: #28283d;
-  padding-left: 34px;
+  padding-left: 6.4%;
 }
 
 .popup-content .popup-form .submit-wrapper .consent span,
@@ -1181,6 +1235,7 @@ img {
 .popup-content .popup-form .submit-wrapper .password-recovery {
   font-size: 14px;
   width: auto;
+  padding-left: 0;
 }
 
 .popup-content .popup-form .submit-wrapper .password-wrong {
@@ -1189,7 +1244,6 @@ img {
   font-weight: 500;
   line-height: 2;
   color: #ff6c6c;
-  padding-left: 45px;
 }
 
 .popup-content .popup-form .submit-wrapper .password-wrong img {
@@ -1198,7 +1252,7 @@ img {
 }
 
 .popup-content hr {
-  width: 640px;
+  width: 100%;
   height: 2px;
   margin: 0 auto;
   background-color: #dadada;
@@ -1207,7 +1261,9 @@ img {
 .popup-content .facebook,
 .popup-content .google {
   width: 294px;
-  height: 50px;
+  height: 5.5vh;
+  max-height: 50px;
+  width: 46%;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1234,6 +1290,7 @@ img {
 .popup-content .facebook .button-text,
 .popup-content .google .button-text {
   font-family: "Raleway";
+  font-size: calc(12px + (2 + 19 * 0.6) * ((100vw - 992px) / 1440));
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
@@ -1242,7 +1299,7 @@ img {
 }
 
 .popup-content .facebook {
-  margin-top: 39px;
+  margin-top: 4.23vh;
   background-color: #3a5793;
   border: solid 2px #3a5793;
 }
@@ -1258,7 +1315,7 @@ img {
 
 .popup-content .google {
   background-color: #ea4235;
-  margin-top: 23px;
+  margin-top: 2.6vh;
   border: solid 2px #ea4235;
 }
 
@@ -2541,6 +2598,7 @@ li:hover .tag-list-item span {
 .grid-item3 {
   grid-area: grid-item3;
   width: auto;
+  min-width: 123px;
 }
 
 @media (min-width: 320px) {
@@ -2590,6 +2648,15 @@ li:hover .tag-list-item span {
 }
 
 @media (max-width: 1200px) {
+  .popup-wrapper {
+    width: 650px;
+  }
+
+  .popup-content .popup-form .submit-wrapper {
+    margin-top: 3.4vh;
+    margin-bottom: 3.3vh;
+  }
+
   .choose .container > .text {
     margin-right: 30px;
   }

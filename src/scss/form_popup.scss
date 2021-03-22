@@ -3,8 +3,7 @@
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 143px; /* Location of the box */
-  padding-bottom: 100px;
+  // padding-top: 5%; /* Location of the box */
   left: 0;
   top: 70px;
   width: 100%; /* Full width */
@@ -12,6 +11,7 @@
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0, 0, 0); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
+  height: calc(100vh - 70px);
 
   &-button {
     height: 36px;
@@ -25,16 +25,23 @@
 
   &-wrapper {
     position: relative;
-    background-color: #fefefe;
     margin: auto;
     padding: 0;
-    width: 720px;
+    max-width: 720px;
+    width: 51%;
+    min-width: 550px;
+    // max-height: 737px;
+    height: 100%;
+    @include flex(center, center, row, wrap);
   }
 
   &-content {
+    position: relative;
     background-color: #f0f0f1;
+    width: 100%;
     color: #000000;
-    padding: 27px 40px 47px 40px;
+    padding: 2.9vh 5.5% 5.2vh 5.5%;
+    // max-height: 737px;
 
     &--recovery {
       padding-bottom: 0;
@@ -54,7 +61,8 @@
 
     .title {
       font-family: "DidactGothic";
-      font-size: 30px;
+      font-size: calc(27px + (3 + 11 * 0.6) * ((100vw - 992px) / 1440));
+      // font-size: 30px;
       font-weight: normal;
       line-height: 1.37;
       color: #000000;
@@ -62,24 +70,34 @@
 
     .popup-form {
       @include flex(space-between, flex-start, row, wrap);
-      padding-top: 31px;
+      padding-top: 3.5vh;
 
       &--authorization,
       &--recovery {
-        padding-top: 41px;
+        padding-top: 4.6vh;
       }
 
       .form-wrapper {
         @include flex(flex-start, flex-start, column, wrap);
+        width: 47.5%;
+
+        &--recover {
+          width: 100%;
+        }
+
+        &--email {
+          width: 80%;
+        }
 
         .u-full-width--authorization {
-          width: 304px !important;
+          width: 100% !important;
         }
 
         input {
           border-radius: 0;
-          height: 52px;
-          width: 304px;
+          height: 5.75vh;
+          max-height: 52px;
+          width: 100%;
           padding-left: 18px;
           font-family: "Raleway";
           font-size: 16px !important;
@@ -92,7 +110,7 @@
           }
 
           &[type="email"] {
-            width: 393px;
+            width: 76.7%;
           }
 
           &.u-full-width--recovery[type="email"] {
@@ -102,6 +120,7 @@
 
         label {
           font-family: "Raleway";
+          // font-size: calc(10px + (5 + 15 * 0.5) * ((100vw - 992px) / 1440));
           font-size: 14px;
           font-weight: 500;
           font-stretch: normal;
@@ -109,7 +128,8 @@
           line-height: 1.71;
           letter-spacing: normal;
           color: #28283d;
-          margin-top: 19px;
+          margin-top: 2.1vh;
+          margin-bottom: 0.6vh;
         }
 
         input[type="email"]:focus,
@@ -123,12 +143,12 @@
       }
 
       button {
-        padding: 13px 19px 13px 30px;
+        padding: 0 2.8% 0 4.7%;
         border-radius: 25px;
-        width: 225px;
 
         .text {
           font-family: "Raleway";
+          font-size: calc(12px + (2 + 19 * 0.6) * ((100vw - 992px) / 1440));
           font-size: 16px;
           font-weight: 400;
           font-stretch: normal;
@@ -136,16 +156,17 @@
           line-height: 1.5;
           letter-spacing: 0.24px;
           color: #ffffff;
-          margin-right: 27px;
         }
       }
 
       .input-button {
+        justify-content: space-between !important;
         .icon-chevron-right {
           filter: invert(1);
         }
         &--authorization {
           justify-content: space-between !important;
+          width: 35.4% !important;
         }
 
         .arw-btn {
@@ -162,16 +183,20 @@
 
       .submit-wrapper {
         @include flex(flex-start, center, row, wrap);
-        margin-top: 41px;
-        margin-bottom: 39px;
+        margin-top: 4.4vh;
+        margin-bottom: 4.3vh;
 
         &--recovery {
           margin-top: 29px;
+          width: 92%;
         }
 
         .input-button {
           border: solid 2px #00a6ed;
-          height: 48px;
+          height: 5.5vh;
+          max-height: 50px;
+          width: 38.4%;
+          min-height: unset;
 
           &:hover {
             background-color: #f0f0f1;
@@ -189,8 +214,10 @@
         }
 
         &--authorization {
-          margin-top: 29px;
-          margin-bottom: 41px;
+          margin-top: 3.3vh;
+          margin-bottom: 4.6vh;
+          width: 100%;
+          @include flex(space-between, center, row, wrap);
 
           .consent {
             font-size: 14px !important;
@@ -200,13 +227,13 @@
 
         .consent,
         .password-recovery {
-          width: 300px;
+          width: 53%;
           font-family: "Raleway";
           font-size: 12px;
           font-weight: 500;
           line-height: 1.67;
           color: #28283d;
-          padding-left: 34px;
+          padding-left: 6.4%;
 
           span {
             color: #00a6ed;
@@ -224,6 +251,7 @@
         .password-recovery {
           font-size: 14px;
           width: auto;
+          padding-left: 0;
         }
 
         .password-wrong {
@@ -232,7 +260,7 @@
           font-weight: 500;
           line-height: 2;
           color: #ff6c6c;
-          padding-left: 45px;
+          // padding-left: 6.2%;
 
           img {
             display: inline;
@@ -243,7 +271,7 @@
     }
 
     hr {
-      width: 640px;
+      width: 100%;
       height: 2px;
       margin: 0 auto;
       background-color: #dadada;
@@ -252,7 +280,9 @@
     .facebook,
     .google {
       width: 294px;
-      height: 50px;
+      height: 5.5vh;
+      max-height: 50px;
+      width: 46%;
       padding: 0;
       @include flex(center, center, row, wrap);
 
@@ -262,6 +292,7 @@
 
       .button-text {
         font-family: "Raleway";
+        font-size: calc(12px + (2 + 19 * 0.6) * ((100vw - 992px) / 1440));
         font-size: 16px;
         font-weight: 400;
         line-height: 1.5;
@@ -271,7 +302,7 @@
     }
 
     .facebook {
-      margin-top: 39px;
+      margin-top: 4.23vh;
       background-color: #3a5793;
       border: solid 2px #3a5793;
 
@@ -287,7 +318,7 @@
 
     .google {
       background-color: #ea4235;
-      margin-top: 23px;
+      margin-top: 2.6vh;
       border: solid 2px #ea4235;
 
       &:hover {
@@ -316,4 +347,19 @@
 .closed:focus {
   text-decoration: none;
   cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .popup-wrapper {
+    width: 650px;
+  }
+
+  .popup-content {
+    .popup-form {
+      .submit-wrapper {
+        margin-top: 3.4vh;
+        margin-bottom: 3.3vh;
+      }
+    }
+  }
 }

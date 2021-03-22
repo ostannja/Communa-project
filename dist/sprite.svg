@@ -57,16 +57,6 @@
         </g>
       </symbol>
 
-      <symbol id="r" viewBox="0 0 10 10">
-        <g id="Page-1" stroke="none" stroke-width="1">
-          <g id="index.desktop" transform="translate(-637.000000, -1424.000000)" stroke="#000000">
-            <g id="Projects" transform="translate(0.000000, 570.000000)">
-              <circle id="r" cx="642" cy="859" r="4.5"></circle>
-            </g>
-          </g>
-        </g>
-      </symbol>
-
       <symbol id="r-hover" viewBox="0 0 10 10">
         <g >
           <g >
@@ -76,7 +66,4 @@
           </g>
         </g>
       </symbol>
-
-
-    
     </svg>
