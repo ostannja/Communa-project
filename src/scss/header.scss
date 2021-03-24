@@ -106,7 +106,7 @@
   }
 
   .text-block {
-    margin-left: -3px;
+    // margin-left: -3px;
     @include flex(space-between, flex-start, column, nowrap);
   }
 

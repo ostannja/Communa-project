@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="fonts/icomoon-v1.0/style.css" />
   <link rel="stylesheet" href="css/style.min.css" />
   <title>Communa</title>
 </head>
@@ -79,7 +78,7 @@
   <section>
     <div id="signup" class="popup">
       <div class="popup-wrapper">
-        <div class="popup-content">
+        <div class="popup-content popup-animation">
           <span class="closed">
             <img src="img/close-popup.svg" alt="close-popup">
           </span>
@@ -95,7 +94,7 @@
               <input class="u-full-width" type="text" id="surname">
             </div>
 
-            <div class="form-wrapper form-wrapper--email">
+            <div class="form-wrapper form-wrapper--longer">
               <label for="exampleEmailInput">E-mail</label>
               <input class="u-full-width" type="email" id="exampleEmailInput">
             </div>
@@ -111,12 +110,14 @@
             </div>
 
             <div class="submit-wrapper">
-              <button type="button" class="input-button button-primary">
-                <p class="text">Зареєструватися</p>
-                <svg class="submit">
-                  <use xlink:href="sprite.svg#submit"></use>
-                </svg>
-              </button>
+              <a href="settings.html">
+                <button type="button" href="settings.html" class="input-button button-primary">
+                  <p class="text">Зареєструватися</p>
+                  <svg class="submit">
+                    <use xlink:href="sprite.svg#submit"></use>
+                  </svg>
+                </button>
+              </a>
 
               <p class="consent">
                 Натискаючи кнопку ти погоджуєшся з нашою
@@ -144,7 +145,7 @@
 
     <div id="signin" class="popup">
       <div class="popup-wrapper">
-        <div class="popup-content">
+        <div class="popup-content popup-animation">
           <span class="closed">
             <img src="img/close-popup.svg" alt="close-popup">
           </span>
@@ -195,7 +196,7 @@
 
     <div id="recover" class="popup">
       <div class="popup-wrapper">
-        <div class="popup-content popup-content--recovery">
+        <div class="popup-content popup-content--recovery popup-animation">
           <span class="closed">
             <img src="img/close-popup.svg" alt="close-popup">
           </span>

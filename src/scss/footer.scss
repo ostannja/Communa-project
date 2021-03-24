@@ -97,7 +97,7 @@
   &-item2 {
     grid-area: grid-item2;
     width: 53.8vw;
-    // height: 70px;
+    // max-width: 43vw;
   }
 
   &-item3 {
@@ -240,6 +240,14 @@
   .footer {
     .mail-us br {
       display: none;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .grid {
+    &-item2 {
+      max-width: 43vw;
     }
   }
 }

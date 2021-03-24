@@ -3,6 +3,18 @@
 @import "fonts.scss";
 @import "mixins.scss";
 
+// ::-webkit-scrollbar {
+//   /* chrome based */
+//   width: 0px; /* ширина scrollbar'a */
+//   background: transparent; /* опционально */
+// }
+
+// body {
+//   -ms-overflow-style: none; /* IE 10+ */
+//   scrollbar-width: none; /* Firefox */
+//   position: relative;
+// }
+
 @-webkit-keyframes animatetop {
   from {
     top: -300px;
@@ -67,5 +79,4 @@ img {
 @import "kickstarter.scss";
 @import "choose.scss";
 @import "footer.scss";
-
-// @import "media.scss";
+@import "settings.scss";

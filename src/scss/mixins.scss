@@ -27,3 +27,10 @@
   flex-direction: $fd;
   flex-wrap: $fw;
 }
+
+@mixin text($fs, $fw, $ls) {
+  font-family: Lato;
+  font-size: $fs;
+  font-weight: $fw;
+  letter-spacing: $ls;
+}

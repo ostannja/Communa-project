@@ -1,0 +1,240 @@
+.settings {
+  .background-header {
+    height: 326px;
+    .subtitle {
+      width: 57%;
+      line-height: 1.63;
+      margin-top: 36px;
+      letter-spacing: 0.1px;
+    }
+  }
+  .popup-content {
+    padding: 0;
+    .popup-form {
+      padding-top: 19px;
+      display: grid;
+      justify-content: unset;
+      grid-gap: 0px;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 0.355fr;
+      grid-template-areas:
+        "grid-item1 grid-item4"
+        "grid-item2 grid-item4"
+        "grid-item3 grid-item5";
+
+      .grid-item-1 {
+        grid-area: grid-item1;
+        margin-bottom: 20px;
+      }
+
+      .grid-item-2 {
+        grid-area: grid-item2;
+      }
+
+      .grid-item-3 {
+        grid-area: grid-item3;
+        margin-top: -86px;
+
+        .container-checkbox {
+          display: block;
+          position: relative;
+          padding-left: 29px;
+          margin-bottom: 12px;
+          cursor: pointer;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          font-family: "Raleway";
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 1.71;
+          color: #28283d;
+        }
+
+        /* Hide the browser's default checkbox */
+        .container-checkbox input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+        }
+
+        /* Create a custom checkbox */
+        .container-checkbox .checkmark {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 20px;
+          width: 20px;
+          background-color: #ffffff;
+        }
+
+        /* On mouse-over, add a grey background color */
+        .container-checkbox:hover input ~ .checkmark {
+          // background-color: #00a6ed;
+        }
+
+        /* When the checkbox is checked, add a blue background */
+        .container-checkbox input:checked ~ .checkmark {
+          background-color: #ffffff;
+        }
+
+        /* Create the checkmark/indicator (hidden when not checked) */
+        .container-checkbox .checkmark:after {
+          content: "";
+          position: absolute;
+          display: none;
+        }
+
+        /* Show the checkmark when checked */
+        .container-checkbox input:checked ~ .checkmark:after {
+          display: block;
+        }
+
+        /* Style the checkmark/indicator */
+        .container-checkbox .checkmark:after {
+          top: 5px;
+          left: 5px;
+          width: 10px;
+          height: 10px;
+          background-color: #00a6ed;
+        }
+      }
+
+      .grid-item-4 {
+        grid-area: grid-item4;
+      }
+
+      .grid-item-5 {
+        grid-area: grid-item5;
+        margin-top: -21px;
+
+        .delete {
+          font-family: "Raleway";
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 1.5;
+          color: #00a6ed;
+        }
+
+        .sign-in {
+          font-family: "Raleway";
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 2;
+          color: #969b9f;
+        }
+      }
+
+      .submit-wrapper {
+        margin: 0;
+      }
+
+      .input-button {
+        width: 195px;
+        padding: 0 2.9% 0 4.7%;
+        margin-top: 35px;
+      }
+
+      .form-wrapper {
+        width: 100%;
+
+        &--uploader {
+          margin-top: 29px;
+          margin-bottom: 17px;
+        }
+        label {
+          margin-top: 25px;
+          margin-bottom: 5px;
+        }
+
+        .u-full-width {
+          width: 65.6%;
+
+          &--longer {
+            width: 81.6%;
+          }
+        }
+
+        .uploader-block {
+          width: 70%;
+          display: flex;
+          align-items: center;
+          @include flex(flex-start, center, row, wrap);
+          position: relative;
+
+          .label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: 0;
+          }
+
+          .sign-in {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            font-family: "Raleway";
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 2;
+            color: #969b9f;
+          }
+
+          .uploader-wrapper {
+            @include flex(space-between, center, row, wrap);
+            width: 87%;
+          }
+        }
+
+        textarea {
+          width: 97.8% !important;
+          max-height: unset;
+          height: 220px;
+        }
+      }
+    }
+  }
+}
+
+.label-photo {
+  margin: 0 !important;
+  display: inline-block;
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  @include backgr(url(../img/avka-s.svg));
+  @extend %backgr;
+}
+
+.input-uploader::before {
+  content: var(--content, "Завантажити фото");
+  display: inline-block;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
+  font-family: "Raleway";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #00a8eb;
+}
+
+.input-uploader:hover::before {
+  border-color: black;
+}
+.input-uploader:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
+.input-uploader {
+  width: 143px;
+}
+
+.input-uploader:focus {
+  outline: none !important;
+}

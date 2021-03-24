@@ -53,3 +53,30 @@ testWebP(function (support) {
     document.querySelector("body").classList.add("no-webp");
   }
 });
+
+let uploader = document.querySelector(".label-photo");
+let inputuploader = document.querySelector(".input-uploader");
+let inputUploaderBefore = document.querySelectorAll(".input-uploader");
+
+document
+  .querySelector(".input-uploader")
+  .addEventListener("change", function () {
+    if (this.files[0]) {
+      var fr = new FileReader();
+
+      fr.addEventListener(
+        "load",
+        function () {
+          uploader.style.backgroundImage = "url(" + fr.result + ")";
+          inputuploader.style.width = "108.5px";
+          inputUploaderBefore[0].style.setProperty(
+            "--content",
+            "'Оновити фото'"
+          );
+        },
+        false
+      );
+
+      fr.readAsDataURL(this.files[0]);
+    }
+  });

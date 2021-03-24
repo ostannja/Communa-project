@@ -349,6 +349,8 @@ textarea {
   min-height: 65px;
   padding-top: 6px;
   padding-bottom: 6px;
+  resize: unset;
+  border-radius: unset;
 }
 
 input[type="email"]:focus,
@@ -523,7 +525,8 @@ hr {
   src: url("../../dist/fonts/DidactGothic-Regular.woff");
 }
 
-.background-header .background-img {
+.background-header .background-img,
+.label-photo {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 100%;
@@ -757,7 +760,6 @@ img {
 }
 
 .background-header .text-block {
-  margin-left: -3px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -900,23 +902,15 @@ img {
 
 .popup {
   display: none;
-  /* Hidden by default */
   position: fixed;
-  /* Stay in place */
   z-index: 1;
-  /* Sit on top */
   left: 0;
   top: 70px;
   width: 100%;
-  /* Full width */
   height: 100%;
-  /* Full height */
   overflow: auto;
-  /* Enable scroll if needed */
   background-color: black;
-  /* Fallback color */
   background-color: rgba(0, 0, 0, 0.8);
-  /* Black w/ opacity */
   height: calc(100vh - 70px);
 }
 
@@ -953,6 +947,13 @@ img {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.popup-wrapper .popup-animation {
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
 }
 
 .popup-content {
@@ -1034,7 +1035,7 @@ img {
   width: 100%;
 }
 
-.popup-content .popup-form .form-wrapper--email {
+.popup-content .popup-form .form-wrapper--longer {
   width: 80%;
 }
 
@@ -1042,7 +1043,7 @@ img {
   width: 100% !important;
 }
 
-.popup-content .popup-form .form-wrapper input {
+.popup-content .popup-form .form-wrapper .u-full-width {
   border-radius: 0;
   height: 5.75vh;
   max-height: 52px;
@@ -1055,15 +1056,11 @@ img {
   color: #000000 !important;
 }
 
-.popup-content .popup-form .form-wrapper input[type="password"] {
+.popup-content .popup-form .form-wrapper .u-full-width[type="password"] {
   font-size: 42px !important;
 }
 
-.popup-content .popup-form .form-wrapper input[type="email"] {
-  width: 76.7%;
-}
-
-.popup-content .popup-form .form-wrapper input.u-full-width--recovery[type="email"] {
+.popup-content .popup-form .form-wrapper .u-full-width.u-full-width--recovery[type="email"] {
   width: 418px;
 }
 
@@ -1090,7 +1087,7 @@ img {
 }
 
 .popup-content .popup-form button {
-  padding: 0 2.8% 0 4.7%;
+  padding: 0 6.8% 0 12.7%;
   border-radius: 25px;
 }
 
@@ -1122,6 +1119,7 @@ img {
       -ms-flex-pack: justify !important;
           justify-content: space-between !important;
   width: 35.4% !important;
+  padding: 0 2.9% 0 4.7%;
 }
 
 .popup-content .popup-form .input-button .arw-btn {
@@ -1156,16 +1154,20 @@ img {
   margin-bottom: 4.3vh;
 }
 
+.popup-content .popup-form .submit-wrapper a {
+  width: 38.5%;
+}
+
 .popup-content .popup-form .submit-wrapper--recovery {
   margin-top: 29px;
-  width: 92%;
+  width: 35.3%;
 }
 
 .popup-content .popup-form .submit-wrapper .input-button {
   border: solid 2px #00a6ed;
   height: 5.5vh;
   max-height: 50px;
-  width: 38.4%;
+  width: 100%;
   min-height: unset;
 }
 
@@ -1327,8 +1329,6 @@ img {
   color: #ea4235;
   font-weight: 500;
 }
-
-/* The Close Button */
 
 .closed {
   color: #000;
@@ -2601,6 +2601,275 @@ li:hover .tag-list-item span {
   min-width: 123px;
 }
 
+.settings .background-header {
+  height: 326px;
+}
+
+.settings .background-header .subtitle {
+  width: 57%;
+  line-height: 1.63;
+  margin-top: 36px;
+  letter-spacing: 0.1px;
+}
+
+.settings .popup-content {
+  padding: 0;
+}
+
+.settings .popup-content .popup-form {
+  padding-top: 19px;
+  display: grid;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+  grid-gap: 0px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 0.355fr;
+  grid-template-areas: "grid-item1 grid-item4" "grid-item2 grid-item4" "grid-item3 grid-item5";
+}
+
+.settings .popup-content .popup-form .grid-item-1 {
+  grid-area: grid-item1;
+  margin-bottom: 20px;
+}
+
+.settings .popup-content .popup-form .grid-item-2 {
+  grid-area: grid-item2;
+}
+
+.settings .popup-content .popup-form .grid-item-3 {
+  grid-area: grid-item3;
+  margin-top: -86px;
+  /* Hide the browser's default checkbox */
+  /* Create a custom checkbox */
+  /* On mouse-over, add a grey background color */
+  /* When the checkbox is checked, add a blue background */
+  /* Create the checkmark/indicator (hidden when not checked) */
+  /* Show the checkmark when checked */
+  /* Style the checkmark/indicator */
+}
+
+.settings .popup-content .popup-form .grid-item-3 .container-checkbox {
+  display: block;
+  position: relative;
+  padding-left: 29px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: "Raleway";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.71;
+  color: #28283d;
+}
+
+.settings .popup-content .popup-form .grid-item-3 .container-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.settings .popup-content .popup-form .grid-item-3 .container-checkbox .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #ffffff;
+}
+
+.settings .popup-content .popup-form .grid-item-3 .container-checkbox input:checked ~ .checkmark {
+  background-color: #ffffff;
+}
+
+.settings .popup-content .popup-form .grid-item-3 .container-checkbox .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.settings .popup-content .popup-form .grid-item-3 .container-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.settings .popup-content .popup-form .grid-item-3 .container-checkbox .checkmark:after {
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #00a6ed;
+}
+
+.settings .popup-content .popup-form .grid-item-4 {
+  grid-area: grid-item4;
+}
+
+.settings .popup-content .popup-form .grid-item-5 {
+  grid-area: grid-item5;
+  margin-top: -21px;
+}
+
+.settings .popup-content .popup-form .grid-item-5 .delete {
+  font-family: "Raleway";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #00a6ed;
+}
+
+.settings .popup-content .popup-form .grid-item-5 .sign-in {
+  font-family: "Raleway";
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 2;
+  color: #969b9f;
+}
+
+.settings .popup-content .popup-form .submit-wrapper {
+  margin: 0;
+}
+
+.settings .popup-content .popup-form .input-button {
+  width: 195px;
+  padding: 0 2.9% 0 4.7%;
+  margin-top: 35px;
+}
+
+.settings .popup-content .popup-form .form-wrapper {
+  width: 100%;
+}
+
+.settings .popup-content .popup-form .form-wrapper--uploader {
+  margin-top: 29px;
+  margin-bottom: 17px;
+}
+
+.settings .popup-content .popup-form .form-wrapper label {
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+
+.settings .popup-content .popup-form .form-wrapper .u-full-width {
+  width: 65.6%;
+}
+
+.settings .popup-content .popup-form .form-wrapper .u-full-width--longer {
+  width: 81.6%;
+}
+
+.settings .popup-content .popup-form .form-wrapper .uploader-block {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+}
+
+.settings .popup-content .popup-form .form-wrapper .uploader-block .label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+}
+
+.settings .popup-content .popup-form .form-wrapper .uploader-block .sign-in {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-family: "Raleway";
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 2;
+  color: #969b9f;
+}
+
+.settings .popup-content .popup-form .form-wrapper .uploader-block .uploader-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 87%;
+}
+
+.settings .popup-content .popup-form .form-wrapper textarea {
+  width: 97.8% !important;
+  max-height: unset;
+  height: 220px;
+}
+
+.label-photo {
+  margin: 0 !important;
+  display: inline-block;
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  background-image: url(../img/avka-s.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100%;
+}
+
+.input-uploader::before {
+  content: var(--content, "Завантажити фото");
+  display: inline-block;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
+  font-family: "Raleway";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #00a8eb;
+}
+
+.input-uploader:hover::before {
+  border-color: black;
+}
+
+.input-uploader:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
+.input-uploader {
+  width: 143px;
+}
+
+.input-uploader:focus {
+  outline: none !important;
+}
+
 @media (min-width: 320px) {
   .container {
     width: 85%;
@@ -2644,6 +2913,12 @@ li:hover .tag-list-item span {
 @media (min-width: 1200px) {
   .container {
     width: 91.1%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .grid-item2 {
+    max-width: 43vw;
   }
 }
 
