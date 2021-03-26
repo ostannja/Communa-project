@@ -10,6 +10,9 @@
   }
   .popup-content {
     padding: 0;
+    .container {
+      width: 100%;
+    }
     .popup-form {
       padding-top: 19px;
       display: grid;
@@ -237,4 +240,130 @@
 
 .input-uploader:focus {
   outline: none !important;
+}
+
+@media (max-width: 991px) {
+  .settings {
+    .popup-content {
+      .popup-form {
+        padding-top: 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.5fr 0.35fr 0.28fr 0.115fr;
+        grid-template-areas:
+          "grid-item4"
+          "grid-item1"
+          "grid-item2"
+          "grid-item3"
+          "grid-item5";
+
+        .grid-item-1 {
+          width: 91.1% !important;
+          margin-bottom: 0;
+          label[for="exampleEmailInput"] {
+            margin-top: 19px;
+          }
+        }
+
+        .grid-item-2 {
+          width: 91.1% !important;
+          label[for="examplePasswordInput"] {
+            margin-top: 14px;
+          }
+        }
+
+        .grid-item-3 {
+          width: 91.1% !important;
+          display: flex;
+          flex-direction: column-reverse;
+          margin-top: 0;
+
+          .input-button {
+            margin-top: 29px;
+          }
+
+          label {
+            margin-top: 21px;
+          }
+
+          .line {
+            order: -1 !important;
+            margin-top: 14px !important;
+          }
+        }
+
+        .grid-item-4 {
+          width: 91.1% !important;
+          margin-top: -5px;
+        }
+
+        .grid-item-5 {
+          width: 91.1% !important;
+          margin-top: 0;
+        }
+
+        .form-wrapper {
+          .u-full-width {
+            width: 56.2%;
+            &--longer {
+              width: 70.4%;
+            }
+          }
+
+          textarea {
+            width: 100% !important;
+          }
+          .uploader-block {
+            width: 60%;
+          }
+        }
+      }
+    }
+  }
+  .line {
+    margin-top: 29px !important;
+    margin-left: -5% !important;
+    width: 109.9% !important;
+    height: 1px;
+    background-color: #d9d9da;
+  }
+
+  .settings-footer {
+    padding-top: 27px;
+  }
+}
+
+@media (min-width: 992px) {
+  .line {
+    display: none;
+  }
+
+  .settings {
+    .popup-content {
+      .container {
+        width: 91.1%;
+      }
+
+      .popup-form {
+        .grid-item-1 {
+          width: 100%;
+        }
+
+        .grid-item-2 {
+          width: 100%;
+        }
+
+        .grid-item-3 {
+          width: 100%;
+        }
+
+        .grid-item-4 {
+          width: 100%;
+        }
+
+        .grid-item-5 {
+          width: 100%;
+        }
+      }
+    }
+  }
 }

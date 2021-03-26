@@ -673,7 +673,7 @@ img {
 }
 
 .navbar-button {
-  margin-left: 43px;
+  margin-left: 45px;
   width: 130px;
 }
 
@@ -697,7 +697,7 @@ img {
 .navbar-enter {
   font-family: "Raleway";
   margin-top: -1px;
-  margin-left: 38px;
+  margin-left: 29px;
 }
 
 .navbar-enter :hover {
@@ -2616,6 +2616,10 @@ li:hover .tag-list-item span {
   padding: 0;
 }
 
+.settings .popup-content .container {
+  width: 100%;
+}
+
 .settings .popup-content .popup-form {
   padding-top: 19px;
   display: grid;
@@ -2910,6 +2914,36 @@ li:hover .tag-list-item span {
   }
 }
 
+@media (min-width: 992px) {
+  .line {
+    display: none;
+  }
+
+  .settings .popup-content .container {
+    width: 91.1%;
+  }
+
+  .settings .popup-content .popup-form .grid-item-1 {
+    width: 100%;
+  }
+
+  .settings .popup-content .popup-form .grid-item-2 {
+    width: 100%;
+  }
+
+  .settings .popup-content .popup-form .grid-item-3 {
+    width: 100%;
+  }
+
+  .settings .popup-content .popup-form .grid-item-4 {
+    width: 100%;
+  }
+
+  .settings .popup-content .popup-form .grid-item-5 {
+    width: 100%;
+  }
+}
+
 @media (min-width: 1200px) {
   .container {
     width: 91.1%;
@@ -3156,6 +3190,95 @@ li:hover .tag-list-item span {
 
   .grid-item3 {
     height: 50px;
+  }
+
+  .settings .popup-content .popup-form {
+    padding-top: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr 0.35fr 0.28fr 0.115fr;
+    grid-template-areas: "grid-item4" "grid-item1" "grid-item2" "grid-item3" "grid-item5";
+  }
+
+  .settings .popup-content .popup-form .grid-item-1 {
+    width: 91.1% !important;
+    margin-bottom: 0;
+  }
+
+  .settings .popup-content .popup-form .grid-item-1 label[for="exampleEmailInput"] {
+    margin-top: 19px;
+  }
+
+  .settings .popup-content .popup-form .grid-item-2 {
+    width: 91.1% !important;
+  }
+
+  .settings .popup-content .popup-form .grid-item-2 label[for="examplePasswordInput"] {
+    margin-top: 14px;
+  }
+
+  .settings .popup-content .popup-form .grid-item-3 {
+    width: 91.1% !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-top: 0;
+  }
+
+  .settings .popup-content .popup-form .grid-item-3 .input-button {
+    margin-top: 29px;
+  }
+
+  .settings .popup-content .popup-form .grid-item-3 label {
+    margin-top: 21px;
+  }
+
+  .settings .popup-content .popup-form .grid-item-3 .line {
+    -webkit-box-ordinal-group: 0 !important;
+        -ms-flex-order: -1 !important;
+            order: -1 !important;
+    margin-top: 14px !important;
+  }
+
+  .settings .popup-content .popup-form .grid-item-4 {
+    width: 91.1% !important;
+    margin-top: -5px;
+  }
+
+  .settings .popup-content .popup-form .grid-item-5 {
+    width: 91.1% !important;
+    margin-top: 0;
+  }
+
+  .settings .popup-content .popup-form .form-wrapper .u-full-width {
+    width: 56.2%;
+  }
+
+  .settings .popup-content .popup-form .form-wrapper .u-full-width--longer {
+    width: 70.4%;
+  }
+
+  .settings .popup-content .popup-form .form-wrapper textarea {
+    width: 100% !important;
+  }
+
+  .settings .popup-content .popup-form .form-wrapper .uploader-block {
+    width: 60%;
+  }
+
+  .line {
+    margin-top: 29px !important;
+    margin-left: -5% !important;
+    width: 109.9% !important;
+    height: 1px;
+    background-color: #d9d9da;
+  }
+
+  .settings-footer {
+    padding-top: 27px;
   }
 }
 
