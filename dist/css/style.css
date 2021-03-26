@@ -532,6 +532,22 @@ hr {
   background-position: 100%;
 }
 
+::-webkit-scrollbar {
+  /* chrome based */
+  width: 0px;
+  /* ширина scrollbar'a */
+  background: transparent;
+  /* опционально */
+}
+
+body {
+  -ms-overflow-style: none;
+  /* IE 10+ */
+  scrollbar-width: none;
+  /* Firefox */
+  position: relative;
+}
+
 @-webkit-keyframes animatetop {
   from {
     top: -300px;
@@ -1308,6 +1324,7 @@ img {
 
 .popup-content .facebook:hover {
   background-color: #f0f0f1;
+  background-image: none;
 }
 
 .popup-content .facebook:hover .button-text {
@@ -3229,7 +3246,8 @@ li:hover .tag-list-item span {
   }
 
   .settings .popup-content .popup-form .grid-item-3 .input-button {
-    margin-top: 29px;
+    margin-top: 30px;
+    padding-left: 3.8%;
   }
 
   .settings .popup-content .popup-form .grid-item-3 label {
@@ -3873,7 +3891,7 @@ li:hover .tag-list-item span {
   }
 
   .grid-item2 {
-    width: 57vw;
+    width: 59vw;
   }
 
   .grid-item3 {
