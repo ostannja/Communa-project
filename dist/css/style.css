@@ -3306,6 +3306,107 @@ li:hover .tag-list-item span {
   }
 }
 
+@media (max-width: 768px) {
+  .settings .background-header {
+    height: auto;
+  }
+
+  .settings .background-header .container {
+    padding-top: 122px;
+  }
+
+  .settings .background-header .subtitle {
+    width: 77%;
+    margin-top: 23px;
+    margin-bottom: 21px;
+  }
+
+  .settings .popup-content .popup-form {
+    grid-template-rows: 1fr 0.5fr 0.35fr 0.28fr 0.128fr;
+  }
+
+  .settings .popup-content .popup-form .grid-item-1 {
+    width: 85% !important;
+  }
+
+  .settings .popup-content .popup-form .grid-item-1 label[for="exampleEmailInput"] {
+    margin-top: 22px;
+  }
+
+  .settings .popup-content .popup-form .grid-item-2 {
+    width: 85% !important;
+  }
+
+  .settings .popup-content .popup-form .grid-item-2 label[for="examplePasswordInput"] {
+    margin-top: 17px;
+  }
+
+  .settings .popup-content .popup-form .grid-item-3 {
+    width: 85% !important;
+  }
+
+  .settings .popup-content .popup-form .grid-item-3 .input-button {
+    width: 180px;
+    height: 44px;
+    min-height: unset;
+    padding-left: 6.8%;
+  }
+
+  .settings .popup-content .popup-form .grid-item-3 label {
+    margin-top: 29px;
+    font-size: 13px !important;
+  }
+
+  .settings .popup-content .popup-form .grid-item-4 {
+    width: 85% !important;
+    margin-top: 0;
+  }
+
+  .settings .popup-content .popup-form .grid-item-4 label[for="exampleMessage"] {
+    margin-top: 6px;
+    font-size: 13px;
+  }
+
+  .settings .popup-content .popup-form .grid-item-5 {
+    width: 85% !important;
+    margin-top: 4px;
+  }
+
+  .settings .popup-content .popup-form .form-wrapper--uploader {
+    width: 100%;
+    margin-top: 32px;
+  }
+
+  .settings .popup-content .popup-form .form-wrapper .uploader-block {
+    width: 100%;
+  }
+
+  .settings .popup-content .popup-form .form-wrapper .uploader-block .uploader-wrapper {
+    width: 91%;
+  }
+
+  .settings .popup-content .popup-form .form-wrapper .u-full-width {
+    width: 100%;
+  }
+
+  .settings .popup-content .popup-form .form-wrapper label {
+    margin-top: 19px;
+    margin-bottom: 5px;
+  }
+
+  .settings .popup-content .popup-form .form-wrapper textarea {
+    padding-bottom: 0;
+    height: 236px;
+  }
+
+  .line {
+    margin-left: -9% !important;
+    width: 117.9% !important;
+    height: 1px;
+    background-color: #d9d9da;
+  }
+}
+
 @media (max-width: 767px) {
   .navbar_container {
     width: 100%;
