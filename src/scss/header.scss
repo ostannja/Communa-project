@@ -8,6 +8,10 @@
 
   &-menu {
     @include flex(flex-end, center, row, nowrap);
+
+    .navbar-sign {
+      @include flex(space-between, center, row, nowrap);
+    }
   }
 
   .logo {
@@ -225,7 +229,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .navbar_container {
     width: 100%;
     position: fixed;
@@ -241,32 +245,102 @@
     align-items: flex-end;
     margin: 0 auto;
 
-    &-menu {
-      display: none;
+    .burger-footer-menu {
+      margin-left: -7.5%;
+      padding-top: 12px;
+      padding-bottom: 17px;
+      width: 100%;
+      height: 127px;
+      background-color: #f0f0f1;
+      @include flex(space-between, flex-start, column, nowrap);
+
+      .footer__facebook {
+        margin-left: 7.5%;
+        font-size: 13px;
+        font-size: calc(13px + (1 + 5 * 0.6) * ((100vw - 375px) / 768));
+        font-weight: normal;
+        line-height: 2.77;
+      }
+
+      .item {
+        margin-left: 7.5%;
+        font-family: "Raleway";
+        font-size: 13px;
+        font-size: calc(13px + (1 + 5 * 0.6) * ((100vw - 375px) / 768));
+        font-weight: normal;
+        line-height: 2.77;
+        color: #00a6ed;
+      }
+
+      .item-block {
+        @include flex(space-between, flex-start, row, nowrap);
+        margin-left: 7.5%;
+        width: 43.5%;
+        max-width: 163px;
+
+        .item {
+          margin-left: 0;
+          font-family: "Raleway";
+          font-size: 13px;
+          font-size: calc(13px + (1 + 5 * 0.6) * ((100vw - 375px) / 768));
+          font-weight: normal;
+          line-height: 1.77;
+          color: #00a6ed;
+        }
+      }
+    }
+
+    .navbar-menu {
+      background-color: #f0f0f1;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      height: calc(100vh - 57px - 127px);
+      margin-left: -7.5%;
+
+      .navbar-item {
+        margin: 0;
+        margin-left: 7.5%;
+        margin-top: 14px;
+        margin-bottom: 10px;
+
+        .navbar-text {
+          font-size: calc(14px + (4 + 5 * 0.6) * ((100vw - 375px) / 768));
+        }
+      }
+
+      .navbar-button {
+        margin: 0;
+        width: 70.5%;
+        max-width: 260px;
+        height: 44px;
+        font-size: calc(15.5px + (1 + 5 * 0.6) * ((100vw - 375px) / 768));
+      }
+
+      .navbar-sign {
+        width: 73%;
+        margin-top: 33px;
+        margin-left: 7.5%;
+      }
+
+      .navbar-enter {
+        margin: 0;
+        margin-left: 7.5%;
+
+        .enter-text {
+          font-size: calc(15.5px + (1 + 5 * 0.6) * ((100vw - 375px) / 768));
+        }
+      }
+
+      hr {
+        width: 100%;
+        border-top: solid 1px #d9d9da;
+        margin-left: 0 !important;
+      }
     }
 
     .img-logo {
       width: 112px;
-    }
-
-    .toggle_button {
-      @include flex(space-around, stretch, column, nowrap);
-      height: 14px;
-      width: 20px;
-      background-color: transparent;
-      border: none;
-      cursor: pointer;
-      padding: 0;
-
-      &:focus {
-        outline: none;
-      }
-
-      &__line {
-        width: 20px;
-        height: 2px;
-        background-color: #00a6ed;
-      }
     }
   }
 
@@ -337,7 +411,10 @@
   }
 
   .navbar {
-    .toggle_button {
+    .toggle_button,
+    #burger-menu,
+    .burger-footer-menu,
+    hr {
       display: none;
     }
   }

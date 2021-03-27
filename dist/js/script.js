@@ -1,5 +1,12 @@
 // "use strict";
 
+var burgerMenu = document.getElementById("burger-menu");
+var overlay = document.getElementById("menu");
+burgerMenu.addEventListener("click", function () {
+  this.classList.toggle("close");
+  overlay.classList.toggle("overlay");
+});
+
 // Get the button that opens the modal
 let btn = document.querySelectorAll(".popup-button");
 // All page modals
