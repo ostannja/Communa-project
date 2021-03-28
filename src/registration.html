@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css" />
+  <title>Registration</title>
+</head>
+<body>
+  <nav class="container navbar_container">
+    <div class="navbar">
+      <a class="logo" href="index.html">
+        <img class="img-logo" src="img/logo_communa.png" alt="logo">
+        <img src="img/logo_alpha.png" class="upper-logo" alt="upper_logo">
+      </a>
+      <div id="burger-menu">
+        <span></span>
+      </div>
+      <div id="menu">
+        <ul class="navbar-menu">
+          <li class="navbar-item">
+            <a class="navbar-text" href="catalog.html">Проєкти</a>
+          </li>
+          <hr>
+          <li class="navbar-item">
+            <a class="navbar-text " href="#how">Як працює?</a>
+          </li>
+          <hr>
+          <li class="navbar-sign">
+            <a class="registration">
+              <button id="changeHref" class="popup-button navbar-button button-primary" href="#signup">
+                Реєстрація
+              </button>
+            </a>
+            <div id="form_authorization" class="navbar-enter">
+              <a class="authorization enter-text popup-button" href="#signin">Увійти</a>
+            </div>
+          </li>          
+        </ul>
+        <hr>
+        <div class="burger-footer-menu">
+          <div class="footer__facebook">
+            Ми
+            <a href="#" class="footer__facebook--blue">на facebook</a>
+          </div>
+          <div class="item-block">
+            <p class="item">Про проєкт</p>
+            <p class="item">Правила</p>
+          </div>
+          <p class="item">Політика конфіденційності</p>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header class="sign-in">
+    <div class="background-header">
+      <div class="container">
+        <div class="text-block">
+          <div class="title">
+            <p>Реєстрація</p>
+          </div>         
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="settings sign-in">
+    <div class="popup-content ">
+      <form class="popup-form container" method="post">
+        <div class="grid-item-1 container">
+
+          <div class="form-wrapper">
+            <label for="name">Ім'я</label>
+            <input class="u-full-width" type="text" id="name">
+          </div>
+
+          <div class="form-wrapper ">
+            <label for="surname">Прізвище</label>
+            <input class="u-full-width" type="text" id="surname">
+          </div>
+
+          <div class="form-wrapper">
+            <label for="exampleEmailInput">E-mail</label>
+            <input class="u-full-width" type="email" id="exampleEmailInput">
+          </div>          
+
+          <hr class="line">
+        </div>
+
+        <div class="grid-item-2 container">
+          <div class="form-wrapper">
+            <label for="examplePasswordInput">Придумай пароль</label>
+            <input class="u-full-width" type="password" id="examplePasswordInput">
+          </div>
+
+          <div class="form-wrapper">
+            <label for="exampleRepeatPasswordInput">Повтори пароль</label>
+            <input class="u-full-width" type="password" id="exampleRepeatPasswordInput">
+          </div>
+
+          <hr class="line">
+        </div>
+
+        <div class="grid-item-3 container submit-wrapper">
+
+          <p class="consent">
+            Натискаючи кнопку ти погоджуєшся з нашою
+            <a href="#"> 
+              <span class="agreement">угодою про конфіденційність</span>
+            </a>               
+          </p>
+
+          <a href="settings.html">
+            <button type="button" class="input-button button-primary">
+              <p class="text">Зареєструватися</p>
+              <svg class="submit">
+                <use xlink:href="sprite.svg#submit"></use>
+              </svg>
+            </button>
+          </a>
+
+          <hr class="line">
+        </div>
+
+        <div class="grid-item-4 container submit-wrapper">
+          <button class="button facebook" type="button">
+            <span class="button-text">Реєстрація через Facebook</span>
+          </button>
+
+          <button class="button google" type="button">
+            <span class="button-text">Реєстрація через Google</span>
+          </button>
+        </div>
+
+       
+      </form>
+    </div>
+  </main>
+
+  <footer class="container footer grid settings-footer sign-in">
+    <div class=" grid-item1">
+      <div class="logo">
+        <img src="img/logo-f-desk.svg" alt="footer logo" />
+        <span class="copyright">&copy; 2021</span>
+      </div>
+    </div>
+    <div class="footer__navbar grid-item2">
+      <div class="menu">
+        <div>Про проєкт</div>
+        <div class="central">Правила</div>
+        <div>Політика конфіденційності</div>
+      </div>
+      <p class="mail-us">
+        Дуже тішимося порадам — <br />напиши нам на
+        <a href="#" class="mail-us--blue">hello@communa.ua</a>
+      </p>
+    </div>
+    <div class="footer__facebook grid-item3">
+      Ми
+      <a href="#" class="footer__facebook--blue">на facebook</a>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

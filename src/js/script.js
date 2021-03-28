@@ -1,11 +1,25 @@
 // "use strict";
 
+// burger-menu
 var burgerMenu = document.getElementById("burger-menu");
 var overlay = document.getElementById("menu");
 burgerMenu.addEventListener("click", function () {
   this.classList.toggle("close");
   overlay.classList.toggle("overlay");
 });
+
+// change href for the mobile window`s width
+if (window.innerWidth < 768) {
+  let pageRegistration = document.querySelector(".registration");
+  pageRegistration.setAttribute("href", "registration.html");
+
+  let buttonTag = document.querySelector("button");
+  buttonTag.classList.remove("popup-button");
+
+  let pageAuthorization = document.querySelector(".authorization");
+  pageAuthorization.setAttribute("href", "authorization.html");
+  pageAuthorization.classList.remove("popup-button");
+}
 
 // Get the button that opens the modal
 let btn = document.querySelectorAll(".popup-button");
@@ -44,6 +58,7 @@ window.onclick = function (event) {
   }
 };
 
+//webpack in gulp
 function testWebP(callback) {
   var webP = new Image();
   webP.onload = webP.onerror = function () {
@@ -65,6 +80,7 @@ let uploader = document.querySelector(".label-photo");
 let inputuploader = document.querySelector(".input-uploader");
 let inputUploaderBefore = document.querySelectorAll(".input-uploader");
 
+//uploader in settings.html
 document
   .querySelector(".input-uploader")
   .addEventListener("change", function () {
@@ -80,6 +96,15 @@ document
             "--content",
             "'Оновити фото'"
           );
+          var ops = window
+            .getComputedStyle(
+              document.querySelector(".input-uploader"),
+              ":before"
+            )
+            .getPropertyValue("content");
+          let burgerMenu = document.getElementById("burger-menu");
+          console.log(burgerMenu);
+          console.log(ops);
         },
         false
       );

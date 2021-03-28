@@ -23,13 +23,17 @@
   }
 
   &-wrapper {
-    position: relative;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    bottom: 0;
+    right: 0;
     margin: auto;
     padding: 0;
     max-width: 720px;
     width: 51%;
     min-width: 550px;
-    height: 100%;
+    height: fit-content;
     @include flex(center, center, row, wrap);
 
     .popup-animation {

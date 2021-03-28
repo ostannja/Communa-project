@@ -959,13 +959,19 @@ img {
 }
 
 .popup-wrapper {
-  position: relative;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  bottom: 0;
+  right: 0;
   margin: auto;
   padding: 0;
   max-width: 720px;
   width: 51%;
   min-width: 550px;
-  height: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2638,6 +2644,21 @@ li:hover .tag-list-item span {
 
 .settings .background-header {
   height: 326px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .settings .background-header .subtitle {
@@ -2653,6 +2674,7 @@ li:hover .tag-list-item span {
 
 .settings .popup-content .container {
   width: 100%;
+  padding-top: 0;
 }
 
 .settings .popup-content .popup-form {
@@ -3447,11 +3469,12 @@ li:hover .tag-list-item span {
   }
 
   .navbar .navbar-menu .navbar-button {
+    font-family: "Raleway";
     margin: 0;
     width: 70.5%;
     max-width: 260px;
     height: 44px;
-    font-size: calc(15.5px + (1 + 5 * 0.6) * ((100vw - 375px) / 768));
+    font-size: calc(14.5px + (1 + 5 * 0.6) * ((100vw - 375px) / 768));
   }
 
   .navbar .navbar-menu .navbar-sign {
@@ -3631,7 +3654,6 @@ li:hover .tag-list-item span {
     visibility: hidden;
     opacity: 0;
     text-align: center;
-    padding-top: 20px;
     -webkit-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
@@ -3640,7 +3662,7 @@ li:hover .tag-list-item span {
   #menu.overlay {
     visibility: visible;
     opacity: 1;
-    padding-top: 57px;
+    margin-top: 57px;
   }
 
   #menu.overlay hr {
@@ -3747,6 +3769,111 @@ li:hover .tag-list-item span {
     width: 117.9% !important;
     height: 1px;
     background-color: #d9d9da;
+  }
+
+  .navbar .navbar-menu .navbar-button {
+    width: 100%;
+  }
+
+  .navbar-sign a {
+    width: 70.5%;
+    max-width: 260px;
+  }
+
+  .sign-in .background-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 188px;
+  }
+
+  .sign-in .background-header .title {
+    margin-bottom: 26px;
+  }
+
+  .sign-in .popup-content .popup-form {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.6fr 0.2fr 0.2fr;
+    grid-template-areas: "grid-item1" "grid-item2" "grid-item3" "grid-item4";
+  }
+
+  .sign-in .popup-content .popup-form .submit-wrapper {
+    margin: auto;
+  }
+
+  .sign-in .popup-content .popup-form .submit-wrapper a {
+    width: 100%;
+  }
+
+  .sign-in .popup-content .popup-form .grid-item-3 {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .sign-in .popup-content .popup-form .grid-item-3 .input-button {
+    width: 72%;
+    padding-right: 5%;
+    margin-bottom: 24px;
+    max-width: 300px;
+  }
+
+  .sign-in .popup-content .popup-form .grid-item-3 .line {
+    margin-top: 24px !important;
+  }
+
+  .sign-in .popup-content .popup-form .grid-item-3 .consent {
+    padding: 0;
+    width: 85%;
+  }
+
+  .sign-in .popup-content .popup-form .grid-item-4 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-top: 29px;
+  }
+
+  .sign-in .popup-content .popup-form .grid-item-4 .button {
+    margin: 0;
+    height: 44px;
+    padding-left: 9%;
+  }
+
+  .sign-in .popup-content .popup-form .grid-item-4 .facebook {
+    width: 80%;
+    margin-bottom: 16px;
+    max-width: 300px;
+  }
+
+  .sign-in .popup-content .popup-form .grid-item-4 .google {
+    width: 74%;
+    max-width: 280px;
+    margin-bottom: 30px;
+  }
+
+  .sign-in .popup-content .popup-form .form-wrapper {
+    max-width: 350px;
+  }
+
+  .sign-in .footer__navbar {
+    margin-bottom: 25px !important;
   }
 }
 

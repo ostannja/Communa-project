@@ -1,0 +1,90 @@
+@media (max-width: 768px) {
+  .navbar .navbar-menu .navbar-button {
+    width: 100%;
+  }
+  .navbar-sign a {
+    width: 70.5%;
+    max-width: 260px;
+  }
+
+  .sign-in {
+    .background-header {
+      @include flex(flex-end, flex-end, row, wrap);
+      height: 188px;
+
+      .title {
+        margin-bottom: 26px;
+      }
+    }
+
+    .popup-content {
+      .popup-form {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.6fr 0.2fr 0.2fr;
+        grid-template-areas:
+          "grid-item1"
+          "grid-item2"
+          "grid-item3"
+          "grid-item4";
+
+        .submit-wrapper {
+          margin: auto;
+
+          a {
+            width: 100%;
+          }
+        }
+
+        .grid-item-3 {
+          align-items: flex-start;
+
+          .input-button {
+            width: 72%;
+            padding-right: 5%;
+            margin-bottom: 24px;
+            max-width: 300px;
+          }
+
+          .line {
+            margin-top: 24px !important;
+          }
+          .consent {
+            padding: 0;
+            width: 85%;
+          }
+        }
+
+        .grid-item-4 {
+          flex-direction: column;
+          align-items: flex-start;
+          padding-top: 29px;
+
+          .button {
+            margin: 0;
+            height: 44px;
+            padding-left: 9%;
+          }
+
+          .facebook {
+            width: 80%;
+            margin-bottom: 16px;
+            max-width: 300px;
+          }
+          .google {
+            width: 74%;
+            max-width: 280px;
+            margin-bottom: 30px;
+          }
+        }
+
+        .form-wrapper {
+          max-width: 350px;
+        }
+      }
+    }
+
+    .footer__navbar {
+      margin-bottom: 25px !important;
+    }
+  }
+}

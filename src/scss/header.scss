@@ -310,11 +310,12 @@
       }
 
       .navbar-button {
+        font-family: "Raleway";
         margin: 0;
         width: 70.5%;
         max-width: 260px;
         height: 44px;
-        font-size: calc(15.5px + (1 + 5 * 0.6) * ((100vw - 375px) / 768));
+        font-size: calc(14.5px + (1 + 5 * 0.6) * ((100vw - 375px) / 768));
       }
 
       .navbar-sign {

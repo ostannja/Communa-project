@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.min.css" />
-  <title>Settings</title>
+  <title>Authorization</title>
 </head>
-
 <body>
   <nav class="container navbar_container">
     <div class="navbar">
@@ -26,17 +24,19 @@
           </li>
           <hr>
           <li class="navbar-item">
-            <a class="navbar-text " href="index.html#how">Як працює?</a>
+            <a class="navbar-text " href="#how">Як працює?</a>
           </li>
           <hr>
           <li class="navbar-sign">
-            <button class="activity popup-button navbar-button button-primary" href="#">
-              Активності
-            </button>
+            <a class="registration">
+              <button id="changeHref" class="popup-button navbar-button button-primary" href="#signup">
+                Реєстрація
+              </button>
+            </a>
             <div id="form_authorization" class="navbar-enter">
-              <a class="enter-text" href="index.html">Вийти</a>
+              <a class="authorization enter-text popup-button" href="#signin">Увійти</a>
             </div>
-          </li>
+          </li>          
         </ul>
         <hr>
         <div class="burger-footer-menu">
@@ -54,78 +54,22 @@
     </div>
   </nav>
 
-  <header class="settings">
+  <header>
     <div class="background-header">
       <div class="container">
         <div class="text-block">
           <div class="title">
-            <p>Налаштування</p>
-          </div>
-          <div class="subtitle">
-            <p>Максимум інформації запезпечить тобі привабливий digital-портрет</p>
-          </div>
+            <p>Авторизація</p>
+          </div>         
         </div>
       </div>
     </div>
   </header>
-
   <main class="settings">
     <div class="popup-content ">
       <form class="popup-form container" method="post">
         <div class="grid-item-1 container">
 
-          <div class="form-wrapper">
-            <label for="exampleEmailInput">E-mail</label>
-            <input class="u-full-width" type="email" id="exampleEmailInput">
-          </div>
-
-          <div class="form-wrapper">
-            <label for="exampleFacebookInput">Facebook</label>
-            <input class="u-full-width u-full-width--longer" type="text" id="exampleFacebookInput"
-              placeholder="facebook.com/username">
-          </div>
-
-          <div class="form-wrapper">
-            <label for="exampleInstagramInput">Instagram</label>
-            <input class="u-full-width u-full-width--longer" type="text" id="exampleInstagramInput"
-              placeholder="instagram.com/username">
-          </div>
-
-          <hr class="line">
-        </div>
-
-        <div class="grid-item-2 container">
-          <div class="form-wrapper">
-            <label for="examplePasswordInput">Новий пароль</label>
-            <input class="u-full-width" type="password" id="examplePasswordInput">
-          </div>
-
-          <div class="form-wrapper">
-            <label for="exampleRepeatPasswordInput">Підтвердити пароль</label>
-            <input class="u-full-width" type="password" id="exampleRepeatPasswordInput">
-          </div>
-
-          <hr class="line">
-        </div>
-
-        <div class="grid-item-3 container">
-
-          <label class="container-checkbox">Отримувати сповіщення на e-mail
-            <input type="checkbox" checked="checked">
-            <span class="checkmark"></span>
-          </label>
-
-          <button type="button" href="settings.html" class="input-button button-primary">
-            <p class="text">Зберегти</p>
-            <svg class="submit">
-              <use xlink:href="sprite.svg#submit"></use>
-            </svg>
-          </button>
-
-          <hr class="line">
-        </div>
-
-        <div class="grid-item-4 container">
           <div class="form-wrapper">
             <label for="name">Ім'я</label>
             <input class="u-full-width" type="text" id="name">
@@ -136,31 +80,45 @@
             <input class="u-full-width" type="text" id="surname">
           </div>
 
+          <div class="form-wrapper">
+            <label for="exampleEmailInput">E-mail</label>
+            <input class="u-full-width" type="email" id="exampleEmailInput">
+          </div>
 
-          <div class="form-wrapper form-wrapper--uploader">
-            <div class="uploader-block">
-              <img src="img/add-avka.svg" alt="add avka" style="margin-right: 10px;">
-              <div class="uploader-wrapper">
-                <input class="input-uploader" type="file" id="pct" />
-                <label class="label-photo" for="pct"></label>
-              </div>
-              <label class="label">Фото</label>
-              <p class="sign-in">jpg або png до 2 Мб</p>
-            </div>
+          
+
+          <hr class="line">
+        </div>
+
+        <div class="grid-item-2 container">
+          <div class="form-wrapper">
+            <label for="examplePasswordInput">Придумай пароль</label>
+            <input class="u-full-width" type="password" id="examplePasswordInput">
           </div>
 
           <div class="form-wrapper">
-            <label for="exampleMessage">Якщо маєш щось додати…</label>
-            <textarea class="u-full-width" placeholder="Hi Dave …" id="exampleMessage"></textarea>
+            <label for="exampleRepeatPasswordInput">Повтори пароль</label>
+            <input class="u-full-width" type="password" id="exampleRepeatPasswordInput">
           </div>
+
           <hr class="line">
-
         </div>
 
-        <div class="grid-item-5 container">
-          <p class="delete">Видалити аккаунт</p>
-          <p class="sign-in">Єдина непотрібна функція на сайті</p>
+        <div class="grid-item-3 container">
+
+          <button type="button" href="settings.html" class="input-button button-primary">
+            <p class="text">Увійти</p>
+            <svg class="submit">
+              <use xlink:href="sprite.svg#submit"></use>
+            </svg>
+          </button>
+
+          <hr class="line">
         </div>
+
+        
+
+       
       </form>
     </div>
   </main>
@@ -188,8 +146,6 @@
       <a href="#" class="footer__facebook--blue">на facebook</a>
     </div>
   </footer>
-
   <script src="js/script.js"></script>
 </body>
-
 </html>
