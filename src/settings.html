@@ -115,12 +115,18 @@
             <span class="checkmark"></span>
           </label>
 
-          <button type="button" href="settings.html" class="input-button button-primary">
-            <p class="text">Зберегти</p>
-            <svg class="submit">
-              <use xlink:href="sprite.svg#submit"></use>
-            </svg>
-          </button>
+         <div class="button-container">
+            <button type="button" href="settings.html" class="input-button button-primary">
+              <p class="text">Зберегти</p>
+              <svg class="submit">
+                <use xlink:href="sprite.svg#submit"></use>
+              </svg>
+            </button>
+            <p class="password-wrong" href="#">
+              <img src="img/alarm-red.svg" alt="wrong password">
+              <span>Паролі не збігаються</span>
+            </p>
+         </div>
 
           <hr class="line">
         </div>
@@ -138,20 +144,26 @@
 
 
           <div class="form-wrapper form-wrapper--uploader">
-            <div class="uploader-block">
-              <img src="img/add-avka.svg" alt="add avka" style="margin-right: 10px;">
               <div class="uploader-wrapper">
-                <input class="input-uploader" type="file" id="pct" />
-                <label class="label-photo" for="pct"></label>
+                <div class="uploader-block">
+                  <label for="downloader">
+                    <!-- <img src="img/add-avka.svg" alt="add avka" style="margin: 0;"> -->
+                    <svg class="add-avka">
+                      <use xlink:href="sprite.svg#add-avka"></use>
+                    </svg>
+                  </label>
+                  <input class="input-uploader" type="file" id="downloader" />
+                </div>
+                
+                <div class="downloader"></div>
               </div>
               <label class="label">Фото</label>
               <p class="sign-in">jpg або png до 2 Мб</p>
-            </div>
           </div>
 
           <div class="form-wrapper">
             <label for="exampleMessage">Якщо маєш щось додати…</label>
-            <textarea class="u-full-width" placeholder="Hi Dave …" id="exampleMessage"></textarea>
+            <textarea class="u-full-width" id="exampleMessage"></textarea>
           </div>
           <hr class="line">
 

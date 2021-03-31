@@ -316,6 +316,7 @@
         max-width: 260px;
         height: 44px;
         font-size: calc(14.5px + (1 + 5 * 0.6) * ((100vw - 375px) / 768));
+        font-size: 14px;
       }
 
       .navbar-sign {
@@ -396,6 +397,7 @@
 
       .button {
         padding-left: 22px;
+        padding-right: 15px;
         height: 44px;
 
         .button-text {
@@ -406,7 +408,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .header-img-mob {
     display: none;
   }

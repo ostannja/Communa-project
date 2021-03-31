@@ -1,15 +1,15 @@
 // "use strict";
 
 // burger-menu
-var burgerMenu = document.getElementById("burger-menu");
-var overlay = document.getElementById("menu");
+let burgerMenu = document.getElementById("burger-menu");
+let overlay = document.getElementById("menu");
 burgerMenu.addEventListener("click", function () {
   this.classList.toggle("close");
   overlay.classList.toggle("overlay");
 });
 
 // change href for the mobile window`s width
-if (window.innerWidth < 768) {
+if (window.innerWidth < 769) {
   let pageRegistration = document.querySelector(".registration");
   pageRegistration.setAttribute("href", "registration.html");
 
@@ -58,6 +58,34 @@ window.onclick = function (event) {
   }
 };
 
+//uploader in settings.html
+let downloader = document.querySelector(".downloader");
+let inputUploader = document.querySelector(".input-uploader");
+let inputUploaderBefore = document.querySelectorAll(".input-uploader");
+
+document
+  .querySelector(".input-uploader")
+  .addEventListener("change", function () {
+    if (this.files[0]) {
+      let fr = new FileReader();
+
+      fr.addEventListener(
+        "load",
+        function () {
+          downloader.style.backgroundImage = "url(" + fr.result + ")";
+          inputUploader.style.width = "117.5px";
+          inputUploaderBefore[0].style.setProperty(
+            "--content",
+            "'Оновити фото'"
+          );
+        },
+        false
+      );
+
+      fr.readAsDataURL(this.files[0]);
+    }
+  });
+
 //webpack in gulp
 function testWebP(callback) {
   var webP = new Image();
@@ -75,40 +103,3 @@ testWebP(function (support) {
     document.querySelector("body").classList.add("no-webp");
   }
 });
-
-let uploader = document.querySelector(".label-photo");
-let inputuploader = document.querySelector(".input-uploader");
-let inputUploaderBefore = document.querySelectorAll(".input-uploader");
-
-//uploader in settings.html
-document
-  .querySelector(".input-uploader")
-  .addEventListener("change", function () {
-    if (this.files[0]) {
-      var fr = new FileReader();
-
-      fr.addEventListener(
-        "load",
-        function () {
-          uploader.style.backgroundImage = "url(" + fr.result + ")";
-          inputuploader.style.width = "108.5px";
-          inputUploaderBefore[0].style.setProperty(
-            "--content",
-            "'Оновити фото'"
-          );
-          var ops = window
-            .getComputedStyle(
-              document.querySelector(".input-uploader"),
-              ":before"
-            )
-            .getPropertyValue("content");
-          let burgerMenu = document.getElementById("burger-menu");
-          console.log(burgerMenu);
-          console.log(ops);
-        },
-        false
-      );
-
-      fr.readAsDataURL(this.files[0]);
-    }
-  });
