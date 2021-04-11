@@ -54,7 +54,7 @@
     </div>
   </nav>
 
-  <header>
+  <header class="sign-in">
     <div class="background-header">
       <div class="container">
         <div class="text-block">
@@ -65,58 +65,54 @@
       </div>
     </div>
   </header>
-  <main class="settings">
+
+  <main class="settings sign-in">
     <div class="popup-content ">
-      <form class="popup-form container" method="post">
+      <form class="popup-form container popup-form-authorization-mobile" method="post">
         <div class="grid-item-1 container">
-
-          <div class="form-wrapper">
-            <label for="name">Ім'я</label>
-            <input class="u-full-width" type="text" id="name">
-          </div>
-
-          <div class="form-wrapper ">
-            <label for="surname">Прізвище</label>
-            <input class="u-full-width" type="text" id="surname">
-          </div>
 
           <div class="form-wrapper">
             <label for="exampleEmailInput">E-mail</label>
             <input class="u-full-width" type="email" id="exampleEmailInput">
-          </div>
-
+          </div> 
           
-
-          <hr class="line">
-        </div>
-
-        <div class="grid-item-2 container">
           <div class="form-wrapper">
-            <label for="examplePasswordInput">Придумай пароль</label>
+            <label for="examplePasswordInput">Пароль</label>
             <input class="u-full-width" type="password" id="examplePasswordInput">
           </div>
 
-          <div class="form-wrapper">
-            <label for="exampleRepeatPasswordInput">Повтори пароль</label>
-            <input class="u-full-width" type="password" id="exampleRepeatPasswordInput">
-          </div>
+          <hr class="line">
+        </div>
+
+        <div class="grid-item-3 container submit-wrapper">
+
+          <p class="consent consent-authorization">
+            <a href="recovery.html"> 
+              <span class="agreement">Відновлення паролю</span>
+            </a>               
+          </p>
+
+          <a href="#">
+            <button type="button" class="input-button button-primary">
+              <p class="text">Увійти</p>
+              <svg class="submit">
+                <use xlink:href="sprite.svg#submit"></use>
+              </svg>
+            </button>
+          </a>
 
           <hr class="line">
         </div>
 
-        <div class="grid-item-3 container">
-
-          <button type="button" href="settings.html" class="input-button button-primary">
-            <p class="text">Увійти</p>
-            <svg class="submit">
-              <use xlink:href="sprite.svg#submit"></use>
-            </svg>
+        <div class="grid-item-4 container submit-wrapper">
+          <button class="button facebook facebook-authorization" type="button">
+            <span class="button-text">Вхід через Facebook</span>
           </button>
 
-          <hr class="line">
+          <button class="button google google-authorization" type="button">
+            <span class="button-text">Вхід через Google</span>
+          </button>
         </div>
-
-        
 
        
       </form>

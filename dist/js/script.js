@@ -103,3 +103,9 @@ testWebP(function (support) {
     document.querySelector("body").classList.add("no-webp");
   }
 });
+
+// Remove the margin-right for every fourth element of vacancy-card on the create page
+let vacancyCard = document.querySelectorAll(".vacancy-card");
+for (let i = 3; i < vacancyCard.length; i += 4) {
+  vacancyCard[i].style.marginRight = "0px";
+}
