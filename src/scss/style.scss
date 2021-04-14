@@ -70,6 +70,15 @@ img {
   margin: 0;
 }
 
+// input[type="email"]:focus,
+// input[type="text"]:focus,
+// input[type="password"]:focus,
+// textarea:focus,
+select:focus {
+  border: solid 2px #000000 !important;
+  outline: 0;
+}
+
 @import "header.scss";
 @import "burger-menu.scss";
 @import "form_popup.scss";

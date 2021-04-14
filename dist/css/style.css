@@ -527,7 +527,7 @@ hr {
 .background-header .background-img,
 .downloader,
 .create .vacancy .vacancy-created .person,
-.create .vacancy .vacancy-header .person {
+.create .vacancy .vacancy-filled .person {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 100%;
@@ -607,6 +607,11 @@ img {
   height: auto;
   display: block;
   margin: 0;
+}
+
+select:focus {
+  border: solid 2px #000000 !important;
+  outline: 0;
 }
 
 .navbar {
@@ -1121,15 +1126,6 @@ img {
   color: #28283d;
   margin-top: 2.1vh;
   margin-bottom: 0.6vh;
-}
-
-.popup-content .popup-form .form-wrapper input[type="email"]:focus,
-.popup-content .popup-form .form-wrapper input[type="text"]:focus,
-.popup-content .popup-form .form-wrapper input[type="password"]:focus,
-.popup-content .popup-form .form-wrapper textarea:focus,
-.popup-content .popup-form .form-wrapper select:focus {
-  border: solid 2px #ff6c6c;
-  outline: 0;
 }
 
 .popup-content .popup-form button {
@@ -2381,6 +2377,7 @@ li:hover .tag-list-item span {
   display: -ms-flexbox;
   display: flex;
   width: 270px;
+  border: solid 2px #ffffff;
 }
 
 .choose .form-container .form-select {
@@ -2402,6 +2399,7 @@ li:hover .tag-list-item span {
   background-position-y: 50%;
   border-radius: 24.5px;
   padding-left: 29px;
+  border: solid 2px #ffffff;
 }
 
 .choose input.text {
@@ -3547,6 +3545,7 @@ li:hover .tag-list-item span {
   color: #000000;
   margin-right: 19px;
   padding-top: 5px;
+  cursor: pointer;
 }
 
 .create .editor .header svg {
@@ -3651,7 +3650,7 @@ li:hover .tag-list-item span {
   background-position: 100%;
 }
 
-.create .vacancy .vacancy-header .person {
+.create .vacancy .vacancy-filled .person {
   background-image: -o-linear-gradient(331deg, #00a6ed -3%, #00eb98);
   background-image: linear-gradient(119deg, #00a6ed -3%, #00eb98);
   background-repeat: no-repeat;
@@ -3659,7 +3658,7 @@ li:hover .tag-list-item span {
   background-position: 100%;
 }
 
-.create .vacancy .vacancy-plus {
+.create .vacancy .vacancy-add {
   position: relative;
   height: 233px;
   background-color: #ffffff;
@@ -3668,7 +3667,19 @@ li:hover .tag-list-item span {
           justify-content: flex-end !important;
 }
 
-.create .vacancy .vacancy-plus .text {
+.create .vacancy .vacancy-add:hover {
+  background-color: #dadada;
+}
+
+.create .vacancy .vacancy-add:hover .text {
+  color: #ffffff;
+}
+
+.create .vacancy .vacancy-add:hover .plus {
+  fill: #ffffff;
+}
+
+.create .vacancy .vacancy-add .text {
   font-family: "Raleway";
   font-size: 14px;
   font-weight: 500;
@@ -3677,7 +3688,7 @@ li:hover .tag-list-item span {
   margin-bottom: 39px;
 }
 
-.create .vacancy .vacancy-plus .plus {
+.create .vacancy .vacancy-add .plus {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -3685,6 +3696,7 @@ li:hover .tag-list-item span {
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   cursor: pointer;
+  fill: #d2d7db;
 }
 
 .create .vacancy .vacancy-card {
@@ -3790,12 +3802,19 @@ li:hover .tag-list-item span {
   color: #000000;
 }
 
-.create .vacancy .vacancy-card .position .name {
+.create .vacancy .vacancy-card .position .name,
+.create .vacancy .vacancy-card .position .details {
   font-family: "Raleway";
   font-size: 12px;
   font-weight: 500;
   line-height: 1.67;
   color: #00a6ed;
+}
+
+.create .vacancy .vacancy-card .position .name:hover,
+.create .vacancy .vacancy-card .position .details:hover {
+  color: #000000;
+  text-decoration: underline;
 }
 
 .create .vacancy .vacancy-card .position .name-wrapper {
@@ -3816,8 +3835,16 @@ li:hover .tag-list-item span {
       flex-wrap: wrap;
 }
 
-.create .vacancy .vacancy-card .position .name-wrapper > :nth-of-type(2) {
+.create .vacancy .vacancy-card .position .name-wrapper .delete {
+  font-family: "Raleway";
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.67;
   color: #ff6c6c;
+}
+
+.create .vacancy .vacancy-card .position .name-wrapper .delete:hover {
+  text-decoration: underline;
 }
 
 .create .question-block {
@@ -3912,6 +3939,10 @@ li:hover .tag-list-item span {
   cursor: pointer;
 }
 
+.create .question-block .action .delete:hover {
+  text-decoration: underline;
+}
+
 .create .question-block .action .add {
   font-family: "Raleway";
   font-size: 12px;
@@ -3919,6 +3950,11 @@ li:hover .tag-list-item span {
   line-height: 1.67;
   color: #00a6ed;
   margin-right: 46px;
+}
+
+.create .question-block .action .add:hover {
+  color: #000;
+  text-decoration: underline;
 }
 
 .create .question-block .u-full-width {
@@ -4031,6 +4067,83 @@ li:hover .tag-list-item span {
   font-weight: 500;
   line-height: 2;
   color: #969b9f;
+}
+
+.create .popup {
+  top: 0;
+  height: 100vh;
+}
+
+.create .popup .popup-content {
+  padding: 27px 39px 37px 40px;
+}
+
+.create .popup .popup-content .title {
+  font-size: 30px;
+  margin-bottom: 59px;
+  margin-top: 0;
+}
+
+.create .popup .popup-content .popup-form {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0;
+}
+
+.create .popup .popup-content .popup-form > :first-child .u-full-width {
+  width: 418px;
+  height: 52px;
+  margin-bottom: 29px;
+}
+
+.create .popup .popup-content .popup-form > :nth-child(2) .u-full-width {
+  height: 185px;
+  margin-bottom: 36px;
+  max-height: unset;
+}
+
+.create .popup .popup-content .popup-form .form-wrapper {
+  width: 100%;
+}
+
+.create .popup .popup-content .popup-form .form-wrapper .approach {
+  width: 100%;
+  height: 185px;
+  max-height: unset;
+}
+
+.create .popup .popup-content .popup-form .form-wrapper label {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.create .popup .popup-content .popup-form .submit-wrapper {
+  margin: 0;
+}
+
+.create .popup .popup-content .popup-form .submit-wrapper .input-button {
+  width: 225px;
+  height: 50px;
+}
+
+.create .popup .popup-content .popup-form .vacancy-description,
+.create .popup .popup-content .popup-form .vacancy-description-last {
+  font-family: "Raleway";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.71;
+  color: #28283d;
+  margin-bottom: 30px;
+  width: 94%;
+}
+
+.create .popup .popup-content .popup-form .vacancy-description-last,
+.create .popup .popup-content .popup-form .vacancy-description-last-last {
+  width: 60%;
+  margin-bottom: 0;
+  margin-top: -12px;
 }
 
 .create-footer {

@@ -54,6 +54,7 @@ window.onclick = function (event) {
     for (let index in modals) {
       if (typeof modals[index].style !== "undefined")
         modals[index].style.display = "none";
+      window.onscroll = true;
     }
   }
 };

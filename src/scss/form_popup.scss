@@ -138,15 +138,6 @@
           margin-top: 2.1vh;
           margin-bottom: 0.6vh;
         }
-
-        input[type="email"]:focus,
-        input[type="text"]:focus,
-        input[type="password"]:focus,
-        textarea:focus,
-        select:focus {
-          border: solid 2px #ff6c6c;
-          outline: 0;
-        }
       }
 
       button {
