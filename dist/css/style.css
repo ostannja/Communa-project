@@ -3032,11 +3032,11 @@ li:hover .tag-list-item span {
   width: 100%;
 }
 
-.create form {
+.create .form {
   padding-top: 145px;
 }
 
-.create form .short-brief {
+.create .form .short-brief {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3054,7 +3054,7 @@ li:hover .tag-list-item span {
       flex-wrap: nowrap;
 }
 
-.create form .short-brief .text-block-wrapper {
+.create .form .short-brief .text-block-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3074,19 +3074,19 @@ li:hover .tag-list-item span {
   margin-right: 85px;
 }
 
-.create form .short-brief .text-block-wrapper .u-full-width {
+.create .form .short-brief .text-block-wrapper .u-full-width {
   width: 100%;
   border-radius: 0;
   padding-top: 9px;
   padding-left: 23px;
 }
 
-.create form .short-brief .text-block-wrapper > :first-child {
+.create .form .short-brief .text-block-wrapper > :first-child {
   margin-bottom: 23px;
   height: 67px;
 }
 
-.create form .short-brief .text-block-wrapper > :first-child::-webkit-input-placeholder {
+.create .form .short-brief .text-block-wrapper > :first-child::-webkit-input-placeholder {
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: start;
@@ -3105,7 +3105,7 @@ li:hover .tag-list-item span {
           align-items: flex-start;
 }
 
-.create form .short-brief .text-block-wrapper > :first-child::-moz-placeholder {
+.create .form .short-brief .text-block-wrapper > :first-child::-moz-placeholder {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -3118,7 +3118,7 @@ li:hover .tag-list-item span {
   align-items: flex-start;
 }
 
-.create form .short-brief .text-block-wrapper > :first-child:-ms-input-placeholder {
+.create .form .short-brief .text-block-wrapper > :first-child:-ms-input-placeholder {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: start;
@@ -3137,7 +3137,7 @@ li:hover .tag-list-item span {
       align-items: flex-start;
 }
 
-.create form .short-brief .text-block-wrapper > :first-child::-ms-input-placeholder {
+.create .form .short-brief .text-block-wrapper > :first-child::-ms-input-placeholder {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: start;
@@ -3156,7 +3156,7 @@ li:hover .tag-list-item span {
       align-items: flex-start;
 }
 
-.create form .short-brief .text-block-wrapper > :first-child::placeholder {
+.create .form .short-brief .text-block-wrapper > :first-child::placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3181,12 +3181,12 @@ li:hover .tag-list-item span {
           align-items: flex-start;
 }
 
-.create form .short-brief .text-block-wrapper > :last-child {
+.create .form .short-brief .text-block-wrapper > :last-child {
   height: 105px;
   margin-bottom: 55px;
 }
 
-.create form .short-brief .text-block-wrapper > :last-child::-webkit-input-placeholder {
+.create .form .short-brief .text-block-wrapper > :last-child::-webkit-input-placeholder {
   font-family: "Raleway";
   font-size: 16px;
   font-weight: 500;
@@ -3195,7 +3195,7 @@ li:hover .tag-list-item span {
           transform: translateY(-160%);
 }
 
-.create form .short-brief .text-block-wrapper > :last-child::-moz-placeholder {
+.create .form .short-brief .text-block-wrapper > :last-child::-moz-placeholder {
   font-family: "Raleway";
   font-size: 16px;
   font-weight: 500;
@@ -3203,7 +3203,7 @@ li:hover .tag-list-item span {
   transform: translateY(-160%);
 }
 
-.create form .short-brief .text-block-wrapper > :last-child:-ms-input-placeholder {
+.create .form .short-brief .text-block-wrapper > :last-child:-ms-input-placeholder {
   font-family: "Raleway";
   font-size: 16px;
   font-weight: 500;
@@ -3212,7 +3212,7 @@ li:hover .tag-list-item span {
       transform: translateY(-160%);
 }
 
-.create form .short-brief .text-block-wrapper > :last-child::-ms-input-placeholder {
+.create .form .short-brief .text-block-wrapper > :last-child::-ms-input-placeholder {
   font-family: "Raleway";
   font-size: 16px;
   font-weight: 500;
@@ -3221,7 +3221,7 @@ li:hover .tag-list-item span {
       transform: translateY(-160%);
 }
 
-.create form .short-brief .text-block-wrapper > :last-child::placeholder {
+.create .form .short-brief .text-block-wrapper > :last-child::placeholder {
   font-family: "Raleway";
   font-size: 16px;
   font-weight: 500;
@@ -3231,7 +3231,7 @@ li:hover .tag-list-item span {
           transform: translateY(-160%);
 }
 
-.create form .short-brief .person-block {
+.create .form .short-brief .person-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3250,18 +3250,18 @@ li:hover .tag-list-item span {
   height: 100px;
 }
 
-.create form .short-brief .person-block img {
+.create .form .short-brief .person-block img {
   max-width: unset;
 }
 
-.create form .short-brief .person-block .avatar {
+.create .form .short-brief .person-block .avatar {
   width: 100px;
   height: 100px;
   border-radius: 50%;
   margin-right: 25px;
 }
 
-.create form .short-brief .person-block .person {
+.create .form .short-brief .person-block .person {
   height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3280,7 +3280,7 @@ li:hover .tag-list-item span {
       flex-wrap: nowrap;
 }
 
-.create form .short-brief .person-block .person .position {
+.create .form .short-brief .person-block .person .position {
   font-family: "Raleway";
   font-size: 14px;
   font-weight: 500;
@@ -3288,7 +3288,7 @@ li:hover .tag-list-item span {
   color: #ffffff;
 }
 
-.create form .short-brief .person-block .person .name-block {
+.create .form .short-brief .person-block .person .name-block {
   font-family: "Raleway";
   font-size: 14px;
   font-weight: 500;
@@ -4148,6 +4148,221 @@ li:hover .tag-list-item span {
 
 .create-footer {
   padding-top: 58px !important;
+}
+
+.project-checkbox {
+  margin-bottom: 28px;
+}
+
+.project-checkbox .project-tab {
+  font-family: "Raleway";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.71;
+  color: #000000;
+}
+
+.project-checkbox .tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.project-checkbox .tabs label {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  display: block;
+  margin-right: 50px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  -webkit-transition: background ease 0.2s;
+  -o-transition: background ease 0.2s;
+  transition: background ease 0.2s;
+  font-family: "Raleway";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 3.05;
+  color: #000000;
+}
+
+.project-checkbox .tabs .tab {
+  -webkit-box-ordinal-group: 100;
+      -ms-flex-order: 99;
+          order: 99;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 100%;
+  display: none;
+  padding: 1rem;
+  background: #fff;
+}
+
+.project-checkbox .tabs input[type="radio"] {
+  display: none;
+}
+
+.project-checkbox .tabs input[type="radio"]:checked + label + .tab {
+  display: block;
+}
+
+.project {
+  padding-bottom: 0;
+}
+
+.project .header-title {
+  font-family: "DidactGothic";
+  font-size: 55px;
+  font-weight: normal;
+  line-height: 1.11;
+  color: #ffffff;
+  height: unset !important;
+  margin-bottom: 37px !important;
+}
+
+.project .subtitle {
+  font-family: "Raleway";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.05;
+  color: #ffffff;
+  height: unset !important;
+  margin-bottom: 70px !important;
+}
+
+.project .form {
+  padding-top: 140px;
+}
+
+.project .form .short-brief .person-block .person .position {
+  line-height: 2.5;
+}
+
+.project .form .short-brief .person-block .person .name-block {
+  line-height: 1.2;
+}
+
+.project .title-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.project .title-wrapper .title {
+  font-family: "DidactGothic";
+  font-size: 35px;
+  font-weight: normal;
+  line-height: 0.86;
+  color: #000000;
+  margin-top: 42px;
+  margin-bottom: 38px;
+}
+
+.project .top-project .img {
+  width: 64.3%;
+}
+
+.project .top-project .card .info {
+  padding-left: 28px;
+}
+
+.project .top-project .card .info .info-card .card-text,
+.project .top-project .card .info .info-card .card-text-timer {
+  font-family: "Raleway";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.1;
+  color: #000000;
+  margin-bottom: 8px;
+}
+
+.project .top-project .card .info .info-card .card-text-timer {
+  margin-bottom: 17px;
+}
+
+.project .top-project .card .info .info-card .quantity {
+  font-family: "DidactGothic";
+  font-size: 35px;
+  font-weight: normal;
+  line-height: 1;
+  color: #000000;
+}
+
+.project .top-project .card .info .info-card .progress {
+  margin-top: 19px;
+  margin-bottom: 21px;
+}
+
+.project .top-project .card .info .info-card .progress .progress-status {
+  width: 57%;
+  height: 6px;
+}
+
+.project .top-project .card .info .info-card .details-tag {
+  margin: 0;
+}
+
+.project .top-project .card .info .info-card .details-orient {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.project .top-project .card .info .info-card .details-location {
+  margin-right: 38px;
+}
+
+.project .top-project .card .info .info-card .button-block {
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+.project .top-project .card .info .info-card .button-block .preview {
+  width: 68%;
+}
+
+.project .top-project .card .info .info-card .social-button-container {
+  width: 171px;
+}
+
+.project .top-project .card .info .info-card .social-button-container .social-button {
+  background-color: #f0f0f1;
+  margin-left: 0;
+}
+
+.project .vacancy {
+  margin-bottom: 86px;
+}
+
+.project .finance .title-container {
+  margin-bottom: 16px;
+}
+
+.project .finance .button-block {
+  max-width: unset;
+}
+
+.project .finance .button-block .button--finance {
+  margin-right: 13.6%;
+}
+
+.project-footer {
+  padding-top: 50px;
 }
 
 @media (min-width: 320px) {
@@ -5524,6 +5739,21 @@ li:hover .tag-list-item span {
 
   .grid-item3 {
     width: 39vw;
+  }
+}
+
+@media (max-width: 45em) {
+  .project-checkbox .tabs .tab,
+  .project-checkbox .tabs label {
+    -webkit-box-ordinal-group: initial;
+        -ms-flex-order: initial;
+            order: initial;
+  }
+
+  .project-checkbox .tabs label {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0.2rem;
   }
 }
 

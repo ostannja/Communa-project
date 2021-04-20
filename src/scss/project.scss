@@ -1,0 +1,151 @@
+.project {
+  padding-bottom: 0;
+  .header-title {
+    font-family: "DidactGothic";
+    font-size: 55px;
+    font-weight: normal;
+    line-height: 1.11;
+    color: #ffffff;
+    height: unset !important;
+    margin-bottom: 37px !important;
+  }
+
+  .subtitle {
+    font-family: "Raleway";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.05;
+    color: #ffffff;
+    height: unset !important;
+    margin-bottom: 70px !important;
+  }
+
+  .form {
+    padding-top: 140px;
+
+    .short-brief {
+      .person-block {
+        .person {
+          .position {
+            line-height: 2.5;
+          }
+
+          .name-block {
+            line-height: 1.2;
+          }
+        }
+      }
+    }
+  }
+
+  .title-wrapper {
+    @include flex(space-between, flex-start, row, nowrap);
+
+    .title {
+      font-family: "DidactGothic";
+      font-size: 35px;
+      font-weight: normal;
+      line-height: 0.86;
+      color: #000000;
+      margin-top: 42px;
+      margin-bottom: 38px;
+    }
+  }
+
+  .top-project {
+    .img {
+      width: 64.3%;
+    }
+
+    .card {
+      .info {
+        padding-left: 28px;
+        .info-card {
+          .card-text,
+          .card-text-timer {
+            font-family: "Raleway";
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.1;
+            color: #000000;
+            margin-bottom: 8px;
+          }
+
+          .card-text-timer {
+            margin-bottom: 17px;
+          }
+
+          .quantity {
+            font-family: "DidactGothic";
+            font-size: 35px;
+            font-weight: normal;
+            line-height: 1;
+            color: #000000;
+          }
+
+          .progress {
+            margin-top: 19px;
+            margin-bottom: 21px;
+
+            .progress-status {
+              width: 57%;
+              height: 6px;
+            }
+          }
+
+          .details-tag {
+            margin: 0;
+          }
+
+          .details-orient {
+            justify-content: flex-start;
+          }
+
+          .details-location {
+            margin-right: 38px;
+          }
+
+          .button-block {
+            margin-bottom: 30px;
+            padding: 0;
+
+            .preview {
+              width: 68%;
+            }
+          }
+
+          .social-button-container {
+            width: 171px;
+
+            .social-button {
+              background-color: #f0f0f1;
+              margin-left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .vacancy {
+    margin-bottom: 86px;
+  }
+
+  .finance {
+    .title-container {
+      margin-bottom: 16px;
+    }
+
+    .button-block {
+      max-width: unset;
+
+      .button--finance {
+        margin-right: 13.6%;
+      }
+    }
+  }
+}
+
+.project-footer {
+  padding-top: 50px;
+}

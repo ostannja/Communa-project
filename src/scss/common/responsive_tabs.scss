@@ -1,0 +1,58 @@
+.project-checkbox {
+  margin-bottom: 28px;
+
+  .project-tab {
+    font-family: "Raleway";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.71;
+    color: #000000;
+  }
+
+  .tabs {
+    display: flex;
+    flex-wrap: wrap; // make sure it wraps
+  }
+  .tabs label {
+    order: 1; // Put the labels first
+    display: block;
+    margin-right: 50px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: background ease 0.2s;
+    font-family: "Raleway";
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 3.05;
+    color: #000000;
+  }
+  .tabs .tab {
+    order: 99; // Put the tabs last
+    flex-grow: 1;
+    width: 100%;
+    display: none;
+    padding: 1rem;
+    background: #fff;
+  }
+  .tabs input[type="radio"] {
+    display: none;
+  }
+  .tabs input[type="radio"]:checked + label {
+    // background: #fff;
+  }
+  .tabs input[type="radio"]:checked + label + .tab {
+    display: block;
+  }
+
+  @media (max-width: 45em) {
+    .tabs .tab,
+    .tabs label {
+      order: initial;
+    }
+    .tabs label {
+      width: 100%;
+      margin-right: 0;
+      margin-top: 0.2rem;
+    }
+  }
+}

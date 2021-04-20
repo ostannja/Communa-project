@@ -54,14 +54,13 @@
     </div>
   </nav>
 
-  <main class="create">
+  <main class="create project">
     <section class="background"></section>
-    <form action="post" class="form container">
+    <div class="container form">
       <section class="short-brief">
         <div class="text-block-wrapper">
-          <input class="u-full-width" type="text" id="title" placeholder="Вигадай назву проєкту (до 50 символів)" />
-          <input class="u-full-width" type="text" id="short-brief"
-            placeholder="А сюди максимально-стислий опис на одне-два речення (до 160 символів)" />
+          <p class="header-title">Factory — перший учбовий хакерспейс для підлітків</p>
+          <p class="subtitle">Запрошуємо всіх бажаючих пробігтися столицею Прикарпаття.</p>
         </div>
 
         <div class="person-block">
@@ -78,82 +77,95 @@
 
       <section class="top-project">
         <div class="card">
-          <div class="img downloader"></div>
-          <div class="info">
-            <div class="info-upper">
-              <div class="form-select">
-                <select class="u-full-width text">
-                  <option selected>Тривалість</option>
-                  <option value="1">Тривалість 30 днів</option>
-                  <option value="2">Тривалість 20 днів</option>
-                  <option value="3">Тривалість 10 днів</option>
-                </select>
+          <div class="img">
+            <img src="img/main_marathon.png" alt="Marathon’17">
+          </div>
+          <div class="info ">
+            <div class="info-card">
+              <a href="project.html">
+                <p class="card-text">Команда</p>
+              </a>
+              <p class="quantity"><span>4</span> з <span>7</span> знайдено</p>
+              <div class="progress">
+                <div class="progress-status"></div>
               </div>
-
-              <div class="form-select text">
-                <select class="u-full-width text">
-                  <option selected>Вибери категорію</option>
-                  <option value="1">Діти</option>
-                  <option value="2">Мистецтво</option>
-                  <option value="3">Місто</option>
-                  <option value="4">Освіта</option>
-                  <option value="5">Події</option>
-                  <option value="6">Спорт</option>
-                  <option value="7">Digital</option>
-                  <option value="8">Інше</option>
-                </select>
+              <p class="card-text-timer">Залишилось <span>9</span> годин</p>
+              <div class="details-orient">
+                <div class=" details-location">
+                  <img class="geo" src="img/geo.svg" alt="geo">
+                  <span class="details-city">Івано-Франківськ</span>
+                </div>
+                <a class="details-tag" href="#">
+                  <img src="img/hash.svg" alt="hash">
+                  <span class="details-tag-text">Спорт</span></a>
               </div>
-              <input class="u-full-width" type="text" id="town" placeholder="Місто" />
             </div>
-
-            <div class="info-down">
-              <input class="u-full-width" type="text" id="youtube" placeholder="Посилання на YouTube-відео, якщо є " />
-              <div class="uploader-block">
-                <label for="downloader">
-                  <div class="input-button">Завантажити кавер</div>
-                </label>
-                <input class="input-uploader" type="file" id="downloader" />
-                <p class="consent">jpg або png до 5 Мб 1540 х 840 px</p>
+            <div class="info-card">
+              <div class="button-block">
+                <button type="button" class="input-button preview">
+                  <p class="text">Хочу в команду</p>
+                  <svg class="arw-btn">
+                    <use xlink:href="sprite.svg#arw-btn"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="social-button-container">
+                <a href="#">
+                  <button type="button" class="social-button facebook">
+                    <svg class="fb">
+                      <use xlink:href="sprite.svg#fb"></use>
+                    </svg>
+                  </button>
+                </a>
+                <a href="#">
+                  <button type="button" class="social-button instagram">
+                    <svg class="insta">
+                      <use xlink:href="sprite.svg#insta"></use>
+                    </svg>
+                  </button>
+                </a>
+                <a href="https://twitter.com/">
+                  <button type="button" class="social-button twitter">
+                    <svg class="twitter">
+                      <use xlink:href="sprite.svg#twitter"></use>
+                    </svg>
+                  </button>
+                </a>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <p class="title">Опис проекту</p>
-
-      <section class="editor">
-        <div class="header">
-          <svg class="italic" style="width: 9px">
-            <use xlink:href="sprite.svg#italic"></use>
-          </svg>
-          <p>Заголовок</p>
-          <svg class="bits" style="width: 14px">
-            <use xlink:href="sprite.svg#bits"></use>
-          </svg>
-          <svg class="link" style="width: 14px">
-            <use xlink:href="sprite.svg#link"></use>
-          </svg>
-          <svg class="unlink" style="width: 14px">
-            <use xlink:href="sprite.svg#unlink"></use>
-          </svg>
-          <svg class="pastevideo" style="width: 16px">
-            <use xlink:href="sprite.svg#pastevideo"></use>
-          </svg>
-          <svg class="pastephoto" style="width: 14px">
-            <use xlink:href="sprite.svg#pastephoto"></use>
-          </svg>
+     <section class="project-checkbox">
+      <div class="tabs">
+        <input type="radio" name="tabs" id="tabone" checked="checked">
+        <label for="tabone">Проект</label>
+        <div class="tab">
+          <p class="project-tab">Арвінд залишив свою 30-річну кар’єру в сталеварній промисловості, щоб відкрити власний бізнес з експорту продуктів до ЄС. Він переконався, що електронна резиденція була на той час найпростішим і найбільш безпроблемним шляхом, щоб заснувати свій бізнес та отримати довіру на ринку. 
+            Довіра є дуже важливою для нових технологій, але коли я презентую себе як електронного резидента Естонії, це демонструє наш зв’язок з Європою. Ми використовуємо Естонію як сходинку до решти Європи та усього світу”.</p>
         </div>
-        <textarea
-          placeholder="Текст, картинки, списки, відео, посилання — все сюди. Детально опиши свою ідею, твоя задача запалити людей долучитися в твою команду!"></textarea>
-        <div class="footer">
-          <svg class="more" style="width: 23px; height: 10px">
-            <use xlink:href="sprite.svg#more"></use>
-          </svg>
+        
+        <input type="radio" name="tabs" id="tabtwo">
+        <label for="tabtwo">Коментарі</label>
+        <div class="tab">
+          <h1>Tab Two Content</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
-      </section>
+        
+        <input type="radio" name="tabs" id="tabthree">
+        <label for="tabthree">Часті запитання</label>
+        <div class="tab">
+          <h1>Часті запитання</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+      </div>
+     </section>
 
-      <p class="title">Вакансії</p>
+      <div class="title-wrapper">
+        <p class="title">Команда: <span>4</span> з <span>7</span> знайдено</p>
+        <p class="title">Залишилось <span>9</span> годин</p>
+      </div>
 
       <section class="vacancy">
         <div class="vacancy-card vacancy-filled">
@@ -187,71 +199,12 @@
             <p class="activity">Помічник репортажного фотографа</p>
             <div class="name-wrapper">
               <p class="details">Деталі вакансії</p>
-              <p class="delete">Видалити</p>
             </div>
           </div>
         </div>
-        <div class="vacancy-card vacancy-add popup-button" href="#vacancy-first-step">
-          <!-- <img class="enter-text plus popup-button" src="img/vacancy-plus.svg" href="#vacancy-first-step" alt=""> -->
-          <svg class="vacancy-plus plus popup-button enter-text" href="#vacancy-first-step">
-            <use xlink:href="sprite.svg#vacancy-plus"></use>
-          </svg>
-          <div class="text" href="#vacancy-first-step">Додати вакансію</div>
-        </div>
       </section>
 
-      <p class="title">Часті запитання</p>
-
-      <div class="question-block">
-        <div class="wrapper">
-          <div class="shadow"></div>
-          <p class="text">Що буде, якщо я не встигну зібрати команду?</p>
-        </div>
-        <div class="wrapper">
-          <div class="shadow"></div>
-          <p class="text">Арвінд залишив свою 30-річну кар’єру в сталеварній промисловості, щоб відкрити власний бізнес
-            з експорту продуктів до ЄС. Він переконався, що електронна резиденція </p>
-        </div>
-        <div class="action">
-          <p class="delete">Видалити</p>
-        </div>
-      </div>
-
-      <div class="question-block">
-        <input class="u-full-width" type="text" placeholder="Запитання" />
-        <input class="u-full-width" type="text" placeholder="Відповідь" />
-        <div class="action">
-          <p class="add">Додати ще</p>
-          <p class="delete">Видалити</p>
-        </div>
-      </div>
-
-      <section class="button-block">
-        <button type="button" class="input-button preview">
-          <p class="text">Попередній перегляд</p>
-          <svg class="arw-btn">
-            <use xlink:href="sprite.svg#arw-btn"></use>
-          </svg>
-        </button>
-
-        <button type="button" class="input-button publish">
-          <p class="text">Опублікувати</p>
-          <svg class="submit">
-            <use xlink:href="sprite.svg#submit"></use>
-          </svg>
-        </button>
-
-        <p class="password-wrong" href="#">
-          <img src="img/alarm-red.svg" alt="wrong password">
-          <span>Не заповнені обов’язкові поля</span>
-        </p>
-        
-        <!-- change with the following tag if the page is filled correctly -->
-        <!-- <p class="checked">Сторінка буде надіслана на перевірку модераторам</p> -->
-        
-
-      </section>
-    </form>
+    </div>
 
     <section>
       <div id="vacancy-first-step" class="popup">
@@ -359,9 +312,82 @@
         </div>
       </div>
     </section>
+
+    <section class="finance">
+      <div class="container">
+        <div class="title-container">
+          <p class="block-title">Зроби внесок у розвиток
+            соціальних проектів в Україні</p>
+        </div>
+        <div class="button-block">
+          <button type="button" class="button button--finance">
+            <span class="button-text">Підтримай гривнею</span>
+            <svg class="arw-btn icon-chevron-right">
+              <use xlink:href="sprite.svg#arw-btn"></use>
+            </svg>
+          </button>
+          <div class="social-container ">
+            <p class="text">та розкажи про нас</p>
+            <div class="social-button-container">
+              <a href="#">
+                <button type="button" class="social-button facebook">
+                  <svg class="fb">
+                    <use xlink:href="sprite.svg#fb"></use>
+                  </svg>
+                </button>
+              </a>
+              <a href="#">
+                <button type="button" class="social-button instagram">
+                  <svg class="insta">
+                    <use xlink:href="sprite.svg#insta"></use>
+                  </svg>
+                </button>
+              </a>
+              <a href="https://twitter.com/">
+                <button type="button" class="social-button twitter">
+                  <svg class="twitter">
+                    <use xlink:href="sprite.svg#twitter"></use>
+                  </svg>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="choose">
+      <div class="container">
+        <div class="text">Підпишись <br> на нові проєкти</div>
+        <div class="form-container">
+          <div class="form-select ">
+            <select class="u-full-width text" id="exampleRecipientInput">
+              <option selected>Всі категорії</option>
+              <option value="1">Діти</option>
+              <option value="2">Мистецтво</option>
+              <option value="3">Місто</option>
+              <option value="4">Освіта</option>
+              <option value="5">Події</option>
+              <option value="6">Спорт</option>
+              <option value="7">Digital</option>
+              <option value="8">Інше</option>
+            </select>
+          </div>
+          <div class="form-choose">
+            <input class="u-full-width text" type="email" placeholder="Введи свій email">
+            <button type="button" class="input-button">
+              <svg class="submit">
+                <use xlink:href="sprite.svg#submit"></use>
+              </svg>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer class="container footer grid create-footer">
+  <footer class="container footer grid project-footer">
     <div class="grid-item1">
       <div class="logo">
         <img src="img/logo-f-desk.svg" alt="footer logo" />

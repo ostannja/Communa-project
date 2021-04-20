@@ -1,7 +1,7 @@
 // @import "node_modules/bootstrap/scss/bootstrap.scss";
-@import "skeleton.scss";
-@import "fonts.scss";
-@import "mixins.scss";
+@import "general/skeleton.scss";
+@import "general/fonts.scss";
+@import "general/mixins.scss";
 
 ::-webkit-scrollbar {
   /* chrome based */
@@ -79,16 +79,18 @@ select:focus {
   outline: 0;
 }
 
-@import "header.scss";
-@import "burger-menu.scss";
-@import "form_popup.scss";
-@import "top-project.scss";
-@import "projects-preview.scss";
-@import "want-help.scss";
-@import "finance.scss";
-@import "kickstarter.scss";
-@import "choose.scss";
-@import "footer.scss";
+@import "common/header.scss";
+@import "common/burger-menu.scss";
+@import "common/form_popup.scss";
+@import "common/top-project.scss";
+@import "index/projects-preview.scss";
+@import "index/want-help.scss";
+@import "index/finance.scss";
+@import "index/kickstarter.scss";
+@import "index/choose.scss";
+@import "common/footer.scss";
 @import "settings.scss";
-@import "signin_signup_for_mobile.scss";
+@import "common/signin_signup_for_mobile.scss";
 @import "create.scss";
+@import "common/responsive_tabs.scss";
+@import "project.scss";
