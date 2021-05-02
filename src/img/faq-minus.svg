@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="2" viewBox="0 0 18 2">
+    <g fill="none" fill-rule="evenodd">
+        <g fill="#000">
+            <g>
+                <path d="M8 -8H10V10H8z" transform="translate(-1271 -999) translate(1271 999) rotate(90 9 1)"/>
+            </g>
+        </g>
+    </g>
+</svg>

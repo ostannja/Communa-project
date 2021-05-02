@@ -31,14 +31,14 @@
     flex-grow: 1;
     width: 100%;
     display: none;
-    padding: 1rem;
+    padding: 24px 31px 26px 30px;
     background: #fff;
   }
   .tabs input[type="radio"] {
     display: none;
   }
   .tabs input[type="radio"]:checked + label {
-    // background: #fff;
+    color: #00a6ed;
   }
   .tabs input[type="radio"]:checked + label + .tab {
     display: block;

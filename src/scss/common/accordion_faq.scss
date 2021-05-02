@@ -1,0 +1,102 @@
+.accordion_faq {
+  padding: 0 !important;
+
+  /* Acordeon styles */
+  .faq-tab {
+    position: relative;
+    margin-bottom: 1px;
+    width: 100%;
+    color: #fff;
+    overflow: hidden;
+  }
+
+  input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+
+  label {
+    position: relative;
+    display: block;
+    // padding: 0 0 0 1em;
+    background: #fff;
+    font-weight: bold;
+    line-height: 3;
+    cursor: pointer;
+    padding-right: 31px !important;
+    margin-right: 0 !important;
+    line-height: 2.05 !important;
+    margin-bottom: 11px !important;
+    padding-top: 10px;
+    padding-left: 30px;
+    border-top: 1px solid #f0f0f1;
+
+    &:hover {
+      color: #00a6ed;
+      text-decoration: underline;
+    }
+
+    p {
+      max-width: 80%;
+      line-height: 1.7;
+    }
+  }
+
+  .blue label {
+    background: #2980b9;
+  }
+
+  .tab-content {
+    max-height: 0;
+    overflow: hidden;
+    background: #fff;
+    -webkit-transition: max-height 0.5s;
+    -o-transition: max-height 0.5s;
+    transition: max-height 0.5s;
+  }
+
+  .blue .tab-content {
+    background: #3498db;
+  }
+
+  .tab-content p {
+    padding-left: 30px;
+    font-family: "Raleway";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.71;
+    color: #000000;
+    width: 90%;
+    margin-bottom: 20px;
+    padding-top: 10px;
+  }
+
+  /* :checked */
+  input:checked ~ .tab-content {
+    max-height: 500px;
+  }
+  input:checked ~ label {
+    color: #00a6ed;
+  }
+
+  /* Icon */
+  label::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    position: absolute;
+    top: 0;
+    display: block;
+    height: fit-content;
+    font-size: 30px;
+    margin-right: 30px;
+  }
+  input[type="checkbox"] + label::after {
+    content: url("../../img/faq-plus.svg");
+  }
+  input[type="checkbox"]:checked + label::after {
+    margin-top: -8px;
+    content: url("../../img/faq-minus.svg");
+  }
+}
