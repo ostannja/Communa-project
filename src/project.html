@@ -230,20 +230,22 @@
           </div>
         </div>
         <div class="vacancy-card vacancy-created">
-          <div class="person"></div>
+          <div class="person person-hover">
+            <button class="input-button popup-button" href="#vacancy-add-step">Долучитись</button>
+          </div>
           <div class="position">
-            <p class="activity">Помічник репортажного фотографа</p>
+            <p class="activity">Звукорежисер</p>
             <div class="name-wrapper">
-              <p class="details">Деталі вакансії</p>
+              <p class="details popup-button" href="#vacancy-about-step"> Деталі вакансії</p>
             </div>
           </div>
         </div>
+        
       </section>
-
     </div>
 
-    <section>
-      <div id="vacancy-first-step" class="popup">
+  <section>
+      <!-- <div id="vacancy-first-step" class="popup">
         <div class="popup-wrapper">
           <div class="popup-content popup-animation">
             <span class="closed">
@@ -264,8 +266,8 @@
               </div>
 
               <div class="submit-wrapper">
-                <button type="button" href="#vacancy-second-step" class="input-button button-primary popup-button">
-                  <p class="text" href="#vacancy-second-step">Додати вакансію</p>
+                <button type="button" href="#vacancy-about-step" class="input-button button-primary popup-button">
+                  <p class="text" href="#vacancy-about-step">Додати вакансію</p>
                   <svg class="arw-btn">
                     <use xlink:href="sprite.svg#arw-btn"></use>
                   </svg>
@@ -275,9 +277,9 @@
 
           </div>
         </div>
-      </div>
+      </div> -->
 
-      <div id="vacancy-second-step" class="popup">
+      <div id="vacancy-add-step" class="popup">
         <div class="popup-wrapper">
           <div class="popup-content popup-animation">
             <span class="closed">
@@ -293,8 +295,8 @@
               </div>
 
               <div class="submit-wrapper">
-                <button type="button" href="#vacancy-third-step" class="input-button button-primary popup-button">
-                  <p class="text" href="#vacancy-third-step">Долучитися</p>
+                <button type="button" href="#vacancy-last-step" class="input-button button-primary popup-button">
+                  <p class="text" href="#vacancy-last-step">Долучитися</p>
                   <svg class="arw-btn">
                     <use xlink:href="sprite.svg#arw-btn"></use>
                   </svg>
@@ -306,7 +308,7 @@
         </div>
       </div>
 
-      <div id="vacancy-third-step" class="popup">
+      <div id="vacancy-about-step" class="popup">
         <div class="popup-wrapper">
           <div class="popup-content popup-animation">
             <span class="closed">
@@ -323,7 +325,7 @@
 
               <div class="submit-wrapper">
                 <button type="button" class="input-button button-primary popup-button">
-                  <p class="text" href="#vacancy-last-step">Долучитися</p>
+                  <p class="text">Долучитися</p>
                   <svg class="arw-btn">
                     <use xlink:href="sprite.svg#arw-btn"></use>
                   </svg>

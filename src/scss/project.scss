@@ -32,6 +32,10 @@
 
           .name-block {
             line-height: 1.2;
+
+            &:hover {
+              text-decoration: underline;
+            }
           }
         }
       }
@@ -120,6 +124,23 @@
             .social-button {
               background-color: #f0f0f1;
               margin-left: 0;
+
+              &:hover {
+                border: solid 2px #000000 !important;
+              }
+            }
+
+            .facebook:hover,
+            .instagram:hover,
+            .twitter:hover {
+              background-image: unset;
+              background-color: #ffffff;
+
+              .fb,
+              .insta,
+              .twitter {
+                fill: #000;
+              }
             }
           }
         }
@@ -129,6 +150,43 @@
 
   .vacancy {
     margin-bottom: 86px;
+
+    .vacancy-created {
+      cursor: pointer;
+
+      &:hover .input-button {
+        display: block;
+      }
+
+      &:hover .person {
+        @include backgr(url(../img/vacancy-cover-hover.png));
+      }
+
+      .position {
+        .name-wrapper {
+          // align-items: flex-end !important;
+        }
+      }
+
+      .input-button {
+        display: none;
+        height: 50px;
+        width: 168px;
+        font-family: "Raleway";
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        color: #000000;
+        background-color: #ffffff;
+        border: none !important;
+
+        &:hover {
+          background-color: inherit;
+          border: solid 2px #ffffff !important;
+          color: #ffffff;
+        }
+      }
+    }
   }
 
   .finance {

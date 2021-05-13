@@ -295,8 +295,11 @@
 
     .vacancy-created {
       .person {
+        display: block;
         @include backgr(url(../img/vacancy-cover.png));
         @extend %backgr;
+        justify-content: center !important;
+        align-items: center !important;
       }
     }
 
@@ -312,6 +315,7 @@
       height: 233px;
       background-color: #ffffff;
       justify-content: flex-end !important;
+      cursor: pointer;
 
       &:hover {
         background-color: #dadada;
@@ -398,6 +402,7 @@
           &:hover {
             color: #000000;
             text-decoration: underline;
+            cursor: pointer;
           }
         }
 

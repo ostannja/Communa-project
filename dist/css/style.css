@@ -3644,10 +3644,17 @@ li:hover .tag-list-item span {
 }
 
 .create .vacancy .vacancy-created .person {
+  display: block;
   background-image: url(../img/vacancy-cover.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 100%;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
 }
 
 .create .vacancy .vacancy-filled .person {
@@ -3665,6 +3672,7 @@ li:hover .tag-list-item span {
   -webkit-box-pack: end !important;
       -ms-flex-pack: end !important;
           justify-content: flex-end !important;
+  cursor: pointer;
 }
 
 .create .vacancy .vacancy-add:hover {
@@ -3815,6 +3823,7 @@ li:hover .tag-list-item span {
 .create .vacancy .vacancy-card .position .details:hover {
   color: #000000;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .create .vacancy .vacancy-card .position .name-wrapper {
@@ -4356,6 +4365,10 @@ li:hover .tag-list-item span {
   line-height: 1.2;
 }
 
+.project .form .short-brief .person-block .person .name-block:hover {
+  text-decoration: underline;
+}
+
 .project .title-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4456,8 +4469,65 @@ li:hover .tag-list-item span {
   margin-left: 0;
 }
 
+.project .top-project .card .info .info-card .social-button-container .social-button:hover {
+  border: solid 2px #000000 !important;
+}
+
+.project .top-project .card .info .info-card .social-button-container .facebook:hover,
+.project .top-project .card .info .info-card .social-button-container .instagram:hover,
+.project .top-project .card .info .info-card .social-button-container .twitter:hover {
+  background-image: unset;
+  background-color: #ffffff;
+}
+
+.project .top-project .card .info .info-card .social-button-container .facebook:hover .fb,
+.project .top-project .card .info .info-card .social-button-container .facebook:hover .insta,
+.project .top-project .card .info .info-card .social-button-container .facebook:hover .twitter,
+.project .top-project .card .info .info-card .social-button-container .instagram:hover .fb,
+.project .top-project .card .info .info-card .social-button-container .instagram:hover .insta,
+.project .top-project .card .info .info-card .social-button-container .instagram:hover .twitter,
+.project .top-project .card .info .info-card .social-button-container .twitter:hover .fb,
+.project .top-project .card .info .info-card .social-button-container .twitter:hover .insta,
+.project .top-project .card .info .info-card .social-button-container .twitter:hover .twitter {
+  fill: #000;
+}
+
 .project .vacancy {
   margin-bottom: 86px;
+}
+
+.project .vacancy .vacancy-created {
+  cursor: pointer;
+}
+
+.project .vacancy .vacancy-created:hover .input-button {
+  display: block;
+}
+
+.project .vacancy .vacancy-created:hover .person {
+  background-image: url(../img/vacancy-cover-hover.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100%;
+}
+
+.project .vacancy .vacancy-created .input-button {
+  display: none;
+  height: 50px;
+  width: 168px;
+  font-family: "Raleway";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #000000;
+  background-color: #ffffff;
+  border: none !important;
+}
+
+.project .vacancy .vacancy-created .input-button:hover {
+  background-color: inherit;
+  border: solid 2px #ffffff !important;
+  color: #ffffff;
 }
 
 .project .finance .title-container {
@@ -6004,3 +6074,5 @@ li:hover .tag-list-item span {
 .webp .create .top-project .card .downloader{ background-image: url(../img/empty_photo.webp); }
 
 .webp .create .vacancy .vacancy-created .person{ background-image: url(../img/vacancy-cover.webp); }
+
+.webp .project .vacancy .vacancy-created:hover .person{ background-image: url(../img/vacancy-cover-hover.webp); }
