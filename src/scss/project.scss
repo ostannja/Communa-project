@@ -1,5 +1,16 @@
 .project {
   padding-bottom: 0;
+
+  // background mark-up for fail project
+
+  // .background-fail {
+  //   display: none;
+  //   position: absolute;
+  //   background-image: linear-gradient(118deg, #5e5e5e -3%, #e2e2e2 100%);
+  //   height: 716px;
+  //   width: 100%;
+  // }
+
   .header-title {
     font-family: "DidactGothic";
     font-size: 55px;
@@ -141,6 +152,69 @@
               .twitter {
                 fill: #000;
               }
+            }
+          }
+        }
+
+        .info-card-moderation {
+          .input-button-moderation {
+            width: 60%;
+            height: 50px;
+            background-color: #ff6c6c;
+            border-radius: unset;
+            border: none;
+            margin-bottom: 24px;
+
+            .text {
+              font-family: "Raleway";
+              font-size: 16px;
+              font-weight: 500;
+              line-height: 1.5;
+              color: #ffffff;
+            }
+          }
+
+          .text-moderation {
+            font-family: "Raleway";
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.5;
+            color: #969b9f;
+          }
+        }
+
+        .info-card-success {
+          .input-button-success {
+            width: 183px;
+            height: 50px;
+            background-color: #00e89c;
+            border-radius: unset;
+            border: none;
+
+            .text {
+              font-family: "Raleway";
+              font-size: 16px;
+              font-weight: 500;
+              line-height: 1.5;
+              color: #ffffff;
+            }
+          }
+        }
+
+        .info-card-fail {
+          .input-button-fail {
+            width: 197px;
+            height: 50px;
+            background-color: #000000;
+            border-radius: unset;
+            border: none;
+
+            .text {
+              font-family: "Raleway";
+              font-size: 16px;
+              font-weight: 500;
+              line-height: 1.5;
+              color: #ffffff;
             }
           }
         }

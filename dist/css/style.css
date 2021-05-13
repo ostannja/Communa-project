@@ -4492,6 +4492,63 @@ li:hover .tag-list-item span {
   fill: #000;
 }
 
+.project .top-project .card .info .info-card-moderation .input-button-moderation {
+  width: 60%;
+  height: 50px;
+  background-color: #ff6c6c;
+  border-radius: unset;
+  border: none;
+  margin-bottom: 24px;
+}
+
+.project .top-project .card .info .info-card-moderation .input-button-moderation .text {
+  font-family: "Raleway";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+.project .top-project .card .info .info-card-moderation .text-moderation {
+  font-family: "Raleway";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #969b9f;
+}
+
+.project .top-project .card .info .info-card-success .input-button-success {
+  width: 183px;
+  height: 50px;
+  background-color: #00e89c;
+  border-radius: unset;
+  border: none;
+}
+
+.project .top-project .card .info .info-card-success .input-button-success .text {
+  font-family: "Raleway";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+.project .top-project .card .info .info-card-fail .input-button-fail {
+  width: 197px;
+  height: 50px;
+  background-color: #000000;
+  border-radius: unset;
+  border: none;
+}
+
+.project .top-project .card .info .info-card-fail .input-button-fail .text {
+  font-family: "Raleway";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
 .project .vacancy {
   margin-bottom: 86px;
 }
