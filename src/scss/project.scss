@@ -29,6 +29,10 @@
     color: #ffffff;
     height: unset !important;
     margin-bottom: 70px !important;
+
+    br {
+      display: none;
+    }
   }
 
   .form {
@@ -64,6 +68,10 @@
       color: #000000;
       margin-top: 42px;
       margin-bottom: 38px;
+
+      br {
+        display: none;
+      }
     }
   }
 
@@ -131,6 +139,7 @@
 
           .social-button-container {
             width: 171px;
+            flex-wrap: nowrap;
 
             .social-button {
               background-color: #f0f0f1;
@@ -218,6 +227,10 @@
             }
           }
         }
+
+        .details-orient-mobile {
+          display: none;
+        }
       }
     }
   }
@@ -234,12 +247,6 @@
 
       &:hover .person {
         @include backgr(url(../img/vacancy-cover-hover.png));
-      }
-
-      .position {
-        .name-wrapper {
-          // align-items: flex-end !important;
-        }
       }
 
       .input-button {
@@ -280,4 +287,333 @@
 
 .project-footer {
   padding-top: 50px;
+}
+
+@media (max-width: 899px) {
+  .project {
+    .background {
+      height: 530px;
+      background-image: linear-gradient(128deg, #00a6ed -4%, #00eb98);
+    }
+
+    // .background-grey {
+    //   position: absolute;
+    //   height: 181px;
+    //   top: 854px;
+    //   left: 0;
+    //   width: 100%;
+    //   background-color: #ffffff;
+    // }
+
+    .form {
+      .short-brief {
+        margin-bottom: 25px;
+        flex-direction: column;
+
+        .text-block-wrapper {
+          width: 100%;
+          margin-right: 0;
+
+          .header-title {
+            margin-bottom: 25px !important;
+          }
+
+          .subtitle {
+            margin-bottom: 37px !important;
+          }
+        }
+
+        .person-block {
+          height: 78px;
+
+          .avatar {
+            height: 78px;
+            width: 78px;
+            margin-right: 13px;
+          }
+
+          .person {
+            height: 78px;
+            justify-content: center;
+
+            .name-block {
+              @include flex(space-between, flex-start, row, nowrap);
+
+              .first-name {
+                margin-right: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .top-project {
+      display: block;
+
+      .card {
+        height: 320px;
+
+        .info {
+          width: 47.5%;
+          padding: 25px 27px 13px 24px;
+
+          .info-card {
+            .progress {
+              margin-bottom: 17px;
+            }
+
+            .card-text-timer {
+              margin-bottom: 15px;
+            }
+
+            .button-block {
+              margin-bottom: 15px;
+
+              .preview {
+                margin-right: 0;
+                width: 88%;
+              }
+            }
+
+            .social-button-container {
+              width: 150px;
+            }
+          }
+        }
+      }
+
+      .img {
+        width: 52.5%;
+      }
+    }
+
+    .title-wrapper {
+      flex-direction: column;
+
+      > :first-child {
+        font-size: 30px;
+        font-weight: normal;
+        line-height: 1.3;
+        margin-top: 19px;
+        margin-bottom: 0;
+
+        br {
+          display: block;
+        }
+      }
+
+      > :last-child {
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 1.69;
+        letter-spacing: 0.5px;
+        margin-top: 18px;
+        margin-bottom: 23px;
+      }
+    }
+
+    .vacancy {
+      margin-bottom: 0px;
+
+      .vacancy-card {
+        width: 48%;
+        margin-right: 3.73%;
+        margin-bottom: 32px;
+      }
+    }
+
+    .finance {
+      .button-block {
+        .button--finance {
+          margin-right: 7.6%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 699px) {
+  .project {
+    .form {
+      .short-brief {
+        margin-bottom: 17px;
+
+        .text-block-wrapper {
+          .header-title {
+            font-size: calc(40px + (15 + 5 * 0.6) * ((100vw - 375px) / 768));
+            margin-right: 20px;
+            margin-top: 21px;
+            margin-bottom: 19px !important;
+            line-height: 1;
+          }
+
+          .subtitle {
+            margin-right: 20px;
+            margin-bottom: 30px !important;
+            font-family: Raleway;
+            font-size: calc(13px + (3 + 5 * 0.6) * ((100vw - 375px) / 768));
+            font-weight: normal;
+            line-height: 1.62;
+            width: 100%;
+
+            br {
+              display: inline;
+            }
+          }
+        }
+
+        .person-block {
+          .person {
+            .position {
+              font-size: 13px;
+            }
+
+            .name-block {
+              font-size: 13px;
+
+              .first-name {
+                margin-right: 3px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .form > :nth-child(2),
+    .form > :nth-child(3) {
+      width: 100% !important;
+    }
+
+    .top-project {
+      margin-bottom: 0;
+
+      .card {
+        flex-direction: column;
+        height: fit-content;
+
+        .img {
+          width: 100%;
+          height: 204px;
+        }
+
+        .info {
+          width: 100%;
+          padding: 16px 17px 17px 20px;
+
+          > :nth-child(2) {
+            @include flex(space-between, flex-start, row, nowrap);
+          }
+
+          .info-card {
+            .card-text {
+              font-size: 12px;
+              line-height: 1.75;
+              margin-bottom: 5px;
+            }
+
+            .quantity {
+              font-size: 40px;
+              line-height: 0.98;
+            }
+
+            .progress {
+              margin-top: 18px;
+              margin-bottom: 13px;
+
+              .progress-status {
+                height: 4px;
+              }
+            }
+
+            .card-text-timer {
+              font-size: 12px;
+              line-height: 1.75;
+              margin-bottom: 39px;
+            }
+
+            .details-orient {
+              display: none;
+            }
+
+            .button-block {
+              width: 55%;
+              margin-bottom: 19px;
+
+              .input-button {
+                width: 100%;
+                width: 185px;
+                max-width: 260px;
+                min-height: unset;
+                height: 44px;
+                padding-left: 11%;
+                padding-right: 11%;
+              }
+            }
+          }
+
+          .details-orient-mobile {
+            display: block;
+            @include flex(flex-start, center, row, nowrap);
+
+            .details-location {
+              @include flex(space-between, center, row, nowrap);
+              margin-right: 33px;
+
+              .geo {
+                margin-right: 5px;
+                padding-left: 3px;
+              }
+            }
+
+            .details-city {
+              font-family: "Raleway";
+              font-size: 12px;
+              font-weight: 500;
+              line-height: 1.75;
+              letter-spacing: 0.02px;
+              color: #28283d;
+            }
+
+            .details-tag {
+              @include flex(center, center, row, nowrap);
+              margin-right: 49px;
+
+              &-text {
+                margin-left: 5px;
+                font-family: "Raleway";
+                font-size: 12px;
+                font-weight: 500;
+                line-height: 1.75;
+                letter-spacing: 0.01px;
+                color: #00a6ed;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .title-wrapper {
+      > :first-child {
+        margin-top: 14px;
+      }
+    }
+
+    .vacancy {
+      .vacancy-card {
+        margin-right: 0;
+        width: 100%;
+        margin-bottom: 20px;
+        max-width: 350px;
+      }
+    }
+
+    .finance {
+      .button-block {
+        padding-top: 20px;
+      }
+    }
+  }
 }

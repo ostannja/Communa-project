@@ -3472,6 +3472,8 @@ li:hover .tag-list-item span {
 }
 
 .create .top-project .card .info .info-down .uploader-block .input-button {
+  padding-left: 10%;
+  padding-right: 10%;
   height: 50px;
   border-radius: 24.5px;
   font-family: "Raleway";
@@ -4353,6 +4355,10 @@ li:hover .tag-list-item span {
   margin-bottom: 70px !important;
 }
 
+.project .subtitle br {
+  display: none;
+}
+
 .project .form {
   padding-top: 140px;
 }
@@ -4395,6 +4401,10 @@ li:hover .tag-list-item span {
   color: #000000;
   margin-top: 42px;
   margin-bottom: 38px;
+}
+
+.project .title-wrapper .title br {
+  display: none;
 }
 
 .project .top-project .img {
@@ -4462,6 +4472,8 @@ li:hover .tag-list-item span {
 
 .project .top-project .card .info .info-card .social-button-container {
   width: 171px;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 .project .top-project .card .info .info-card .social-button-container .social-button {
@@ -4547,6 +4559,10 @@ li:hover .tag-list-item span {
   font-weight: 500;
   line-height: 1.5;
   color: #ffffff;
+}
+
+.project .top-project .card .info .details-orient-mobile {
+  display: none;
 }
 
 .project .vacancy {
@@ -4709,6 +4725,25 @@ li:hover .tag-list-item span {
   .background-header .header-img {
     overflow: hidden;
     left: 565px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .project-checkbox {
+    margin-bottom: 0;
+  }
+
+  .project-checkbox .tabs label {
+    margin-right: 46px;
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 3.81;
+  }
+
+  .project-checkbox .tabs .tab {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 19px;
   }
 }
 
@@ -5189,6 +5224,154 @@ li:hover .tag-list-item span {
     font-weight: 500;
     line-height: 1.75;
     color: #28283d;
+  }
+}
+
+@media (max-width: 899px) {
+  .project .background {
+    height: 530px;
+    background-image: -o-linear-gradient(322deg, #00a6ed -4%, #00eb98);
+    background-image: linear-gradient(128deg, #00a6ed -4%, #00eb98);
+  }
+
+  .project .form .short-brief {
+    margin-bottom: 25px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .project .form .short-brief .text-block-wrapper {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .project .form .short-brief .text-block-wrapper .header-title {
+    margin-bottom: 25px !important;
+  }
+
+  .project .form .short-brief .text-block-wrapper .subtitle {
+    margin-bottom: 37px !important;
+  }
+
+  .project .form .short-brief .person-block {
+    height: 78px;
+  }
+
+  .project .form .short-brief .person-block .avatar {
+    height: 78px;
+    width: 78px;
+    margin-right: 13px;
+  }
+
+  .project .form .short-brief .person-block .person {
+    height: 78px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .project .form .short-brief .person-block .person .name-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+
+  .project .form .short-brief .person-block .person .name-block .first-name {
+    margin-right: 10px;
+  }
+
+  .project .top-project {
+    display: block;
+  }
+
+  .project .top-project .card {
+    height: 320px;
+  }
+
+  .project .top-project .card .info {
+    width: 47.5%;
+    padding: 25px 27px 13px 24px;
+  }
+
+  .project .top-project .card .info .info-card .progress {
+    margin-bottom: 17px;
+  }
+
+  .project .top-project .card .info .info-card .card-text-timer {
+    margin-bottom: 15px;
+  }
+
+  .project .top-project .card .info .info-card .button-block {
+    margin-bottom: 15px;
+  }
+
+  .project .top-project .card .info .info-card .button-block .preview {
+    margin-right: 0;
+    width: 88%;
+  }
+
+  .project .top-project .card .info .info-card .social-button-container {
+    width: 150px;
+  }
+
+  .project .top-project .img {
+    width: 52.5%;
+  }
+
+  .project .title-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .project .title-wrapper > :first-child {
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 1.3;
+    margin-top: 19px;
+    margin-bottom: 0;
+  }
+
+  .project .title-wrapper > :first-child br {
+    display: block;
+  }
+
+  .project .title-wrapper > :last-child {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.69;
+    letter-spacing: 0.5px;
+    margin-top: 18px;
+    margin-bottom: 23px;
+  }
+
+  .project .vacancy {
+    margin-bottom: 0px;
+  }
+
+  .project .vacancy .vacancy-card {
+    width: 48%;
+    margin-right: 3.73%;
+    margin-bottom: 32px;
+  }
+
+  .project .finance .button-block .button--finance {
+    margin-right: 7.6%;
   }
 }
 
@@ -5980,21 +6163,6 @@ li:hover .tag-list-item span {
   }
 }
 
-@media (max-width: 45em) {
-  .project-checkbox .tabs .tab,
-  .project-checkbox .tabs label {
-    -webkit-box-ordinal-group: initial;
-        -ms-flex-order: initial;
-            order: initial;
-  }
-
-  .project-checkbox .tabs label {
-    width: 100%;
-    margin-right: 0;
-    margin-top: 0.2rem;
-  }
-}
-
 @media (max-width: 699px) {
   .project-preview {
     padding-bottom: 47px;
@@ -6096,6 +6264,288 @@ li:hover .tag-list-item span {
   .project-preview .project-preview__slider .slider-link .slider-link-text {
     font-size: 16px;
     letter-spacing: 0;
+  }
+
+  .project-checkbox {
+    background-color: #ffffff;
+  }
+
+  .project-checkbox .container-mobile {
+    width: 85% !important;
+    margin: 0 auto !important;
+  }
+
+  .project-checkbox .tabs label {
+    margin-right: 0;
+    width: 30.33%;
+    line-height: 3.35;
+    background-color: #f0f0f1;
+  }
+
+  label[for="tabone"] {
+    padding-left: 7.5% !important;
+  }
+
+  label[for="tabtwo"] {
+    width: 35.7% !important;
+    margin-left: -6.5% !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  label[for="tabthree"] {
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 7.5% !important;
+    margin-left: -3.8% !important;
+    width: 44.2% !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+
+  .accordion_faq label {
+    width: 100% !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 12px;
+    background-color: #ffffff !important;
+  }
+
+  .accordion_faq .faq-tab {
+    margin-bottom: 0;
+  }
+
+  .project .form .short-brief {
+    margin-bottom: 17px;
+  }
+
+  .project .form .short-brief .text-block-wrapper .header-title {
+    font-size: calc(40px + (15 + 5 * 0.6) * ((100vw - 375px) / 768));
+    margin-right: 20px;
+    margin-top: 21px;
+    margin-bottom: 19px !important;
+    line-height: 1;
+  }
+
+  .project .form .short-brief .text-block-wrapper .subtitle {
+    margin-right: 20px;
+    margin-bottom: 30px !important;
+    font-family: Raleway;
+    font-size: calc(13px + (3 + 5 * 0.6) * ((100vw - 375px) / 768));
+    font-weight: normal;
+    line-height: 1.62;
+    width: 100%;
+  }
+
+  .project .form .short-brief .text-block-wrapper .subtitle br {
+    display: inline;
+  }
+
+  .project .form .short-brief .person-block .person .position {
+    font-size: 13px;
+  }
+
+  .project .form .short-brief .person-block .person .name-block {
+    font-size: 13px;
+  }
+
+  .project .form .short-brief .person-block .person .name-block .first-name {
+    margin-right: 3px;
+  }
+
+  .project .form > :nth-child(2),
+  .project .form > :nth-child(3) {
+    width: 100% !important;
+  }
+
+  .project .top-project {
+    margin-bottom: 0;
+  }
+
+  .project .top-project .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+
+  .project .top-project .card .img {
+    width: 100%;
+    height: 204px;
+  }
+
+  .project .top-project .card .info {
+    width: 100%;
+    padding: 16px 17px 17px 20px;
+  }
+
+  .project .top-project .card .info > :nth-child(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+
+  .project .top-project .card .info .info-card .card-text {
+    font-size: 12px;
+    line-height: 1.75;
+    margin-bottom: 5px;
+  }
+
+  .project .top-project .card .info .info-card .quantity {
+    font-size: 40px;
+    line-height: 0.98;
+  }
+
+  .project .top-project .card .info .info-card .progress {
+    margin-top: 18px;
+    margin-bottom: 13px;
+  }
+
+  .project .top-project .card .info .info-card .progress .progress-status {
+    height: 4px;
+  }
+
+  .project .top-project .card .info .info-card .card-text-timer {
+    font-size: 12px;
+    line-height: 1.75;
+    margin-bottom: 39px;
+  }
+
+  .project .top-project .card .info .info-card .details-orient {
+    display: none;
+  }
+
+  .project .top-project .card .info .info-card .button-block {
+    width: 55%;
+    margin-bottom: 19px;
+  }
+
+  .project .top-project .card .info .info-card .button-block .input-button {
+    width: 100%;
+    width: 185px;
+    max-width: 260px;
+    min-height: unset;
+    height: 44px;
+    padding-left: 11%;
+    padding-right: 11%;
+  }
+
+  .project .top-project .card .info .details-orient-mobile {
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+
+  .project .top-project .card .info .details-orient-mobile .details-location {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin-right: 33px;
+  }
+
+  .project .top-project .card .info .details-orient-mobile .details-location .geo {
+    margin-right: 5px;
+    padding-left: 3px;
+  }
+
+  .project .top-project .card .info .details-orient-mobile .details-city {
+    font-family: "Raleway";
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.75;
+    letter-spacing: 0.02px;
+    color: #28283d;
+  }
+
+  .project .top-project .card .info .details-orient-mobile .details-tag {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin-right: 49px;
+  }
+
+  .project .top-project .card .info .details-orient-mobile .details-tag-text {
+    margin-left: 5px;
+    font-family: "Raleway";
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.75;
+    letter-spacing: 0.01px;
+    color: #00a6ed;
+  }
+
+  .project .title-wrapper > :first-child {
+    margin-top: 14px;
+  }
+
+  .project .vacancy .vacancy-card {
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 20px;
+    max-width: 350px;
+  }
+
+  .project .finance .button-block {
+    padding-top: 20px;
   }
 }
 

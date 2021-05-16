@@ -58,14 +58,15 @@
 
     <main class="create project">
       <section class="background background-fail"></section>
-      <div class="container form">
-        <section class="short-brief">
+      <section class="background-grey"></section>
+      <div class=" form">
+        <section class="short-brief container">
           <div class="text-block-wrapper">
             <p class="header-title">
               Factory — перший учбовий хакерспейс для підлітків
             </p>
             <p class="subtitle">
-              Запрошуємо всіх бажаючих пробігтися столицею Прикарпаття.
+              Запрошуємо всіх бажаючих пробігтися <br/>столицею Прикарпаття.
             </p>
           </div>
 
@@ -81,7 +82,7 @@
           </div>
         </section>
 
-        <section class="top-project">
+        <section class="top-project container">
           <div class="card">
             <div class="img">
               <img src="img/main_marathon.png" alt="Marathon’17" />
@@ -140,6 +141,17 @@
                     </button>
                   </a>
                 </div>
+              </div>
+
+              <div class="details-orient-mobile">
+                <div class="details-location">
+                  <img class="geo" src="img/geo.svg" alt="geo" />
+                  <span class="details-city">Івано-Франківськ</span>
+                </div>
+                <a class="details-tag" href="#">
+                  <img src="img/hash.svg" alt="hash" />
+                  <span class="details-tag-text">Спорт</span></a
+                >
               </div>
 
               <!-- mark-up for project hold -->
@@ -227,12 +239,12 @@
           </div>
         </section>
 
-        <section class="project-checkbox">
-          <div class="tabs">
+        <section class="project-checkbox container ">
+          <div class="tabs ">
             <input type="radio" name="tabs" id="tabone" checked="checked" />
             <label for="tabone">Проект</label>
-            <div class="tab">
-              <p class="project-tab">
+            <div class="tab container-mobile">
+              <p class="project-tab container-mobile">
                 Арвінд залишив свою 30-річну кар’єру в сталеварній
                 промисловості, щоб відкрити власний бізнес з експорту продуктів
                 до ЄС. Він переконався, що електронна резиденція була на той час
@@ -247,14 +259,14 @@
 
             <input type="radio" name="tabs" id="tabtwo" />
             <label for="tabtwo">Коментарі</label>
-            <div class="tab">
+            <div class="tab container-mobile">
               <h1>Тут мають бути коментарі</h1>
               <p>Так, тут</p>
             </div>
 
             <input type="radio" name="tabs" id="tabthree" />
             <label for="tabthree">Часті запитання</label>
-            <div class="tab accordion_faq">
+            <div class="tab accordion_faq container-mobile">
               <div class="faq-tab">
                 <input id="tab-one" type="checkbox" name="tabs" />
                 <label for="tab-one">Як долучитися?</label>
@@ -321,12 +333,12 @@
           </div>
         </section>
 
-        <div class="title-wrapper">
-          <p class="title">Команда: <span>4</span> з <span>7</span> знайдено</p>
+        <div class="title-wrapper container">
+          <div class="title">Команда: <br> <span>4</span> з <span>7</span> знайдено</div>
           <p class="title">Залишилось <span>9</span> годин</p>
         </div>
 
-        <section class="vacancy">
+        <section class="vacancy container">
           <div class="vacancy-card vacancy-filled">
             <div class="person">
               <img src="img/petrov.jpg" alt="" />
@@ -370,43 +382,11 @@
               </div>
             </div>
           </div>
+          
         </section>
       </div>
 
       <section>
-        <!-- <div id="vacancy-first-step" class="popup">
-        <div class="popup-wrapper">
-          <div class="popup-content popup-animation">
-            <span class="closed">
-              <img src="img/close-popup.svg" alt="close-popup">
-            </span>
-            <div class="title">Нова вакансія</div>
-            <form class="popup-form">
-
-              <div class="form-wrapper">
-                <label for="vacancy">Введіть назву вакансії (до 70 символів)</label>
-                <input class="u-full-width" type="text" id="vacancy">
-              </div>
-
-              <div class="form-wrapper">
-                <label for="description">Опишіть, що ви очікуєте від кандидата та які навички потрібні (до 200
-                  символів)</label>
-                <input class="u-full-width" type="text" id="description">
-              </div>
-
-              <div class="submit-wrapper">
-                <button type="button" href="#vacancy-about-step" class="input-button button-primary popup-button">
-                  <p class="text" href="#vacancy-about-step">Додати вакансію</p>
-                  <svg class="arw-btn">
-                    <use xlink:href="sprite.svg#arw-btn"></use>
-                  </svg>
-                </button>
-              </div>
-            </form>
-
-          </div>
-        </div>
-      </div> -->
 
         <div id="vacancy-add-step" class="popup">
           <div class="popup-wrapper">

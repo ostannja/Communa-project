@@ -100,3 +100,17 @@
     content: url("../../img/faq-minus.svg");
   }
 }
+
+@media (max-width: 699px) {
+  .accordion_faq {
+    label {
+      width: 100% !important;
+      margin-bottom: 0 !important;
+      padding-bottom: 12px;
+      background-color: #ffffff !important;
+    }
+    .faq-tab {
+      margin-bottom: 0;
+    }
+  }
+}

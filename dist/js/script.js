@@ -59,6 +59,19 @@ window.onclick = function (event) {
   }
 };
 
+// Remove the margin-right for every fourth element of vacancy-card on the create page
+let vacancyCard = document.querySelectorAll(".vacancy-card");
+if (window.innerWidth > 1200) {
+  for (let i = 3; i < vacancyCard.length; i += 4) {
+    vacancyCard[i].style.marginRight = "0px";
+  }
+}
+if (window.innerWidth >= 700 && window.innerWidth < 1200) {
+  for (let i = 1; i < vacancyCard.length; i += 2) {
+    vacancyCard[i].style.marginRight = "0px";
+  }
+}
+
 //uploader in settings.html
 let downloader = document.querySelector(".downloader");
 let inputUploader = document.querySelector(".input-uploader");
@@ -104,9 +117,3 @@ testWebP(function (support) {
     document.querySelector("body").classList.add("no-webp");
   }
 });
-
-// Remove the margin-right for every fourth element of vacancy-card on the create page
-let vacancyCard = document.querySelectorAll(".vacancy-card");
-for (let i = 3; i < vacancyCard.length; i += 4) {
-  vacancyCard[i].style.marginRight = "0px";
-}
