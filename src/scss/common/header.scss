@@ -42,6 +42,10 @@
   &-button {
     margin-left: 45px;
     width: 130px;
+    font-family: "Raleway";
+    font-weight: 500;
+    font-size: 14px;
+    border: solid 2px #00a6ed;
 
     &:hover,
     &:focus {
@@ -312,7 +316,7 @@
       .navbar-button {
         font-family: "Raleway";
         margin: 0;
-        width: 70.5%;
+        width: 70.5% !important;
         max-width: 260px;
         height: 44px;
         font-size: calc(14.5px + (1 + 5 * 0.6) * ((100vw - 375px) / 768));

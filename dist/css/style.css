@@ -589,6 +589,7 @@ a {
   margin: 0;
   padding: 0;
   text-decoration: none;
+  color: unset;
 }
 
 ul {
@@ -715,6 +716,10 @@ select:focus {
 .navbar-button {
   margin-left: 45px;
   width: 130px;
+  font-family: "Raleway";
+  font-weight: 500;
+  font-size: 14px;
+  border: solid 2px #00a6ed;
 }
 
 .navbar-button:hover,
@@ -4619,6 +4624,289 @@ li:hover .tag-list-item span {
   padding-top: 50px;
 }
 
+.dashboard .background {
+  height: 410px;
+}
+
+.dashboard .form .short-brief .header-title {
+  font-family: "DidactGothic";
+  font-size: 55px;
+  font-weight: normal;
+  line-height: 0.95;
+  color: #ffffff;
+  margin-bottom: 41px !important;
+}
+
+.dashboard .form .short-brief .subtitle {
+  font-family: "Raleway";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.63;
+  color: #ffffff;
+  margin-bottom: 40px !important;
+}
+
+.dashboard .form .short-brief .subtitle br {
+  display: inline;
+}
+
+.dashboard .form .short-brief .person-block .person .settings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.dashboard .form .short-brief .person-block .person .settings:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.dashboard .form .short-brief .person-block .person .settings .position {
+  margin-right: 15px;
+}
+
+.dashboard .form .short-brief .person-block .person .name-block {
+  margin-top: 9px;
+  line-height: 1.5;
+}
+
+.dashboard .form .short-brief .person-block .arw-btn {
+  fill: #fff;
+  width: 7px;
+  height: 8px;
+}
+
+.dashboard .board-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.dashboard .board-wrapper .board {
+  width: 48.4%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #ffffff;
+  margin-bottom: 170px;
+}
+
+.dashboard .board-wrapper .board > :first-child {
+  height: 85px;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.dashboard .board-wrapper .board > :first-child .title {
+  padding: 0 !important;
+}
+
+.dashboard .board-wrapper .board .board-panel {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 17px 28px 13px;
+}
+
+.dashboard .board-wrapper .board .board-panel .title {
+  margin: 0;
+  padding-top: 14px;
+  padding-bottom: 11px;
+  font-family: "DidactGothic";
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 1;
+  color: #000000;
+}
+
+.dashboard .board-wrapper .board .board-panel .project-title {
+  font-family: "Raleway";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.31;
+  margin-bottom: 14px;
+}
+
+.dashboard .board-wrapper .board .board-panel .project-title:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+.dashboard .board-wrapper .board .board-panel .project-data {
+  font-family: "Raleway";
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.75;
+  color: #000000;
+}
+
+.dashboard .board-wrapper .board .board-panel:not(:first-child) {
+  border-top: 2px solid #f0f0f1;
+}
+
+.dashboard .board-wrapper .board .board-panel .arw-btn {
+  fill: #fff;
+  width: 8px;
+  height: 11px;
+}
+
+.dashboard .board-wrapper .board .project-on-the-fly {
+  color: #00a6ed;
+}
+
+.dashboard .board-wrapper .board .project-complete {
+  color: #00e89c;
+}
+
+.dashboard .board-wrapper .board .project-on-moderation .project-data {
+  color: #ff6c6c;
+}
+
+.dashboard .board-wrapper .board .project-not-assembled {
+  color: #969b9f;
+}
+
+.dashboard .board-wrapper .board .project-not-assembled .project-data {
+  color: #969b9f;
+}
+
+.dashboard .board-wrapper .board .project-not-assembled .project-title:hover {
+  text-decoration: unset;
+  color: inherit;
+}
+
+.dashboard .board-wrapper .board .project-initialization,
+.dashboard .board-wrapper .board .project-choose {
+  height: 62px;
+  padding: 0 29px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.dashboard .board-wrapper .board .project-initialization .project-title,
+.dashboard .board-wrapper .board .project-choose .project-title {
+  color: #ffffff;
+  margin: 0;
+  margin-right: 28px;
+}
+
+.dashboard .board-wrapper .board .project-initialization .project-title:hover,
+.dashboard .board-wrapper .board .project-choose .project-title:hover {
+  color: #ffffff;
+}
+
+.dashboard .board-wrapper .board .project-data {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.dashboard .board-wrapper .board .project-choose {
+  background-color: #00e89c;
+}
+
+.dashboard .board-wrapper .board .project-initialization {
+  background-color: #00a6ed;
+}
+
+.dashboard .board-wrapper .board .without-project {
+  font-family: "Raleway";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.64;
+  color: #000000;
+  margin-bottom: 11px;
+}
+
 @media (min-width: 320px) {
   .container {
     width: 85%;
@@ -5056,10 +5344,6 @@ li:hover .tag-list-item span {
 }
 
 @media (max-width: 900px) {
-  .navbar .navbar-menu .navbar-button {
-    width: 100%;
-  }
-
   .navbar-sign a {
     width: 70.5%;
     max-width: 260px;
@@ -5373,6 +5657,74 @@ li:hover .tag-list-item span {
   .project .finance .button-block .button--finance {
     margin-right: 7.6%;
   }
+
+  .dashboard .form .short-brief {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-bottom: 33px;
+  }
+
+  .dashboard .form .short-brief .text-block-wrapper {
+    width: 65.5%;
+  }
+
+  .dashboard .form .short-brief .text-block-wrapper .header-title {
+    margin-bottom: 42px !important;
+  }
+
+  .dashboard .form .short-brief .person-block .avatar {
+    margin-right: 26px !important;
+  }
+
+  .dashboard .form .short-brief .person-block .person .name-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .dashboard .board-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .dashboard .board-wrapper .board {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+
+  .dashboard .board-wrapper .board > :first-child {
+    height: 66px;
+    padding: 0 28px !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .dashboard .board-wrapper .board .board-panel {
+    padding-right: 16px;
+  }
+
+  .dashboard .board-wrapper .board .board-panel .project-data {
+    font-size: 13px;
+    line-height: 1.62;
+  }
 }
 
 @media (max-width: 800px) {
@@ -5503,7 +5855,7 @@ li:hover .tag-list-item span {
   .navbar .navbar-menu .navbar-button {
     font-family: "Raleway";
     margin: 0;
-    width: 70.5%;
+    width: 70.5% !important;
     max-width: 260px;
     height: 44px;
     font-size: calc(14.5px + (1 + 5 * 0.6) * ((100vw - 375px) / 768));
@@ -6267,7 +6619,7 @@ li:hover .tag-list-item span {
   }
 
   .project-checkbox {
-    background-color: #ffffff;
+    background-color: #fff;
   }
 
   .project-checkbox .container-mobile {
@@ -6546,6 +6898,82 @@ li:hover .tag-list-item span {
 
   .project .finance .button-block {
     padding-top: 20px;
+  }
+
+  .dashboard .form .short-brief {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 31px;
+  }
+
+  .dashboard .form .short-brief .text-block-wrapper {
+    width: 100%;
+  }
+
+  .dashboard .form .short-brief .text-block-wrapper .header-title {
+    margin-top: 39px;
+  }
+
+  .dashboard .form .short-brief .text-block-wrapper .subtitle {
+    width: 248px;
+    margin-bottom: 43px !important;
+  }
+
+  .dashboard .form .short-brief .text-block-wrapper .subtitle br {
+    display: none;
+  }
+
+  .dashboard .form .short-brief .person-block .avatar {
+    margin-right: 16px !important;
+  }
+
+  .dashboard .form .short-brief .person-block .person .name-block {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-bottom: 2px;
+  }
+
+  .dashboard .form .short-brief .person-block .person .settings .position {
+    margin-right: 6px;
+  }
+
+  .dashboard .board-wrapper .board {
+    margin-bottom: 41px;
+  }
+
+  .dashboard .board-wrapper .board .board-panel {
+    padding: 10px 18px 12px 28px;
+  }
+
+  .dashboard .board-wrapper .board .board-panel .title {
+    padding-top: 6px;
+    padding-bottom: 5px;
+  }
+
+  .dashboard .board-wrapper .board .board-panel .project-title {
+    font-size: 13px;
+    line-height: 1.62;
+  }
+
+  .dashboard .board-wrapper .board .project-initialization,
+  .dashboard .board-wrapper .board .project-choose {
+    padding-bottom: 17px;
+  }
+
+  .dashboard .board-wrapper .board .project-initialization .project-title,
+  .dashboard .board-wrapper .board .project-choose .project-title {
+    font-size: 16px;
+    line-height: 1.31;
+  }
+
+  .dashboard .board-wrapper .board .without-project {
+    font-size: 13px;
+    margin-bottom: 0;
+    line-height: 1.9;
   }
 }
 
