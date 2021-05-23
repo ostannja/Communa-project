@@ -1,0 +1,213 @@
+$color1: #f4f4f4;
+$color2: #3197ee;
+
+.catalog {
+  overflow: hidden;
+  background-color: #f0f0f1;
+  height: fit-content;
+
+  .background-header {
+    height: 393px;
+    align-items: flex-start;
+    margin-bottom: 66px;
+
+    .subtitle {
+      margin-top: 17px;
+    }
+
+    .container {
+      overflow: hidden;
+    }
+  }
+
+  .form {
+    float: left;
+    width: 23.2%;
+
+    .tag-list {
+      padding: 0;
+      height: 275px;
+    }
+
+    .choose {
+      padding-top: 75px;
+      padding-bottom: 36px;
+
+      .form-container {
+        .form-select {
+          width: 90%;
+        }
+      }
+    }
+  }
+
+  .project-prewiev {
+    width: fit-content !important;
+    height: 287px !important;
+  }
+
+  .block {
+    height: 287px;
+    width: 23.2%;
+    float: left;
+    margin-left: 2.4%;
+    margin-bottom: 63px;
+
+    &:nth-of-type(4n + 7) {
+      margin-left: 0;
+    }
+
+    .info-card {
+      .details-time {
+        margin-right: 0px;
+      }
+    }
+  }
+
+  .radio-container {
+    background-color: unset;
+  }
+
+  .radio {
+    label {
+      font-family: "DidactGothic";
+      font-size: 18px;
+      font-weight: normal;
+      line-height: 2;
+      color: #000000;
+      margin-bottom: 0;
+    }
+
+    input[type="radio"] {
+      position: absolute;
+      opacity: 0;
+      + .radio-label {
+        &:before {
+          content: "";
+          background: #ffffff;
+          border-radius: 100%;
+          // border: 1px solid darken($color1, 25%);
+          display: inline-block;
+          width: 25px;
+          height: 25px;
+          position: relative;
+          top: 4px;
+          margin-right: 10px;
+          vertical-align: top;
+          cursor: pointer;
+          text-align: center;
+          transition: all 450ms ease-in-out;
+        }
+      }
+      &:checked {
+        + .radio-label {
+          &:before {
+            background-color: #00a6ed;
+            box-shadow: inset 0 0 0 7px #ffffff;
+          }
+        }
+      }
+      &:focus {
+        + .radio-label {
+          &:before {
+            outline: none;
+          }
+        }
+      }
+      &:disabled {
+        + .radio-label {
+          &:before {
+            box-shadow: inset 0 0 0 7px $color1;
+            border-color: darken($color1, 25%);
+            background: darken($color1, 25%);
+          }
+        }
+      }
+      + .radio-label {
+        &:empty {
+          &:before {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .input-button {
+    margin: 2px auto 72px;
+    width: 265px;
+    height: 50px;
+    font-family: "Raleway";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #ffffff;
+    padding-left: 36px;
+    padding-right: 37px;
+    background-color: #000000;
+    border: black 2px solid !important;
+    letter-spacing: 0;
+
+    &:hover {
+      background-color: #ffffff;
+      color: #000000;
+    }
+  }
+}
+
+@media (max-width: 899px) {
+  .catalog {
+    .background-header {
+      height: 285px;
+      margin-bottom: 40px;
+
+      .subtitle {
+        width: 75%;
+      }
+    }
+
+    .form {
+      width: 45.7%;
+
+      .choose {
+        padding-top: 43px;
+
+        .form-container {
+          .form-select {
+            width: 75.5%;
+          }
+        }
+      }
+    }
+
+    .block {
+      width: 45.7%;
+      margin-left: 8.6%;
+      height: 310px;
+      margin-bottom: 30px;
+
+      &:nth-of-type(2n + 3) {
+        margin-left: 0;
+      }
+
+      .img {
+        height: 175px;
+
+        img {
+          height: 175px;
+        }
+      }
+
+      .info-card {
+        .details-time {
+          margin-right: 45px;
+        }
+      }
+    }
+
+    .input-button {
+      margin-top: 52px;
+      margin-bottom: 81px;
+    }
+  }
+}
