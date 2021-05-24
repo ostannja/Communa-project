@@ -5071,6 +5071,10 @@ li:hover .tag-list-item span {
     margin-left: 0;
     border: none;
   }
+
+  .catalog .form .choose-mobile {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
@@ -7167,6 +7171,64 @@ li:hover .tag-list-item span {
     font-size: 13px;
     margin-bottom: 0;
     line-height: 1.9;
+  }
+
+  .catalog .background-header {
+    margin-bottom: 14px;
+  }
+
+  .catalog .background-header .container {
+    padding-top: 109px;
+  }
+
+  .catalog .background-header .subtitle {
+    width: 100%;
+    margin-top: 17px;
+    margin-bottom: 19px;
+    line-height: 1.54;
+  }
+
+  .catalog .form {
+    width: 100%;
+  }
+
+  .catalog .form .choose {
+    padding: 0;
+  }
+
+  .catalog .form .choose .form-container {
+    margin-top: 16px;
+  }
+
+  .catalog .form .choose .form-container .form-select {
+    margin-bottom: 0;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .catalog .form .tag-list {
+    display: none;
+  }
+
+  .catalog .form .radio-container {
+    display: none;
+  }
+
+  .catalog .block {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-top: 30px;
+  }
+
+  .catalog .input-button {
+    margin-top: 42px;
+    margin-bottom: 49px;
+    min-height: unset;
+    height: 44px;
+    width: 250px;
   }
 }
 

@@ -211,3 +211,72 @@ $color2: #3197ee;
     }
   }
 }
+
+@media (max-width: 699px) {
+  .catalog {
+    .background-header {
+      margin-bottom: 14px;
+
+      .container {
+        padding-top: 109px;
+      }
+
+      .subtitle {
+        width: 100%;
+        margin-top: 17px;
+        margin-bottom: 19px;
+        line-height: 1.54;
+      }
+    }
+    .form {
+      width: 100%;
+
+      .choose {
+        padding: 0;
+
+        .form-container {
+          margin-top: 16px;
+
+          .form-select {
+            margin-bottom: 0;
+            width: 100%;
+            justify-content: center;
+          }
+        }
+      }
+
+      .tag-list {
+        display: none;
+      }
+
+      .radio-container {
+        display: none;
+      }
+    }
+
+    .block {
+      width: 100%;
+      margin-left: 0;
+      margin-bottom: 0;
+      margin-top: 30px;
+    }
+
+    .input-button {
+      margin-top: 42px;
+      margin-bottom: 49px;
+      min-height: unset;
+      height: 44px;
+      width: 250px;
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .catalog {
+    .form {
+      .choose-mobile {
+        display: none;
+      }
+    }
+  }
+}
