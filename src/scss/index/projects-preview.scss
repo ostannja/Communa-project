@@ -9,16 +9,16 @@
   &:not(:first-child) {
     margin-left: 27px;
   }
-}
 
-.img {
-  position: relative;
-  height: 152px;
+  .img {
+    position: relative;
+    height: 152px;
 
-  img {
-    min-width: 100%;
-    object-fit: cover;
-    height: fit-content;
+    img {
+      min-width: 100%;
+      object-fit: cover;
+      height: fit-content;
+    }
   }
 }
 

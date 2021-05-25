@@ -504,83 +504,6 @@
     }
   }
 
-  .button-block {
-    @include flex(flex-start, center, row, nowrap);
-    padding-top: 31px;
-
-    .preview {
-      width: 290px;
-      height: 50px;
-      margin-right: 49px;
-
-      &:hover {
-        border: solid 2px #ffffff;
-
-        .text {
-          color: #00a6ed;
-        }
-
-        .arw-btn {
-          fill: #00a6ed;
-        }
-      }
-    }
-
-    .publish {
-      width: 212px;
-      height: 50px;
-      background-color: #000000;
-      border: solid 2px #000000 !important;
-      margin-right: 42px;
-
-      .submit {
-        width: 12px;
-        height: 9px;
-      }
-
-      &:hover {
-        background-color: #ffffff;
-
-        .text {
-          color: #000000;
-        }
-
-        .submit {
-          fill: #000000;
-        }
-      }
-    }
-
-    .input-button {
-      @include flex(space-between, center, row, nowrap);
-      padding-left: 29px;
-      padding-right: 20px;
-
-      .text {
-        font-family: Raleway;
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 1.5;
-        color: #ffffff;
-      }
-
-      .arw-btn {
-        fill: #ffffff;
-        width: 6px;
-        height: 10px;
-      }
-    }
-
-    .checked {
-      font-family: "Raleway";
-      font-size: 12px;
-      font-weight: 500;
-      line-height: 2;
-
-      color: #969b9f;
-    }
-  }
-
   .popup {
     top: 0;
     height: 100vh;
@@ -652,6 +575,83 @@
         }
       }
     }
+  }
+}
+
+.button-block {
+  @include flex(flex-start, center, row, nowrap);
+  padding-top: 31px;
+
+  .preview {
+    width: 290px;
+    height: 50px;
+    margin-right: 49px;
+
+    &:hover {
+      border: solid 2px #ffffff;
+
+      .text {
+        color: #00a6ed;
+      }
+
+      .arw-btn {
+        fill: #00a6ed;
+      }
+    }
+  }
+
+  .publish {
+    width: 212px;
+    height: 50px;
+    background-color: #000000;
+    border: solid 2px #000000 !important;
+    margin-right: 42px;
+
+    .submit {
+      width: 12px;
+      height: 9px;
+    }
+
+    &:hover {
+      background-color: #ffffff;
+
+      .text {
+        color: #000000;
+      }
+
+      .submit {
+        fill: #000000;
+      }
+    }
+  }
+
+  .input-button {
+    @include flex(space-between, center, row, nowrap);
+    padding-left: 29px;
+    padding-right: 20px;
+
+    .text {
+      font-family: Raleway;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.5;
+      color: #ffffff;
+    }
+
+    .arw-btn {
+      fill: #ffffff;
+      width: 6px;
+      height: 10px;
+    }
+  }
+
+  .checked {
+    font-family: "Raleway";
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 2;
+
+    color: #969b9f;
   }
 }
 

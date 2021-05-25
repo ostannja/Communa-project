@@ -1764,12 +1764,12 @@ li:hover .tag-list-item span {
   margin-left: 27px;
 }
 
-.img {
+.block .img {
   position: relative;
   height: 152px;
 }
 
-.img img {
+.block .img img {
   min-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -3981,110 +3981,6 @@ li:hover .tag-list-item span {
   padding-left: 30px;
 }
 
-.create .button-block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  padding-top: 31px;
-}
-
-.create .button-block .preview {
-  width: 290px;
-  height: 50px;
-  margin-right: 49px;
-}
-
-.create .button-block .preview:hover {
-  border: solid 2px #ffffff;
-}
-
-.create .button-block .preview:hover .text {
-  color: #00a6ed;
-}
-
-.create .button-block .preview:hover .arw-btn {
-  fill: #00a6ed;
-}
-
-.create .button-block .publish {
-  width: 212px;
-  height: 50px;
-  background-color: #000000;
-  border: solid 2px #000000 !important;
-  margin-right: 42px;
-}
-
-.create .button-block .publish .submit {
-  width: 12px;
-  height: 9px;
-}
-
-.create .button-block .publish:hover {
-  background-color: #ffffff;
-}
-
-.create .button-block .publish:hover .text {
-  color: #000000;
-}
-
-.create .button-block .publish:hover .submit {
-  fill: #000000;
-}
-
-.create .button-block .input-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  padding-left: 29px;
-  padding-right: 20px;
-}
-
-.create .button-block .input-button .text {
-  font-family: Raleway;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.5;
-  color: #ffffff;
-}
-
-.create .button-block .input-button .arw-btn {
-  fill: #ffffff;
-  width: 6px;
-  height: 10px;
-}
-
-.create .button-block .checked {
-  font-family: "Raleway";
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 2;
-  color: #969b9f;
-}
-
 .create .popup {
   top: 0;
   height: 100vh;
@@ -4160,6 +4056,110 @@ li:hover .tag-list-item span {
   width: 60%;
   margin-bottom: 0;
   margin-top: -12px;
+}
+
+.button-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  padding-top: 31px;
+}
+
+.button-block .preview {
+  width: 290px;
+  height: 50px;
+  margin-right: 49px;
+}
+
+.button-block .preview:hover {
+  border: solid 2px #ffffff;
+}
+
+.button-block .preview:hover .text {
+  color: #00a6ed;
+}
+
+.button-block .preview:hover .arw-btn {
+  fill: #00a6ed;
+}
+
+.button-block .publish {
+  width: 212px;
+  height: 50px;
+  background-color: #000000;
+  border: solid 2px #000000 !important;
+  margin-right: 42px;
+}
+
+.button-block .publish .submit {
+  width: 12px;
+  height: 9px;
+}
+
+.button-block .publish:hover {
+  background-color: #ffffff;
+}
+
+.button-block .publish:hover .text {
+  color: #000000;
+}
+
+.button-block .publish:hover .submit {
+  fill: #000000;
+}
+
+.button-block .input-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  padding-left: 29px;
+  padding-right: 20px;
+}
+
+.button-block .input-button .text {
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+.button-block .input-button .arw-btn {
+  fill: #ffffff;
+  width: 6px;
+  height: 10px;
+}
+
+.button-block .checked {
+  font-family: "Raleway";
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 2;
+  color: #969b9f;
 }
 
 .create-footer {
@@ -5048,6 +5048,149 @@ li:hover .tag-list-item span {
 
 .catalog .input-button:hover {
   background-color: #ffffff;
+  color: #000000;
+}
+
+.how .background-header {
+  height: 326px;
+}
+
+.how .background-header .header-img {
+  width: 354px;
+  height: 286px;
+  top: 41px;
+  left: 68.9%;
+}
+
+.how .background-header .title {
+  margin-bottom: 36px;
+}
+
+.how .want-help {
+  padding-top: 62px;
+  padding-bottom: 65px;
+}
+
+.how .want-help .img-container {
+  padding-top: 63px;
+}
+
+.how .how-create {
+  background-color: #f0f0f1;
+}
+
+.how .how-create .container > :nth-of-type(3) .description-block {
+  padding-top: 30px;
+  margin-right: 0;
+}
+
+.how .how-create .container > :nth-of-type(3) .description-block .title {
+  padding-top: 0;
+  margin-bottom: 49px;
+}
+
+.how .how-create .description .description-block .title {
+  padding-top: 55px;
+  margin-bottom: 34px;
+}
+
+.how .how-create .flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.how .how-create .flex-container .flex-block {
+  width: 30.8%;
+  background-color: #fff;
+  margin-bottom: 46px;
+  height: 156px;
+  padding: 20px 20px 22px 30px;
+}
+
+.how .how-create .flex-container .flex-block:nth-of-type(4) .subtitle {
+  width: 204px;
+}
+
+.how .how-create .flex-container .flex-block:nth-of-type(5) .subtitle {
+  width: 262px;
+}
+
+.how .how-create .flex-container .flex-block .title {
+  font-family: "DidactGothic";
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 1.37;
+  letter-spacing: normal;
+  color: #000000;
+  margin-bottom: 27px;
+}
+
+.how .how-create .flex-container .flex-block .subtitle {
+  font-family: "Raleway";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.71;
+  color: #000000;
+}
+
+.how .how-create .button-block {
+  padding-top: 78px;
+  padding-bottom: 85px;
+}
+
+.how .how-create .button-block .input-button {
+  width: 230px;
+}
+
+.how .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.how .description .description-block {
+  margin-right: 9.4%;
+}
+
+.how .description .description-block .title {
+  font-family: "DidactGothic";
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 1.43;
+  color: #00a6ed;
+  margin-bottom: 19px;
+}
+
+.how .description .description-block .subtitle {
+  font-family: "Raleway";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.71;
   color: #000000;
 }
 

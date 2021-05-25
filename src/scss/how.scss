@@ -1,0 +1,122 @@
+.how {
+  .background-header {
+    height: 326px;
+
+    .header-img {
+      width: 354px;
+      height: 286px;
+      top: 41px;
+      left: 68.9%;
+    }
+
+    .title {
+      margin-bottom: 36px;
+    }
+  }
+
+  .want-help {
+    padding-top: 62px;
+    padding-bottom: 65px;
+
+    .img-container {
+      padding-top: 63px;
+    }
+  }
+
+  .how-create {
+    background-color: #f0f0f1;
+
+    .container {
+      & > :nth-of-type(3) .description-block {
+        padding-top: 30px;
+        margin-right: 0;
+
+        .title {
+          padding-top: 0;
+          margin-bottom: 49px;
+        }
+      }
+    }
+
+    .description {
+      .description-block {
+        .title {
+          padding-top: 55px;
+          margin-bottom: 34px;
+        }
+      }
+    }
+
+    .flex-container {
+      @include flex(space-between, flex-start, row, wrap);
+
+      .flex-block {
+        width: 30.8%;
+        background-color: #fff;
+        margin-bottom: 46px;
+        height: 156px;
+        padding: 20px 20px 22px 30px;
+
+        &:nth-of-type(4) .subtitle {
+          width: 204px;
+        }
+
+        &:nth-of-type(5) .subtitle {
+          width: 262px;
+        }
+
+        .title {
+          font-family: "DidactGothic";
+          font-size: 30px;
+          font-weight: normal;
+          line-height: 1.37;
+          letter-spacing: normal;
+          color: #000000;
+          margin-bottom: 27px;
+        }
+
+        .subtitle {
+          font-family: "Raleway";
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 1.71;
+          color: #000000;
+        }
+      }
+    }
+
+    .button-block {
+      padding-top: 78px;
+      padding-bottom: 85px;
+
+      .input-button {
+        width: 230px;
+      }
+    }
+  }
+
+  .description {
+    @include flex(flex-start, flex-start, row, wrap);
+
+    .description-block {
+      margin-right: 9.4%;
+
+      .title {
+        font-family: "DidactGothic";
+        font-size: 30px;
+        font-weight: normal;
+        line-height: 1.43;
+        color: #00a6ed;
+        margin-bottom: 19px;
+      }
+
+      .subtitle {
+        font-family: "Raleway";
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.71;
+        color: #000000;
+      }
+    }
+  }
+}
