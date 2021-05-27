@@ -73,6 +73,7 @@
           letter-spacing: normal;
           color: #000000;
           margin-bottom: 27px;
+          letter-spacing: -0.5px;
         }
 
         .subtitle {
@@ -96,7 +97,7 @@
   }
 
   .description {
-    @include flex(flex-start, flex-start, row, wrap);
+    @include flex(flex-start, flex-start, row, nowrap);
 
     .description-block {
       margin-right: 9.4%;
@@ -116,6 +117,199 @@
         font-weight: 500;
         line-height: 1.71;
         color: #000000;
+      }
+    }
+  }
+}
+
+@media (max-width: 899px) {
+  .how {
+    .background-header {
+      height: 305px;
+
+      .header-img {
+        left: 66.9%;
+        top: 31px;
+        width: 334px;
+        height: 273px;
+      }
+
+      .title {
+        margin-bottom: 28px;
+      }
+    }
+
+    .description {
+      justify-content: space-between;
+      .description-block {
+        width: 45%;
+        margin-right: 0;
+
+        &:last-child {
+          width: 40%;
+        }
+      }
+    }
+
+    .want-help {
+      padding-top: 23px;
+      padding-bottom: 40px;
+
+      .img-container {
+        padding-top: 35px;
+      }
+    }
+
+    .how-create {
+      .container {
+        & > :nth-of-type(3) .description-block {
+          padding-top: 23px;
+
+          .title {
+            margin-bottom: 35px;
+          }
+        }
+      }
+      .description {
+        .description-block {
+          width: 100%;
+
+          .title {
+            padding-top: 18px;
+            margin-bottom: 31px;
+          }
+        }
+      }
+
+      .flex-container {
+        .flex-block {
+          width: 48%;
+          margin-bottom: 25px;
+
+          .subtitle {
+            font-size: 13px;
+            line-height: 1.85;
+          }
+
+          &:last-child {
+            @include flex(space-between, flex-start, column, nowrap);
+          }
+        }
+      }
+
+      .button-block {
+        padding-top: 44px;
+        padding-bottom: 60px;
+      }
+    }
+  }
+}
+
+@media (max-width: 699px) {
+  .how {
+    .background-header {
+      height: auto;
+
+      .title {
+        letter-spacing: 0;
+        margin-bottom: 33px;
+      }
+
+      .button-container {
+        padding-bottom: 25px;
+      }
+    }
+
+    .description {
+      flex-direction: column;
+
+      .description-block {
+        width: 100%;
+        margin-bottom: 26px;
+
+        &:last-child {
+          width: 100%;
+
+          .subtitle {
+            // font-size: 12.5px;
+            letter-spacing: 0.1px;
+          }
+        }
+
+        .title {
+          margin-bottom: 11px;
+        }
+
+        .subtitle {
+          font-size: 13px;
+          line-height: 1.69;
+        }
+      }
+    }
+
+    .want-help {
+      padding-top: 14px;
+
+      .img-container {
+        padding-top: 10px;
+      }
+    }
+
+    .how-create {
+      .container {
+        & > :nth-of-type(3) .description-block {
+          padding-top: 38px;
+          margin-bottom: 2px;
+
+          .title {
+            line-height: 1.27;
+            width: 94%;
+            margin-bottom: 31px;
+          }
+        }
+      }
+      .description {
+        .description-block {
+          margin-bottom: 21px;
+
+          .title {
+            margin-bottom: 0px;
+          }
+        }
+      }
+
+      .flex-container {
+        .flex-block {
+          width: 100%;
+          padding: 11px 30px 12px 22px;
+          @include flex(space-between, flex-start, column, nowrap);
+          margin-bottom: 30px;
+
+          &:nth-of-type(5) .subtitle {
+            width: 100%;
+          }
+
+          .title {
+            margin-bottom: 0;
+          }
+
+          .subtitle {
+            font-size: 14px;
+            line-height: 1.71;
+          }
+        }
+      }
+
+      .button-block {
+        padding-bottom: 67px;
+
+        .input-button {
+          width: 230px;
+          height: 44px;
+          min-height: unset;
+          padding-right: 10px;
+          padding-left: 22px;
+        }
       }
     }
   }

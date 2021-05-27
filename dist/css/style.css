@@ -5136,6 +5136,7 @@ li:hover .tag-list-item span {
   letter-spacing: normal;
   color: #000000;
   margin-bottom: 27px;
+  letter-spacing: -0.5px;
 }
 
 .how .how-create .flex-container .flex-block .subtitle {
@@ -5169,8 +5170,8 @@ li:hover .tag-list-item span {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 .how .description .description-block {
@@ -6064,6 +6065,95 @@ li:hover .tag-list-item span {
   .catalog .input-button {
     margin-top: 52px;
     margin-bottom: 81px;
+  }
+
+  .how .background-header {
+    height: 305px;
+  }
+
+  .how .background-header .header-img {
+    left: 66.9%;
+    top: 31px;
+    width: 334px;
+    height: 273px;
+  }
+
+  .how .background-header .title {
+    margin-bottom: 28px;
+  }
+
+  .how .description {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .how .description .description-block {
+    width: 45%;
+    margin-right: 0;
+  }
+
+  .how .description .description-block:last-child {
+    width: 40%;
+  }
+
+  .how .want-help {
+    padding-top: 23px;
+    padding-bottom: 40px;
+  }
+
+  .how .want-help .img-container {
+    padding-top: 35px;
+  }
+
+  .how .how-create .container > :nth-of-type(3) .description-block {
+    padding-top: 23px;
+  }
+
+  .how .how-create .container > :nth-of-type(3) .description-block .title {
+    margin-bottom: 35px;
+  }
+
+  .how .how-create .description .description-block {
+    width: 100%;
+  }
+
+  .how .how-create .description .description-block .title {
+    padding-top: 18px;
+    margin-bottom: 31px;
+  }
+
+  .how .how-create .flex-container .flex-block {
+    width: 48%;
+    margin-bottom: 25px;
+  }
+
+  .how .how-create .flex-container .flex-block .subtitle {
+    font-size: 13px;
+    line-height: 1.85;
+  }
+
+  .how .how-create .flex-container .flex-block:last-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+
+  .how .how-create .button-block {
+    padding-top: 44px;
+    padding-bottom: 60px;
   }
 }
 
@@ -7372,6 +7462,121 @@ li:hover .tag-list-item span {
     min-height: unset;
     height: 44px;
     width: 250px;
+  }
+
+  .how .background-header {
+    height: auto;
+  }
+
+  .how .background-header .title {
+    letter-spacing: 0;
+    margin-bottom: 33px;
+  }
+
+  .how .background-header .button-container {
+    padding-bottom: 25px;
+  }
+
+  .how .description {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .how .description .description-block {
+    width: 100%;
+    margin-bottom: 26px;
+  }
+
+  .how .description .description-block:last-child {
+    width: 100%;
+  }
+
+  .how .description .description-block:last-child .subtitle {
+    letter-spacing: 0.1px;
+  }
+
+  .how .description .description-block .title {
+    margin-bottom: 11px;
+  }
+
+  .how .description .description-block .subtitle {
+    font-size: 13px;
+    line-height: 1.69;
+  }
+
+  .how .want-help {
+    padding-top: 14px;
+  }
+
+  .how .want-help .img-container {
+    padding-top: 10px;
+  }
+
+  .how .how-create .container > :nth-of-type(3) .description-block {
+    padding-top: 38px;
+    margin-bottom: 2px;
+  }
+
+  .how .how-create .container > :nth-of-type(3) .description-block .title {
+    line-height: 1.27;
+    width: 94%;
+    margin-bottom: 31px;
+  }
+
+  .how .how-create .description .description-block {
+    margin-bottom: 21px;
+  }
+
+  .how .how-create .description .description-block .title {
+    margin-bottom: 0px;
+  }
+
+  .how .how-create .flex-container .flex-block {
+    width: 100%;
+    padding: 11px 30px 12px 22px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin-bottom: 30px;
+  }
+
+  .how .how-create .flex-container .flex-block:nth-of-type(5) .subtitle {
+    width: 100%;
+  }
+
+  .how .how-create .flex-container .flex-block .title {
+    margin-bottom: 0;
+  }
+
+  .how .how-create .flex-container .flex-block .subtitle {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+
+  .how .how-create .button-block {
+    padding-bottom: 67px;
+  }
+
+  .how .how-create .button-block .input-button {
+    width: 230px;
+    height: 44px;
+    min-height: unset;
+    padding-right: 10px;
+    padding-left: 22px;
   }
 }
 
