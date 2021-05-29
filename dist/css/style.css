@@ -2574,7 +2574,8 @@ li:hover .tag-list-item span {
   width: 473px;
 }
 
-.footer .menu div:hover {
+.footer .menu div:hover,
+.footer .menu a:hover {
   color: #000000 !important;
   text-decoration: underline;
 }
@@ -5133,7 +5134,6 @@ li:hover .tag-list-item span {
   font-size: 30px;
   font-weight: normal;
   line-height: 1.37;
-  letter-spacing: normal;
   color: #000000;
   margin-bottom: 27px;
   letter-spacing: -0.5px;
@@ -5189,6 +5189,53 @@ li:hover .tag-list-item span {
 
 .how .description .description-block .subtitle {
   font-family: "Raleway";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.71;
+  color: #000000;
+}
+
+.rules {
+  background-color: #f0f0f1;
+}
+
+.rules .background-header .title {
+  margin-bottom: 5px;
+  letter-spacing: -1.2px;
+}
+
+.rules .text-content {
+  padding-top: 64px;
+  padding-bottom: 34px;
+}
+
+.rules .text-content > :nth-of-type(4) {
+  margin-bottom: 71px !important;
+}
+
+.rules .text-content > :nth-of-type(4) .subtitle {
+  margin-bottom: 9.5px;
+}
+
+.rules .text-content > :last-of-type .subtitle {
+  font-size: 16px !important;
+}
+
+.rules .text-content .text-block {
+  margin-bottom: 46px;
+}
+
+.rules .text-content .text-block .title {
+  font-family: "DidactGothic";
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 1.37;
+  color: #000000;
+  margin-bottom: 26px;
+}
+
+.rules .text-content .text-block .subtitle {
+  font-family: Raleway;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.71;
@@ -6154,6 +6201,31 @@ li:hover .tag-list-item span {
   .how .how-create .button-block {
     padding-top: 44px;
     padding-bottom: 60px;
+  }
+
+  .rules .background-header {
+    height: 287px;
+  }
+
+  .rules .background-header .title {
+    margin-bottom: 17px;
+  }
+
+  .rules .background-header .subtitle {
+    margin: 0;
+  }
+
+  .rules .text-content {
+    padding-top: 23px;
+    padding-bottom: 1px;
+  }
+
+  .rules .text-content > :last-of-type {
+    margin-bottom: 24px;
+  }
+
+  .rules .text-content > :nth-of-type(4) .subtitle {
+    font-size: 13.5px;
   }
 }
 
@@ -7577,6 +7649,51 @@ li:hover .tag-list-item span {
     min-height: unset;
     padding-right: 10px;
     padding-left: 22px;
+  }
+
+  .rules .background-header {
+    height: 245px;
+  }
+
+  .rules .background-header .container {
+    padding-top: 129px;
+  }
+
+  .rules .background-header .title {
+    margin-bottom: 19px;
+    letter-spacing: -1.2px;
+  }
+
+  .rules .text-content {
+    padding-top: 20px;
+  }
+
+  .rules .text-content > :nth-of-type(4) {
+    margin-bottom: 65px !important;
+  }
+
+  .rules .text-content > :nth-of-type(4) .subtitle {
+    margin-bottom: 18.5px;
+  }
+
+  .rules .text-content > :last-of-type .subtitle {
+    font-size: 13px !important;
+    line-height: 1.69 !important;
+  }
+
+  .rules .text-content .text-block {
+    margin-bottom: 36px;
+  }
+
+  .rules .text-content .text-block .title {
+    font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+  .rules .text-content .text-block .subtitle {
+    font-size: 13px;
+    line-height: 1.69;
   }
 }
 

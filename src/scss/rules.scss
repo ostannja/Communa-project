@@ -1,0 +1,126 @@
+.rules {
+  background-color: #f0f0f1;
+
+  .background-header {
+    .title {
+      margin-bottom: 5px;
+      letter-spacing: -1.2px;
+    }
+  }
+
+  .text-content {
+    padding-top: 64px;
+    padding-bottom: 34px;
+
+    & > :nth-of-type(4) {
+      margin-bottom: 71px !important;
+
+      .subtitle {
+        margin-bottom: 9.5px;
+      }
+    }
+
+    & > :last-of-type .subtitle {
+      font-size: 16px !important;
+    }
+
+    .text-block {
+      margin-bottom: 46px;
+
+      .title {
+        font-family: "DidactGothic";
+        font-size: 30px;
+        font-weight: normal;
+        line-height: 1.37;
+        color: #000000;
+        margin-bottom: 26px;
+      }
+
+      .subtitle {
+        font-family: Raleway;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.71;
+        color: #000000;
+      }
+    }
+  }
+}
+
+@media (max-width: 899px) {
+  .rules {
+    .background-header {
+      height: 287px;
+
+      .title {
+        margin-bottom: 17px;
+      }
+
+      .subtitle {
+        margin: 0;
+      }
+    }
+
+    .text-content {
+      padding-top: 23px;
+      padding-bottom: 1px;
+
+      & > :last-of-type {
+        margin-bottom: 24px;
+      }
+
+      & > :nth-of-type(4) .subtitle {
+        font-size: 13.5px;
+      }
+    }
+  }
+}
+
+@media (max-width: 699px) {
+  .rules {
+    .background-header {
+      height: 245px;
+
+      .container {
+        padding-top: 129px;
+      }
+
+      .title {
+        margin-bottom: 19px;
+        letter-spacing: -1.2px;
+      }
+    }
+
+    .text-content {
+      padding-top: 20px;
+
+      & > :nth-of-type(4) {
+        margin-bottom: 65px !important;
+
+        .subtitle {
+          margin-bottom: 18.5px;
+        }
+      }
+
+      & > :last-of-type .subtitle {
+        font-size: 13px !important;
+        line-height: 1.69 !important;
+      }
+
+      .text-block {
+        margin-bottom: 36px;
+
+        .title {
+          font-weight: normal;
+          line-height: 1.2;
+          margin-bottom: 20px;
+        }
+
+        .subtitle {
+          font-size: 13px;
+          line-height: 1.69;
+        }
+      }
+    }
+  }
+}

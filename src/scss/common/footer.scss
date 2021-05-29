@@ -37,7 +37,8 @@
     color: #00a6ed;
     width: 473px;
 
-    div:hover {
+    div:hover,
+    a:hover {
       color: #000000 !important;
       text-decoration: underline;
     }
