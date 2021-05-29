@@ -14,14 +14,6 @@
 
     & > :nth-of-type(4) {
       margin-bottom: 71px !important;
-
-      .subtitle {
-        margin-bottom: 9.5px;
-      }
-    }
-
-    & > :last-of-type .subtitle {
-      font-size: 16px !important;
     }
 
     .text-block {
@@ -36,13 +28,26 @@
         margin-bottom: 26px;
       }
 
-      .subtitle {
+      .subtitle,
+      .subtitle-list {
         font-family: Raleway;
         font-size: 14px;
         font-weight: 500;
         line-height: 1.71;
         color: #000000;
       }
+
+      .subtitle-list {
+        margin-bottom: 9.5px;
+      }
+    }
+
+    .text-block-refusal {
+      font-family: "Raleway";
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.5;
+      color: #000000;
     }
   }
 }
@@ -65,13 +70,19 @@
       padding-top: 23px;
       padding-bottom: 1px;
 
-      & > :last-of-type {
-        margin-bottom: 24px;
+      & > :nth-child(2) {
+        width: 95%;
       }
 
-      & > :nth-of-type(4) .subtitle {
-        font-size: 13.5px;
+      .text-block {
+        .subtitle-list {
+          letter-spacing: -0.1px;
+        }
       }
+    }
+
+    .text-block-refusal {
+      margin-bottom: 24px;
     }
   }
 }
@@ -94,15 +105,15 @@
     .text-content {
       padding-top: 20px;
 
-      & > :nth-of-type(4) {
-        margin-bottom: 65px !important;
-
-        .subtitle {
-          margin-bottom: 18.5px;
-        }
+      & > :nth-child(2) {
+        width: 100%;
       }
 
-      & > :last-of-type .subtitle {
+      & > :nth-of-type(4) {
+        margin-bottom: 65px !important;
+      }
+
+      .text-block-refusal .subtitle {
         font-size: 13px !important;
         line-height: 1.69 !important;
       }
@@ -120,6 +131,15 @@
           font-size: 13px;
           line-height: 1.69;
         }
+
+        .subtitle-list {
+          margin-bottom: 18.5px;
+        }
+      }
+
+      .text-block-refusal {
+        font-size: 13px;
+        line-height: 1.69;
       }
     }
   }

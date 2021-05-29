@@ -5213,14 +5213,6 @@ li:hover .tag-list-item span {
   margin-bottom: 71px !important;
 }
 
-.rules .text-content > :nth-of-type(4) .subtitle {
-  margin-bottom: 9.5px;
-}
-
-.rules .text-content > :last-of-type .subtitle {
-  font-size: 16px !important;
-}
-
 .rules .text-content .text-block {
   margin-bottom: 46px;
 }
@@ -5234,11 +5226,24 @@ li:hover .tag-list-item span {
   margin-bottom: 26px;
 }
 
-.rules .text-content .text-block .subtitle {
+.rules .text-content .text-block .subtitle,
+.rules .text-content .text-block .subtitle-list {
   font-family: Raleway;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.71;
+  color: #000000;
+}
+
+.rules .text-content .text-block .subtitle-list {
+  margin-bottom: 9.5px;
+}
+
+.rules .text-content .text-block-refusal {
+  font-family: "Raleway";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
   color: #000000;
 }
 
@@ -6220,12 +6225,16 @@ li:hover .tag-list-item span {
     padding-bottom: 1px;
   }
 
-  .rules .text-content > :last-of-type {
-    margin-bottom: 24px;
+  .rules .text-content > :nth-child(2) {
+    width: 95%;
   }
 
-  .rules .text-content > :nth-of-type(4) .subtitle {
-    font-size: 13.5px;
+  .rules .text-content .text-block .subtitle-list {
+    letter-spacing: -0.1px;
+  }
+
+  .rules .text-block-refusal {
+    margin-bottom: 24px;
   }
 }
 
@@ -7668,15 +7677,15 @@ li:hover .tag-list-item span {
     padding-top: 20px;
   }
 
+  .rules .text-content > :nth-child(2) {
+    width: 100%;
+  }
+
   .rules .text-content > :nth-of-type(4) {
     margin-bottom: 65px !important;
   }
 
-  .rules .text-content > :nth-of-type(4) .subtitle {
-    margin-bottom: 18.5px;
-  }
-
-  .rules .text-content > :last-of-type .subtitle {
+  .rules .text-content .text-block-refusal .subtitle {
     font-size: 13px !important;
     line-height: 1.69 !important;
   }
@@ -7692,6 +7701,15 @@ li:hover .tag-list-item span {
   }
 
   .rules .text-content .text-block .subtitle {
+    font-size: 13px;
+    line-height: 1.69;
+  }
+
+  .rules .text-content .text-block .subtitle-list {
+    margin-bottom: 18.5px;
+  }
+
+  .rules .text-content .text-block-refusal {
     font-size: 13px;
     line-height: 1.69;
   }
