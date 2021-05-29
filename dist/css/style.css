@@ -5195,29 +5195,29 @@ li:hover .tag-list-item span {
   color: #000000;
 }
 
-.rules {
+.static {
   background-color: #f0f0f1;
 }
 
-.rules .background-header .title {
+.static .background-header .title {
   margin-bottom: 5px;
   letter-spacing: -1.2px;
 }
 
-.rules .text-content {
+.static .text-content {
   padding-top: 64px;
   padding-bottom: 34px;
 }
 
-.rules .text-content > :nth-of-type(4) {
+.static .text-content > :nth-of-type(4) {
   margin-bottom: 71px !important;
 }
 
-.rules .text-content .text-block {
+.static .text-content .text-block {
   margin-bottom: 46px;
 }
 
-.rules .text-content .text-block .title {
+.static .text-content .text-block .title {
   font-family: "DidactGothic";
   font-size: 30px;
   font-weight: normal;
@@ -5226,8 +5226,8 @@ li:hover .tag-list-item span {
   margin-bottom: 26px;
 }
 
-.rules .text-content .text-block .subtitle,
-.rules .text-content .text-block .subtitle-list {
+.static .text-content .text-block .subtitle,
+.static .text-content .text-block .subtitle-list {
   font-family: Raleway;
   font-size: 14px;
   font-weight: 500;
@@ -5235,11 +5235,11 @@ li:hover .tag-list-item span {
   color: #000000;
 }
 
-.rules .text-content .text-block .subtitle-list {
+.static .text-content .text-block .subtitle-list {
   margin-bottom: 9.5px;
 }
 
-.rules .text-content .text-block-refusal {
+.static .text-content .text-block-refusal {
   font-family: "Raleway";
   font-size: 16px;
   font-weight: 500;
